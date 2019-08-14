@@ -40,7 +40,7 @@
 <!-- ==========================================Pagina login======================================================== -->
 <div class="modal fade " id="exampleModall" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	<div id="exampleModall" class="login-box rounded pt-0">
-		<div class="modal-dialog"></div><!-- para conseguir voltar se apertar "esc" -->
+		<div class="modal-dialog"></div>
 		<div role="document">
 
 			<h1 class=" m-0 pb-2 text-center  " style="font-size: 20px;">Login </h1>
