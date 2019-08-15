@@ -8,16 +8,23 @@
 	<link rel="stylesheet" type="text/css" href="media/css/index.css">
 </head>
 
-<body style="background-image: url(media/images/mdc-18.jpg); background-size: 100%; background-attachment: fixed; top: 1;">
+<body ">
 
 	<!-- Inclusão do HEADER -->
 	<?php require_once('include/header.php'); ?>
+
+	<div style="background-image: url('media/images/mdc-18.jpg'); min-height: 330px; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -118px; background-repeat: no-repeat;" class="shadow">
+		<div class="text-center my-5">
+			
+		</div> 
+	</div>
+
 	
 
 
 	<!-- fundo da Página  -->
 
-	<div class="container mt-5 pt-4 mb-5 pb-4 col-10 " style="text-align: center; background-image: linear-gradient( white, rgb(88, 148, 245)); border-radius: 15px;box-shadow: 5px 5px 5px rgba(0,0,0,0.5);"> 
+	<div class="container  pt-4 mb-5 pb-4 col-10 " style="text-align: center; background-image: linear-gradient( white, rgb(88, 148, 245)); border-radius: 15px;box-shadow: 5px 5px 5px rgba(0,0,0,0.5); margin-top: -150px;" > 
 
 		<h1 style="color: black;text-decoration: underline;">Aqui você sabera tudo sobre nossa página e nossa política de qualidade e muito mais!.</h1>
 		<br>

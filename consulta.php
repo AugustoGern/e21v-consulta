@@ -6,12 +6,18 @@
 <link rel="stylesheet" type="text/css" href="media/css/index.css">
 <script src="https://kit.fontawesome.com/3b47dd4ac9.js"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<body style="background-image: url(media/images/mdc-18.jpg); background-size: 100%; background-attachment: fixed;">
+<body>
 
 	<?php require_once('include/header.php'); ?>
 
+	<div style="background-image: url('media/images/mdc-18.jpg'); min-height: 330px; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -118px; background-repeat: no-repeat;" class="shadow">
+		<div class="text-center my-5">
+			
+		</div> 
+	</div>
 
-	<h1 class="text-center  mb-4">Clique exatamente na região do desconforto</h1>
+
+	<h1 class="text-center"  style="margin-top: -200px;">Clique exatamente na região do desconforto</h1>
 
 	<div class="container-fluid">
 		<div class="container">
