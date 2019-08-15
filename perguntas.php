@@ -12,23 +12,21 @@
 
 	<!-- Inclusão do HEADER -->
 	<?php require_once('include/header.php'); ?>
-	
+	<br>
 
-	<br><br><br><br><br>
-
-	<!-- Titulo -->
+	<!-- Perguntas -->
 	<div class="fonte">
 		<div class="containers">
 			<div>
-				<h3 class="text-white text-justify m-4 p-4"><strong>É comum visitarmos o médico e este informar que estamos com uma virose, ou seja, uma doença transmitida por vírus. Baseando-se nos seus conhecimentos sobre o tema, marque a alternativa que indica o nome de uma virose.</strong></h3>
+				<h3 class="text-white text-justify m-4 p-4 "><strong>É comum visitarmos o médico e este informar que estamos com uma virose, ou seja, uma doença transmitida por vírus. Baseando-se nos seus conhecimentos sobre o tema, marque a alternativa que indica o nome de uma virose.</strong></h3>
 			</div>
 		</div>
 	</div>
 	<br>
-	<!-- Perguntas -->
 
-	<div class="text-center" >
-		<a href="#" class="bbo btn btn-success text-center m-3 ">Febre amarela</a>
+	<!-- Resposta -->
+	<div class="text-center " >
+		<a href="#" class="bbo btn btn-success text-center m-3 ">Febre amarela.</a>
 	</div> 
 
 	<div class="text-center ">
@@ -38,9 +36,6 @@
 	<div class="text-center ">
 		<a href="#" class="bbo btn btn-success text-center m-3 ">Cólera.</a>
 	</div>
-
-
-
 
 	<!-- ==========================================FOOTER=========================================================== -->
 
@@ -55,9 +50,6 @@
 			</div>
 		</div>
 	</div>
-
-
-
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
