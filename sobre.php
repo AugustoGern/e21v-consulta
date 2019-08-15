@@ -17,24 +17,24 @@
 
 	<!-- fundo da Página  -->
 
-	<div class="container mt-5 pt-4 mb-5 pb-4" style="text-align: center; background-image: linear-gradient( white, rgb(88, 148, 245)); border-radius: 15px;box-shadow: 5px 5px 5px rgba(0,0,0,0.5);"> 
+	<div class="container mt-5 pt-4 mb-5 pb-4 col-10 " style="text-align: center; background-image: linear-gradient( white, rgb(88, 148, 245)); border-radius: 15px;box-shadow: 5px 5px 5px rgba(0,0,0,0.5);"> 
 
 		<h1 style="color: black;text-decoration: underline;">Aqui você sabera tudo sobre nossa página e nossa política de qualidade e muito mais!.</h1>
 		<br>
 
-		<h4 style="text-align: center; font-family: Times New Roman" class="ml-5">A página foi desenvolvida por uma equipe de 4 Alunos do Entra21, Edição de 2019. O “nome do site " foi monitorada e auxiliada por nosso instrutor/professor João de Paula.</h4>
+		<h4 style="text-align: center; font-family: Times New Roman" class="p-4">A página foi desenvolvida por uma equipe de 4 Alunos do Entra21, Edição de 2019. O “nome do site " foi monitorada e auxiliada por nosso instrutor/professor João de Paula.</h4>
 		<hr>
 
 		<div class="row">
 			<div class="col-4 mt-3">
-				<img src="media/images/mdc-20.jpg" class="m-4 " style="border-radius: 50px;box-shadow: 5px 5px 5px rgba(0,0,0,0.5);">
+				<img src="media/images/mdc-20.jpg" class="m-4  d-none d-sm-block" style="border-radius: 50px;box-shadow: 5px 5px 5px rgba(0,0,0,0.5);">
 			</div>
 
-			<div class="col-8 mt-3">
+			<div class="col-12 col-md-8 mt-3">
 				<h4 class="m-4 p-0" style="text-align: left; font-family: Times New Roman"> A página vem se desenvolvendo a cada dia e com ela, vem o nosso objetivo de entregar um 'processo de atendimento ao cliente e com agilidade em seu procedimento de consulta ou pesquisa de sintomas "possíveis"'. Nossa equipe visa entregar o máximo de conforto e simplicidade aos nossos clientes e tendo com o site o mais importante que é entregar um profissional na área hospitalar que possa cuidar do paciente e auxilia-lo em sua caminhada ao bem-estar.</h4>
 			</div>
 
-			<div class="col-5	">
+			<div class="col-md-5 col-12 ">
 				<h2 class="mt-4 " style="text-align: left; text-decoration: underline;"><li>Missão</li></h2>
 				<h6 class="ml-5" style="text-align: left;">Cuidar dos nossos pacientes e usuários, promovendo agilidade e saúde com todo conforto e segurança, empatia e eficiência.</h6>
 				<h2 class="mt-2 " style="text-align: left; text-decoration: underline;"><li>Política de Qualidade</li></h2>
@@ -44,12 +44,12 @@
 			</div>
 
 			<div class="col-7">
-				<img src="media/images/mdc.21.jpg" class="m-4" style=" border-radius: 50px;box-shadow: 5px 5px 5px rgba(0,0,0,0.5)">	
+				<img src="media/images/mdc.21.jpg" class="m-4 d-none d-sm-block" style=" border-radius: 50px;box-shadow: 5px 5px 5px rgba(0,0,0,0.5)">	
 			</div>
 		</div>
 	</div>
 
-	<!-- rodapé -->
+	<!-- footer -->
 	<?php require_once('include/footer.php'); ?>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -8,18 +8,20 @@
 	<link rel="stylesheet" type="text/css" href="media/css/index.css">
 	<link rel="stylesheet" type="text/css" href="media/css/footer.css">
 </head>
-<body style="background-image: url(media/images/fnd-index.jpg); background-size: 100%; ">
+<body>
 	
 	<!-- Inclusão do HEADER -->
 	<?php require_once('include/header.php'); ?>
 
-	<!-- Frase -->
-	<div class="container">
-		<h1 class="text-center mb-5 pt-5"> Otimize sua vida! </h1> 
+	<div style="background-image: url('media/images/fnd-index.jpg'); min-height: 330px; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -118px; background-repeat: no-repeat;" class="shadow">
+		<div class="text-center my-5">
+			<h1 style="color: #2256aa;">Otimize sua vida!</h1>
+		</div> 
 	</div>
+
 	<!-- botão -->
 	<div class="text-center ">
-		<a href="consulta.php" class="btn btn-success text-center mt-5 "> Realize sua consulta </a>
+		<a href="consulta.php" class="btn btn-success text-center" style="margin-top: -75px;"> Realize sua consulta </a>
 	</div>
 
 	<!-- ==========================================FOOTER=========================================================== -->
