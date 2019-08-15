@@ -6,6 +6,7 @@
 	<script src="https://kit.fontawesome.com/3b47dd4ac9.js"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="media/css/index.css">
+	<link rel="stylesheet" type="text/css" href="media/css/footer.css">
 </head>
 <body style="background-image: url(media/images/fnd-index.jpg); background-size: 100%; ">
 	
@@ -23,17 +24,8 @@
 
 	<!-- ==========================================FOOTER=========================================================== -->
 
-	<div class="footer p-0 m-0" style="background-color: rgb(10,68,161,0.90);">
-		<div class="row col-sm" style="text-align: center;">
-			<div class="container">	
-
-				<p class=" text-light col-sm text-center pr-0 mt-3"><strong class="text-success">NomeLogo </strong>© 2019</p>
-				
-				<p class="text-light "><i>Uma empresa Brasileira com muito orgulho.</i></p>
-
-			</div>
-		</div>
-	</div>
+	<?php require_once('include/footer.php'); ?>
+	
 	
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
