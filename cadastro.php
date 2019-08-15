@@ -5,19 +5,46 @@
 	<title>Cadastro de Usuarios</title>
 	<script src="https://kit.fontawesome.com/3b47dd4ac9.js"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="media/css/index.css">
+	
 </head>
-<body class="bg-dark">
+<body style="background-image: url(media/images/mdc-18.jpg); background-size: 100%; background-attachment: fixed;">
 
-	<!-- Inclusão do HEADER -->
-	<?php require_once('include/header.php'); ?>
+	<!-- ==============================================NAVBAR==================================================== -->
+<nav class="navbar  navbar-expand-lg navbar-light mb-3" style="background-color: rgb(10,68,161,0.90);">
+	<a class="navbar-brand" href="#">
+		<img src="media/images/logo.png" style="width: 40px;  ">
+	</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse  navbar-collapse " id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+				<a class="nav-link text-white" href="index.php">Início <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link text-white" href="sobre.php">Sobre</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link text-white" href="#">Consultar</a>
+			</li>
+		</ul>
+		<form class="form-inline my-2 my-lg-0">
+			<a class="navbar-brand text-light " href="cadastro.php">
+				<i class="fas fa-user-plus nav-link ml-2" 
+				></i>
+			</a>
+		</form>
+	</div>
+</nav>
 
 	<!-- CONTEÚDO DA PÁGINA -->
 
-	<div class="container-fluid bg-dark">
+	<div class="container-fluid">
 		<div class="container">
 			<h1 class="text-center pt-3 text-white">Cadastro</h1>
-			<div class="card mt-3">
+			<div class="card mt-3 mb-3">
 				<div class="card-body">
 					<form method="post" action="" name="formCadastro">
 						<label for="nome">Nome Completo:<strong class="text-danger"> *</strong></label>
@@ -48,16 +75,8 @@
 		</div>
 	</div>
 
-	<div class="footer p-0 m-0 mt-3" style="background-color: rgb(10,68,161,0.90);">
-		<div class="row col-sm" style="text-align: center;">
-			<div class="container">	
-				<p class=" text-light col-sm text-center pr-0"><strong class="text-success">NomeLogo </strong>© 2019</p>
-				
-				<p class="text-light "><i>Uma empresa Brasileira com muito orgulho.</i></p>
-			</div>
-		</div>
-	</div>
-
+	<!-- FOOTER -->
+	<?php require_once('include/footer.php'); ?>
 
 
 	<!-- BOOTSTRAP -->
