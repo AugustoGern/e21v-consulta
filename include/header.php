@@ -16,7 +16,7 @@
 				<a class="nav-link text-white" href="sobre.php">Sobre</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link text-white" href="#">Consultar</a>
+				<a class="nav-link text-white" href="consulta.php">Consultar</a>
 			</li>
 		</ul>
 		<form class="form-inline my-2 my-lg-0">

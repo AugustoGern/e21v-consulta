@@ -19,7 +19,7 @@
 	</div>
 	<!-- botão -->
 	<div class="text-center ">
-		<a href="#" class="btn btn-success text-center mt-5 "> Realize sua consulta </a>
+		<a href="consulta.php" class="btn btn-success text-center mt-5 "> Realize sua consulta </a>
 	</div>
 
 	<!-- ==========================================FOOTER=========================================================== -->
