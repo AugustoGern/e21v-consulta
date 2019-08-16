@@ -6,7 +6,7 @@
 	<script src="https://kit.fontawesome.com/3b47dd4ac9.js"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="media/css/index.css">
-	<link rel="stylesheet" type="text/css" href="media/css/footer.css">
+	
 </head>
 <body>
 	
@@ -29,9 +29,13 @@
 
 	<div class="container-fluid">
 		<div class="container">
-			<div class="card">
+					<h1 class="text-center">Como funciona?!</h1>
+			<div class="card mb-5">
 				<div class="card-body">
-					fhdsfbdsiboi
+					<li>Ao clicar em <a href="consulta.php">Realizar sua consulta</a> voce poderá identificar o local onde você sente seu desconforto. </li><br>
+					<li>Após identificar seu desconforto, irá ser apresentado uma série de perguntas com possíveis sintomas e você deverá selecionar o sintoma que mais se identifica de acordo com o seu desconforto.</li><br>
+					<li>Assim que finalizar sua "consulta" iremos fornecer como resposta o profissional mais adequado para o seu possível problema.</li><br>
+					<li>Finalizando sua consulta, forneceremos tambem um relatório e histórico de suas pesquisas até o momento. </li> <br>
 				</div>
 			</div>
 		</div>
