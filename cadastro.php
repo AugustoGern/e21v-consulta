@@ -5,13 +5,12 @@
 	<title>Cadastro de Usuarios</title>
 	<script src="https://kit.fontawesome.com/3b47dd4ac9.js"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	
 </head>
 <body >
 
 	<!-- ==============================================NAVBAR==================================================== -->
 	<nav class="navbar  navbar-expand-lg navbar-light mb-3" style="background-color: rgb(10,68,161,0.90);">
-		<a class="navbar-brand" href="#">
+		<a class="navbar-brand" href="index.php">
 			<img src="media/images/logo.png" style="width: 40px;  ">
 		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,15 +45,11 @@
 		</div> 
 	</div>
 
-
-
-
-
 	<!-- CONTEÚDO DA PÁGINA -->
 
 	<div class="container-fluid">
 		<div class="container" style="margin-top: -200px;">
-			<h1 class="text-center pt-3 ">Cadastro</h1>
+			<h1 class="text-center pt-3">Cadastro</h1>
 			<div class="card mt-3 mb-3" >
 				<div class="card-body">
 					<form method="post" action="" name="formCadastro">
@@ -88,7 +83,6 @@
 
 	<!-- FOOTER -->
 	<?php require_once('include/footer.php'); ?>
-
 
 	<!-- BOOTSTRAP -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
