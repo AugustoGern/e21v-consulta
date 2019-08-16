@@ -6,6 +6,7 @@
 	<script src="https://kit.fontawesome.com/3b47dd4ac9.js"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="media/css/index.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 	
 </head>
 <body>
@@ -15,7 +16,7 @@
 
 	<div style="background-image: url('media/images/fnd-index.jpg'); min-height: 330px; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -118px; background-repeat: no-repeat;" class="shadow">
 		<div class="text-center my-5">
-			<h1 style="color: #2256aa;">Otimize sua vida!</h1>
+			<h1 style="color: #2256aa; font-family: 'Montserrat', sans-serif;">Otimize sua vida!</h1>
 		</div> 
 	</div>
 
@@ -28,8 +29,8 @@
 
 
 	<div class="container-fluid">
-		<div class="container">
-					<h1 class="text-center">Como funciona?!</h1>
+		<div class="container" style="font-family: 'Montserrat', sans-serif;">
+					<h1 class="text-center"><strong>Como funciona?!</strong></h1>
 			<div class="card mb-5">
 				<div class="card-body">
 					<li>Ao clicar em <a href="consulta.php">Realizar sua consulta</a> voce poderá identificar o local onde você sente seu desconforto. </li><br>
