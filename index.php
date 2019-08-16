@@ -22,20 +22,27 @@
 
 	<!-- botão -->
 	<div class="text-center ">
-		<a href="consulta.php" class="btn btn-success text-center" style="margin-top: -125px;"> Realize sua consulta </a>
+		<a href="consulta.php" class="btn btn-success text-center " style="margin-top: -125px;"> Realize sua consulta </a>
 	</div>
 	<!-- =========== -->
 
 
 
 	<div class="container-fluid">
-		<div class="container" style="font-family: 'Montserrat', sans-serif;">
-					<h1 class="text-center"><strong>Como funciona?!</strong></h1>
+		<div class="container" style="font-family: 'Montserrat', sans-serif; ">
+
+			<h1 class="text-center" style="font-size: 40px; font-weight: 900; text-transform: uppercase;">É fácil e simples de Consultar!</h1>
+			<h2 class="text-center" style="font-size: 40px;  text-transform: uppercase;"><strong>Como funciona?!</strong></h2>
+
 			<div class="card mb-5">
 				<div class="card-body">
+					<h1>1-</h1>
 					<li>Ao clicar em <a href="consulta.php">Realizar sua consulta</a> voce poderá identificar o local onde você sente seu desconforto. </li><br>
+					<h1>2-</h1>
 					<li>Após identificar seu desconforto, irá ser apresentado uma série de perguntas com possíveis sintomas e você deverá selecionar o sintoma que mais se identifica de acordo com o seu desconforto.</li><br>
+					<h1>3-</h1>
 					<li>Assim que finalizar sua "consulta" iremos fornecer como resposta o profissional mais adequado para o seu possível problema.</li><br>
+					<h1>4-</h1>
 					<li>Finalizando sua consulta, forneceremos tambem um relatório e histórico de suas pesquisas até o momento. </li> <br>
 				</div>
 			</div>
@@ -60,8 +67,8 @@
 	<!-- ==========================================FOOTER=========================================================== -->
 
 	<?php require_once('include/footer.php'); ?>
-	
-	
+
+
 	<!-- =========================================SCRIPT============================== -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
