@@ -1,6 +1,6 @@
 <!-- ==============================================NAVBAR======================================================= -->
 <nav class="navbar  navbar-expand-lg navbar-light mb-5" style="background-color: rgb(10,68,161,0.90);">
-	<a class="navbar-brand" href="#">
+	<a class="navbar-brand" href="index.php">
 		<img src="media/images/logo.png" style="width: 40px;  ">
 	</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
