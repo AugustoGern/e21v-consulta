@@ -24,7 +24,7 @@
 			<div class="card mb-4" style="background-color: transparent; border: transparent;">
 				<div class="card-body text-center">
 
-					<img src="media/images/musculoss.jpg" style="width: 30%; height: 30%;">
+					<img src="media/images/musculos.png" style="width: 30%; height: 30%;">
 					
 				</div>
 			</div>
