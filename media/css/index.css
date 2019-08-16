@@ -13,10 +13,6 @@
     padding: 70px 30px;
 }
 
-
-
-    
-
 .login-box p{
     margin: 0;
     padding: 0;
@@ -71,11 +67,8 @@
     color: white;
     font-size: 25px;
     border-radius: 30px;
-    margin-bottom: 305px;
     padding-right: 30px;
     padding-left: 30px;
-
-
 }
 
 
@@ -159,23 +152,6 @@
 
 .fonte {
     font-family: sans-serif;;
-}
-
-
-
-
-.btn{
-    border: none;
-    outline: none;
-    height: 50px;
-    background: rgb(10,68,161,0.90);
-    color: white;
-    font-size: 25px;
-    border-radius: 30px;
-    margin-bottom: 305px;
-    padding-right: 30px;
-    padding-left: 30px;
-
 }
 
 
