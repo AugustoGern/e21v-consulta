@@ -33,11 +33,11 @@
 		<hr>
 
 		<div class="row">
-			<div class="col-4 mt-3">
-				<img src="media/images/mdc-20.jpg" class="m-4  d-none d-sm-block" style="border-radius: 50px;box-shadow: 5px 5px 5px rgba(0,0,0,0.5);">
+			<div class="col-lg-4 col-md-5  mt-3">
+				<img src="media/images/mdc-20.jpg" class="m-4 col-10 d-none d-sm-block" style="border-radius: 50px;box-shadow: 5px 5px 5px rgba(0,0,0,0.5);">
 			</div>
 
-			<div class="col-12 col-md-8 mt-3">
+			<div class="col-md-12 col-lg-8 mt-3">
 				<h4 class="m-4 p-0" style="text-align: left; font-family: Times New Roman"> A página vem se desenvolvendo a cada dia e com ela, vem o nosso objetivo de entregar um 'processo de atendimento ao cliente e com agilidade em seu procedimento de consulta ou pesquisa de sintomas "possíveis"'. Nossa equipe visa entregar o máximo de conforto e simplicidade aos nossos clientes e tendo com o site o mais importante que é entregar um profissional na área hospitalar que possa cuidar do paciente e auxilia-lo em sua caminhada ao bem-estar.</h4>
 			</div>
 
@@ -50,8 +50,8 @@
 				<h6>Ter uma ótima clientela e satisfazer nosso acessores.</h6>
 			</div>
 
-			<div class="col-7">
-				<img src="media/images/mdc.21.jpg" class="m-4 d-none d-sm-block" style=" border-radius: 50px;box-shadow: 5px 5px 5px rgba(0,0,0,0.5)">	
+			<div class="col-lg-7 ">
+				<img src="media/images/mdc.21.jpg" class="m-4 d-none col-10 d-sm-block" style=" border-radius: 50px;box-shadow: 5px 5px 5px rgba(0,0,0,0.5)">	
 			</div>
 		</div>
 	</div>

@@ -39,7 +39,7 @@
 	</nav>
 
 	<!-- =========================================================================== -->
-	<div style="background-image: url('media/images/mdc-18.jpg'); min-height: 330px; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -118px; background-repeat: no-repeat;" class="shadow">
+	<div style="background-image: url('media/images/mdc-18.jpg'); min-height: 360px; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -118px; background-repeat: no-repeat;" class="shadow">
 		<div class="text-center my-5">
 			
 		</div> 

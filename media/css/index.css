@@ -89,7 +89,7 @@
 
 
 
-    
+
 
 .login-box p{
     margin: 0;
@@ -150,3 +150,10 @@
 
 }
 
+h5 {
+    font-size: 108px;
+    line-height: 100px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    text-align: center;
+}
