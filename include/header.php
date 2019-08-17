@@ -20,7 +20,7 @@
 			</li>
 		</ul>
 		<form class="form-inline my-2 my-lg-0">
-			<a class="navbar-brand text-light " href="#">
+			<a class="navbar-brand text-light " href="historico.php">
 				<i class="fas fa-history nav-link ml-2" href="#"></i>
 			</a>
 
