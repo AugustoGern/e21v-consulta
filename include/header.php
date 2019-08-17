@@ -52,7 +52,7 @@
 
 				<p>Senha:</p>
 
-				<input type="password" class="form-control" id="password" name="password" placeholder="*******">
+				<input type="password" id="password" name="password" placeholder="*******">
 				<input type="submit" name="submit" value="Login">
 				<a href="#">Esqueceu a senha?</a>    
 			</form>
