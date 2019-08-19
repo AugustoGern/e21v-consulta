@@ -63,7 +63,7 @@
 						<input type="date" name="dataNasc" id="dataNasc" class="form-control"><br>
 
 						<label for="sexo">Sexo: <strong class="text-danger"> *</strong></label>
-						<select class="form-control">
+						<select class="form-control" name="sexo" id="sexo">
 							<option>Masculino</option>
 							<option>Feminino</option>
 						</select><br>
