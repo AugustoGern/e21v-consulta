@@ -30,7 +30,7 @@
 			</a>
 
 			<a class="navbar-brand text-light " href="cadastro.php">
-				<i class="fas fa-user-plus nav-link ml-2   "" 
+				<i class="fas fa-user-plus nav-link ml-2 "
 				></i>
 			</a>
 		</form>
@@ -38,22 +38,27 @@
 </nav>
 
 <!-- ==========================================Pagina login======================================================== -->
+
+<?php 
+require_once "login.php";
+
+?>
+
 <div class="modal fade " id="exampleModall" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	<div id="exampleModall" class="login-box rounded pt-0">
 		<div class="modal-dialog"></div>
 		<div role="document">
 
 			<h1 class=" m-0 pb-2 text-center  " style="font-size: 20px;">Login </h1>
-			<form>
-				<p>E-mail:</p>
+			<form action="" method="post">
+				<!-- E-mail -->
+				<label for="email_login">E-mail</label>
+				<input type="email" class="form-control" name="email_login" id="email_login" placeholder="Fulando@gmail.com">
 
-				<input type="email" name="username" id="name" aria-describedby="emailHelp" 
-				placeholder="fulano@gmail.com" >
-
-				<p>Senha:</p>
-
-				<input type="password" id="password" name="password" placeholder="*******">
-				<input type="submit" name="submit" value="Login">
+				<!-- Senha -->
+				<label for="senha_login">Senha</label>
+				<input type="password" class="form-control" id="senha_login" name="senha_login" placeholder="******">
+				<input type="submit" class="btn" name="botao_login" id="botao_login" value="login">
 				<a href="#">Esqueceu a senha?</a>    
 			</form>
 		</div>

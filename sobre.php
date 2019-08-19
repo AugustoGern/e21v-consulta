@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="media/css/index.css">
 </head>
 
-<body ">
+<body>
 
 	<!-- Inclusão do HEADER -->
 	<?php require_once('include/header.php'); ?>
