@@ -29,8 +29,8 @@
 				data-whatever="@fat" ></i>
 			</a>
 
-			<a class="navbar-brand text-light " href="cadastro.php">
-				<i class="fas fa-user-plus nav-link ml-2 "
+			<a class="navbar-brand text-light " href="#">
+				<i class="fas fa-user-plus nav-link ml-2 " data-target="#exampleModal"  href="#" data-toggle="modal" 
 				></i>
 			</a>
 		</form>
@@ -64,3 +64,56 @@ require_once "login.php";
 		</div>
 	</div>
 </div>
+
+<!-- =============================================pagina cadastro======================================================== -->
+
+<div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div id="exampleModall" class="login-box rounded pt-0">
+		<div class="modal-dialog"></div><!-- para conseguir voltar se apertar "esc" -->
+		<div role="document">
+
+			<h1 class=" m-0 pb-2 text-center  " style="font-size: 20px;">Cadastre-se </h1>
+			<form>
+				<div class="row">
+					<div class=" col-lg-6">
+						<label for="nome">Nome Completo:<strong class="text-danger"> *</strong></label>
+						<input type="text" name="nome" id="nome" placeholder="Gabriel de Souza" ><br>
+					</div>
+					<div class="col-lg-6">
+						<label for="email">Email:<strong class="text-danger"> *</strong></label>
+						<input type="email" name="email" id="email"><br>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class=" col-lg-6">
+						<label for="dataNasc">Data de Nascimento: <strong class="text-danger"> *</strong></label>
+						<input type="date" name="dataNasc" id="dataNasc" ><br>
+					</div>
+					<div class=" col-lg-6" >
+						<label for="sexo">Sexo: <strong class="text-danger"> *</strong></label>
+						<select  name="sexo" id="sexo">
+							<option>Masculino</option>
+							<option>Feminino</option>
+						</select><br>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-6">
+						<label for="senha">Senha: <strong class="text-danger"> *</strong></label>
+						<input type="password" name="senha" id="senha" class="form-control"><br>
+					</div>
+					<div class="col-lg-6">
+						<label for="confSenha">Confirmar Senha: <strong class="text-danger"> *</strong></label>
+						<input type="password" name="confSenha" id="confSenha" class="form-control" ><br>
+					</div>
+				</div>
+
+
+				<input type="submit" name="cadastro" id="cadastro" class="btn btn-primary " value="Cadastre-se" disabled="">
+			</form>
+		</div>
+	</div>
+</div>
+
