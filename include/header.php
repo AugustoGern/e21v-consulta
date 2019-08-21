@@ -67,6 +67,8 @@ require_once "login.php";
 </div>
 
 <!-- =============================================pagina cadastro======================================================== -->
+	<?php require_once('cadastro_usuarios.php'); ?>
+
 
 <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	<div id="exampleModall" class="login-box rounded pt-0">
@@ -74,7 +76,7 @@ require_once "login.php";
 		<div role="document">
 
 			<h1 class=" m-0 pb-2 text-center  " style="font-size: 20px;">Cadastre-se </h1>
-			<form>
+			<form method="post" action="" name="formCadastro">
 				<div class="row">
 					<div class=" col-lg-6">
 						<label for="nome">Nome Completo:<strong class="text-danger"> *</strong></label>
