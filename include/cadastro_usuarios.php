@@ -38,6 +38,13 @@
 		} else {
 			$sql = "INSERT INTO tb_usuario VALUES (DEFAULT, '$nomeCompleto', '$emailUsuario', '$dataNasc', '$sexo', '$senha')";
 		}
+
+		if (mysqli_query($con, $sql)) {
+			header('Location: index.php');
+		} else {
+			die("SE FODEU");
+		}
+	}
 		
 		
 
