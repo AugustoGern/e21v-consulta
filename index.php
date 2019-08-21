@@ -29,7 +29,7 @@
 
 	<!-- =================================================COMO FUNCIONA=================================================== -->
 	<div class="container-fluid">
-		<div class="container"">
+		<div class="container">
 
 			<h1 class="text-center" style="font-size: 35px;  text-transform: uppercase;">É fácil e simples de Consultar!</h1>
 			<h2 class="text-center" style="font-size: 35px;  text-transform: uppercase;"><strong>Como funciona?!</strong></h2>

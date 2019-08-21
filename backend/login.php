@@ -1,5 +1,5 @@
 <?php 
-require_once "conexao.php";
+require_once "../backend/conexao.php";
 
 	// Iniciar sessão
 session_start();

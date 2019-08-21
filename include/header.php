@@ -67,7 +67,7 @@ require_once "login.php";
 </div>
 
 <!-- =============================================pagina cadastro======================================================== -->
-	<?php require_once('cadastro_usuarios.php'); ?>
+	<?php require_once('../backend/cadastro_usuarios.php'); ?>
 
 
 <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
