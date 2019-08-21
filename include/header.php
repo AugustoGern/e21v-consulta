@@ -53,12 +53,13 @@ require_once "login.php";
 			<form action="" method="post">
 				<!-- E-mail -->
 				<label for="email_login">E-mail</label>
-				<input type="email" class="form-control" name="email_login" id="email_login" placeholder="Fulando@gmail.com">
+				<input type="email" class="form-control" name="email_login" id="email_login" placeholder="Fulando@gmail.com"
+				 required="">
 
 				<!-- Senha -->
 				<label for="senha_login">Senha</label>
 				<input type="password" class="form-control" id="senha_login" name="senha_login" placeholder="******">
-				<input type="submit" class="btn" name="botao_login" id="botao_login" value="login">
+				<input type="submit" class="btn" name="botao_login" id="botao_login" value="login"  required="">
 				<a href="#">Esqueceu a senha?</a>    
 			</form>
 		</div>
@@ -77,22 +78,22 @@ require_once "login.php";
 				<div class="row">
 					<div class=" col-lg-6">
 						<label for="nome">Nome Completo:<strong class="text-danger"> *</strong></label>
-						<input type="text" name="nome" id="nome" placeholder="Gabriel de Souza" ><br>
+						<input type="text" name="nome" id="nome" placeholder="Gabriel de Souza" required="" ><br>
 					</div>
 					<div class="col-lg-6">
 						<label for="email">Email:<strong class="text-danger"> *</strong></label>
-						<input type="email" name="email" id="email"><br>
+						<input type="email" name="email" id="email" required=""><br>
 					</div>
 				</div>
 
 				<div class="row">
 					<div class=" col-lg-6">
 						<label for="dataNasc">Data de Nascimento: <strong class="text-danger"> *</strong></label>
-						<input type="date" name="dataNasc" id="dataNasc" ><br>
+						<input type="date" name="dataNasc" id="dataNasc" required="" ><br>
 					</div>
 					<div class=" col-lg-6" >
 						<label for="sexo">Sexo: <strong class="text-danger"> *</strong></label>
-						<select  name="sexo" id="sexo">
+						<select  name="sexo" id="sexo" required="">
 							<option>Masculino</option>
 							<option>Feminino</option>
 						</select><br>
@@ -102,11 +103,11 @@ require_once "login.php";
 				<div class="row">
 					<div class="col-lg-6">
 						<label for="senha">Senha: <strong class="text-danger"> *</strong></label>
-						<input type="password" name="senha" id="senha" class="form-control"><br>
+						<input type="password" name="senha" id="senha" class="form-control" required=""><br>
 					</div>
 					<div class="col-lg-6">
 						<label for="confSenha">Confirmar Senha: <strong class="text-danger"> *</strong></label>
-						<input type="password" name="confSenha" id="confSenha" class="form-control" ><br>
+						<input type="password" name="confSenha" id="confSenha" class="form-control" required=""><br>
 					</div>
 				</div>
 
