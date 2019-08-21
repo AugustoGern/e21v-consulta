@@ -1,6 +1,6 @@
 <?php
 
-	require_once('conexao.php');
+	require_once('include/conexao.php');
 
 	// Recuperar ID do usuario
 	if (isset($_GET['id'])) {
