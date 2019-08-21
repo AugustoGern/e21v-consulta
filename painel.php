@@ -12,15 +12,15 @@
   <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
     <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Hospital Entra21</a>
     <ul class="navbar-nav px-3">
-      <li class="nav-item text-nowrap">
+      <li class="nav-item text-nowrap d-none d-sm-block">
         <a class="nav-link" href="index.php">Sair</a>
       </li>
     </ul>
   </nav>
   <div class="container-fluid">
     <div class="row">
-      <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-        <div class="sidebar-sticky">
+      <nav class="col-md-2 bg-light sidebar" style="border-bottom: 1px solid rgba(0, 0, 0, 0.1);">
+        <div class="sidebar-sticky pt-2 pb-3 pt-sm-0" style="height: 100% !important;">
           <ul class="nav flex-column">
             <li class="nav-item">
               <a class="nav-link active" href="painel.php">Inicio</a>
@@ -34,12 +34,21 @@
             <li class="nav-item">
               <a class="nav-link" href="respostas.php">Respostas</a>
             </li>   
+            <li class="nav-item d-block d-sm-none">
+              <a class="nav-link" href="index.php">Sair</a>
+            </li>   
           </ul>
         </div>
       </nav>
       <div class="col-md-10">
-        <h1 class="mt-5">Exemplos de como vai funcionar</h1>
-        <table class="table table-dark  mt-5">
+        <h1 class="mt-5" style="text-align: center;">Exemplos de como vai funcionar!</h1>
+        <h5 style="text-align: center;" class="mt-4">Nesta Pagina você tera acesso a Alteração, Atualização ou Exclusão de Profissionais ou Respostas e Perguntas</h5>
+        <div class="mt-4">
+          <div class="alert alert-primary" role="alert">Editar profissional ou perguntas e respostas</div>
+          <div class="alert alert-success" role="alert">Criar profissional ou perguntas e respostas</div>
+          <div class="alert alert-danger" role="alert">Excluir profissional ou perguntas e respostas</div>
+        </div>
+        <table class="table table-dark  mt-4">
           <thead>
             <tr>
               <th scope="col">Id</th>
@@ -57,16 +66,9 @@
             </tr>
           </tbody>
         </table>
-        <button type="button" class="btn btn-primary">Editar</button>
-        <button type="button" class="btn btn-success">Criar</button>
 
-        <div class="card mt-5" style="width: 18rem;">
-          <img src="media/images/mdc-22.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text">Nesta Pagina você tera acesso a Alteração, Atualização ou Exclusão de Profissionais ou Resposta e Perguntas </p>
-          </div>
-        </div>
       </div>
+
 
     </div>
   </div>
