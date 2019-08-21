@@ -145,7 +145,8 @@
 }
 
 h5 {
-    font-size: 108px;
+    font-family: Montserrat, sans-serif;
+    font-size: 100px;
     line-height: 100px;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;

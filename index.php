@@ -7,8 +7,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="media/css/index.css">
 	<link rel="stylesheet" type="text/css" href="media/css/cadastro.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-	
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:900&display=swap" rel="stylesheet">
 </head>
 <body>
 	
@@ -28,12 +27,12 @@
 	<!-- =========== -->
 
 
-	<!-- =================================================COMO FUNCIONA================================================================ -->
+	<!-- =================================================COMO FUNCIONA=================================================== -->
 	<div class="container-fluid">
-		<div class="container" style="font-family: 'Montserrat', sans-serif; ">
+		<div class="container"">
 
-			<h1 class="text-center" style="font-size: 40px; font-weight: 900; text-transform: uppercase;">É fácil e simples de Consultar!</h1>
-			<h2 class="text-center" style="font-size: 40px;  text-transform: uppercase;"><strong>Como funciona?!</strong></h2>
+			<h1 class="text-center" style="font-size: 35px;  text-transform: uppercase;">É fácil e simples de Consultar!</h1>
+			<h2 class="text-center" style="font-size: 35px;  text-transform: uppercase;"><strong>Como funciona?!</strong></h2>
 
 			<div class="card mb-5" style="background-image: linear-gradient( white, rgb(88, 148, 245)); border:transparent;">
 				<div class="card-body">
