@@ -29,7 +29,7 @@
 
 						<input type="submit" name="btnSalvar" value="Salvar" class="btn btn-success">
 						<input type="submit" name="btnExcluir" value="Excluir" class="btn btn-danger">
-						<a href="painel.php" class="btn btn-dark">Voltar</a>
+						<a href="profissional.php" class="btn btn-dark">Voltar</a>
 
 					</form>
 				</div>
