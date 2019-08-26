@@ -28,7 +28,7 @@
 		if (isset($id_usuario)) {
 			$sql = "UPDATE tb_sintomas SET sintoma = '$sintoma' WHERE id = $id_usuario";
 		} else {
-			$sql = "INSERT INTO tb_sintomas VALUES (DEFAULT, '$sintoma')";
+			$sql = "INSERT INTO tb_medico VALUES (DEFAULT, '$sintoma')";
 		}
 
 		if (mysqli_query($con, $sql)) {
