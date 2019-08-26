@@ -52,7 +52,7 @@
             <div class="alert alert-Danger" role="alert">
               <a href="#" class="alert-link">Alerta!</a> Todas as alterações feitas nesta tabela terão que ser comunicada a toda equipe.</div>
         </div>  
-              <button type="button" class="btn btn-success">Criar</button>  
+              <a href="cadastro_perguntas.php" class="btn btn-success">Criar</a>
 
           <!-- Tabela de alterações -->
 
@@ -69,10 +69,8 @@
                   <th scope="row">1</th>
                   <td>Membros inferiores</td>
                   <td>panturrilha</td>
-                  <td style="float: right;"><button type="button" class="btn btn-Primary">Editar</button>
-                 <button type="button" class="btn btn-danger">Excluir</button>
+                  <td style="float: right;"><a href="cadastro_perguntas.php" class="btn btn-primary">Editar</a>
                   </td>
-                  
                 </tr>
               </tbody>
             </table>

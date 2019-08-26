@@ -53,7 +53,7 @@
               <a href="#" class="alert-link">Alerta!</a> Todas as alterações feitas nesta tabela terão que ser comunicada a toda equipe.</div>
         </div>  
 
-              <button type="button" class="btn btn-success ">Criar</button>  
+              <a href="cadastro_medico.php" class="btn btn-success">Criar</a>
           <!-- Tabela de alterações -->
 
             <table class="table table-striped table-dark mt-3">
@@ -72,8 +72,7 @@
                   <td>Marcos Da Rosa</td>
                   <td>Otorrinolaringologista</td>
                   <td>Hospital Beltrano do Norte</td>
-                  <td style="float: right;"><button type="button" class="btn btn-Primary">Editar</button>
-                  <button type="button" class="btn btn-danger">Excluir</button>
+                  <td style="float: right;"><a href="cadastro_medico.php" class="btn btn-primary">Editar</a>
                   </td>
                 </tr>
               </tbody>

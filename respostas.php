@@ -53,25 +53,21 @@
               <a href="#" class="alert-link">Alerta!</a> Todas as alterações feitas nesta tabela terão que ser comunicada a toda equipe.</div>
         </div>  
 
-              <button type="button" class="btn btn-success">Criar</button>  
+              <a href="cadastro_sintomas.php" class="btn btn-success">Criar</a> 
           <!-- Tabela de alterações -->
 
             <table class="table table-striped table-dark mt-3">
               <thead>
                 <tr>
                   <th scope="col">Id</th>
-                  <th scope="col">Tipo de resposta</th>
-                  <th scope="col">Área de atuação</th>
-
+                  <th scope="col">Sintoma</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <th scope="row">1</th>
-                  <td>Sua </td>
-                  <td>Otorrinolaringologista</td>
-                  <td style="float: right;"><button type="button" class="btn btn-Primary">Editar</button>
-                  <button type="button" class="btn btn-danger">Excluir</button>
+                  <td>Irineu</td>
+                  <td style="float: right;"><a href="cadastro_sintomas.php" class="btn btn-primary">Editar</a>
                   </td>
                 </tr>
               </tbody>
