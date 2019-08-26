@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Cadastro de Usuarios</title>
+	<title>Edição de Usuarios</title>
 	<script src="https://kit.fontawesome.com/3b47dd4ac9.js"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
@@ -49,7 +49,7 @@
 
 	<div class="container-fluid">
 		<div class="container" style="margin-top: -200px;">
-			<h1 class="text-center pt-3">Cadastro</h1>
+			<h1 class="text-center pt-3">Edição</h1>
 			<div class="card mt-3 mb-3" >
 				<div class="card-body">
 					<form method="post" action="" name="formCadastro">
@@ -74,7 +74,7 @@
 						<label for="confSenha">Confirmar Senha: <strong class="text-danger"> *</strong></label>
 						<input type="password" name="confSenha" id="confSenha" class="form-control"><br>
 
-						<input type="submit" name="cadastro" id="cadastro" class="btn btn-primary form-control" value="Cadastre-se" disabled="">
+						<input type="submit" name="cadastro" id="cadastro" class="btn btn-primary form-control" value="Editar" disabled="">
 					</form>
 				</div>
 			</div>
