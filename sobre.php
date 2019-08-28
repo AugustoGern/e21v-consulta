@@ -16,13 +16,9 @@
 	<?php require_once('include/header.php'); ?>
 
 	<div style="background-image: url('media/images/mdc-18.jpg'); min-height: 330px; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -118px; background-repeat: no-repeat;" class="shadow">
-		<div class="text-center my-5">
-			
+		<div class="text-center my-5">	
 		</div> 
 	</div>
-
-	
-
 
 	<!-- fundo da Página  -->
 
@@ -36,7 +32,7 @@
 
 		<div class="row">
 			<div class="col-lg-4 col-md-5  mt-3">
-				<img src="media/images/mdc-20.jpg" class="m-4 col-10 d-none d-sm-block" style="border-radius: 40px;box-shadow: 5px 5px 5px rgba(0,0,0,0.5);">
+				<img src="media/images/mdc-20.jpg" class="m-4 col-10 d-none d-sm-block p-0" style="border-radius: 40px;box-shadow: 5px 5px 5px rgba(0,0,0,0.5);">
 			</div>
 
 			<div class="col-md-12 col-lg-8 mt-3">
@@ -53,7 +49,7 @@
 			</div>
 
 			<div class="col-lg-7 ">
-				<img src="media/images/mdc.21.jpg" class="m-4 d-none col-10 d-sm-block" style=" border-radius: 50px;box-shadow: 5px 5px 5px rgba(0,0,0,0.5)">	
+				<img src="media/images/mdc.21.jpg" class="m-4 d-none col-10 d-sm-block p-0" style=" border-radius: 50px;box-shadow: 5px 5px 5px rgba(0,0,0,0.5)">	
 			</div>
 		</div>
 	</div>
