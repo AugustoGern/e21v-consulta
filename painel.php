@@ -48,28 +48,7 @@
           <div class="alert alert-success" role="alert">Criar profissional ou perguntas e respostas</div>
           <div class="alert alert-danger" role="alert">Excluir profissional ou perguntas e respostas</div>
         </div>
-        <table class="table table-dark  mt-4">
-          <thead>
-            <tr>
-              <th scope="col">Id</th>
-              <th scope="col">Nome</th>
-              <th scope="col">Área de atuação</th>
-              <th scope="col">Data</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>João</td>
-              <td>Piscologo</td>
-              <td>04/01/2000</td>
-            </tr>
-          </tbody>
-        </table>
-
       </div>
-
-
     </div>
   </div>
 </body>
