@@ -28,13 +28,13 @@
 
 		// Verifica se é edição ou cadastro de usuario
 		if (isset($id_usuario)) {
-			$sql = "UPDATE tb_perguntas SET pergunta = '$pergunta', reg_incomodo = '$regIncomodo', local_incomodo = '$localIncomodo'WHERE id = $id_usuario";
+			$sql = "UPDATE tb_perguntas SET pergunta = '$pergunta', regiao_incomodo = '$regIncomodo', local_incomodo = '$localIncomodo' WHERE id = $id_usuario";
 		} else {
-			$sql = "INSERT INTO tb_medico VALUES (DEFAULT, '$pergunta', '$regIncomodo', '$localIncomodo')";
+			$sql = "INSERT INTO tb_perguntas VALUES (DEFAULT, '$pergunta', '$regIncomodo', '$localIncomodo')";
 		}
 
 		if (mysqli_query($con, $sql)) {
-			header('Location: cadastro_perguntas.php');
+			header('Location: perguntas_painel.php');
 		} else {
 			die("SE FODEU");
 		}

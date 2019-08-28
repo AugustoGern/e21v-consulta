@@ -28,11 +28,11 @@
 		if (isset($id_usuario)) {
 			$sql = "UPDATE tb_sintomas SET sintoma = '$sintoma' WHERE id = $id_usuario";
 		} else {
-			$sql = "INSERT INTO tb_medico VALUES (DEFAULT, '$sintoma')";
+			$sql = "INSERT INTO tb_sintomas VALUES (DEFAULT, '$sintoma')";
 		}
 
 		if (mysqli_query($con, $sql)) {
-			header('Location: cadastro_respostas.php');
+			header('Location: respostas.php');
 		} else {
 			die("SE FODEU");
 		}
@@ -43,7 +43,7 @@
 		$sql = "DELETE FROM tb_sintomas WHERE id = $id_usuario";
 
 		if (mysqli_query($con, $sql)) {
-			header('Location: cadastro_respostas.php');
+			header('Location: respostas.php');
 		} else {
 			die("DEU RUIM");
 		}

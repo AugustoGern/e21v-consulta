@@ -1,3 +1,15 @@
+<?php 
+  
+  require_once('include/conexao.php');
+  
+  //Junta as informações das perguntas
+  $sql = "SELECT * FROM tb_perguntas";
+  $queryListagem = mysqli_query($con, $sql);
+
+?>
+
+
+
 <html>
 <head>
   <meta charset="utf-8">
@@ -60,18 +72,21 @@
               <thead>
                 <tr>
                   <th scope="col">Id</th>
-                  <th scope="col">Local da pergunta</th>
-                  <th scope="col">Local da dor</th>
+                  <th scope="col">Região do incomodo</th>
+                  <th scope="col">Local do incomodo</th>
                 </tr>
               </thead>
               <tbody>
+                <?php while($resultado = mysqli_fetch_array($queryListagem)) { ?>
                 <tr>
-                  <th scope="row">1</th>
-                  <td>Membros inferiores</td>
-                  <td>panturrilha</td>
-                  <td style="float: right;"><a href="cadastro_perguntas.php" class="btn btn-primary">Editar</a>
-                  </td>
+                  <th><?=$resultado['id']?></th>
+                    <td><?=$resultado['regiao_incomodo']?></td>
+                    <td><?=$resultado['local_incomodo']?></td>
+                    <td style="float: right;">
+                    <a href="cadastro_perguntas.php?id=<?=$resultado['id']?>" class="btn btn-primary btn-sm">   Editar   </a>
+                    </td>
                 </tr>
+              <?php } ?>
               </tbody>
             </table>
           </div>

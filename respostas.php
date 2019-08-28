@@ -1,3 +1,13 @@
+<?php 
+  
+  require_once('include/conexao.php');
+  
+  //Junta as informações das perguntas
+  $sql = "SELECT * FROM tb_sintomas";
+  $queryListagem = mysqli_query($con, $sql);
+
+?>
+
 <html>
 <head>
   <meta charset="utf-8">
@@ -64,12 +74,15 @@
                 </tr>
               </thead>
               <tbody>
+                <?php while($resultado = mysqli_fetch_array($queryListagem)) { ?>
                 <tr>
-                  <th scope="row">1</th>
-                  <td>Irineu</td>
-                  <td style="float: right;"><a href="cadastro_sintomas.php" class="btn btn-primary">Editar</a>
-                  </td>
+                  <th><?=$resultado['id']?></th>
+                    <td><?=$resultado['sintoma']?></td>
+                    <td style="float: right;">
+                    <a href="cadastro_sintomas.php?id=<?=$resultado['id']?>" class="btn btn-primary btn-sm">   Editar   </a>
+                    </td>
                 </tr>
+              <?php } ?>
               </tbody>
             </table>
                 

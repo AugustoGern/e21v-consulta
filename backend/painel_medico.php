@@ -9,7 +9,7 @@
 
 	// Buscar informações do usuario
 	if (isset($id_usuario)) {
-		$sql = "SELECT * FROM tb_medico WHERE id = $id_usuario";
+		$sql = "SELECT * FROM tb_medicos WHERE id = $id_usuario";
 		$queryUsuario = mysqli_query($con, $sql);
 		$resultadoUsuario = mysqli_fetch_array($queryUsuario);
 
@@ -28,13 +28,13 @@
 
 		// Verifica se é edição ou cadastro de usuario
 		if (isset($id_usuario)) {
-			$sql = "UPDATE tb_medico SET nome_medico = '$nomeMedico', area_atuacao = '$areaAtuacao', hospital = '$hospital'WHERE id = $id_usuario";
+			$sql = "UPDATE tb_medicos SET nome = '$nomeMedico', area_de_atuacao = '$areaAtuacao', hospital = '$hospital'WHERE id = $id_usuario";
 		} else {
-			$sql = "INSERT INTO tb_medico VALUES (DEFAULT, '$nomeMedico', '$areaAtuacao', '$hospital')";
+			$sql = "INSERT INTO tb_medicos VALUES (DEFAULT, '$nomeMedico', '$areaAtuacao', '$hospital')";
 		}
 
 		if (mysqli_query($con, $sql)) {
-			header('Location: cadastro_medico.php');
+			header('Location: profissional.php');
 		} else {
 			die("SE FODEU");
 		}
@@ -42,10 +42,10 @@
 
 	// Verificando ação de EXCLUIR
 	if (isset($_POST['btnExcluir'])) {
-		$sql = "DELETE FROM tb_medico WHERE id = $id_usuario";
+		$sql = "DELETE FROM tb_medicos WHERE id = $id_usuario";
 
 		if (mysqli_query($con, $sql)) {
-			header('Location: cadastro_medico.php');
+			header('Location: profissional.php');
 		} else {
 			die("DEU RUIM");
 		}

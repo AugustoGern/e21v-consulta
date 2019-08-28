@@ -1,3 +1,9 @@
+<?php 
+	require_once('include/conexao.php');
+	require_once('backend/painel_perguntas.php');
+	error_reporting(0);
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,16 +22,16 @@
 				<div class="card-body">
 					<form method="post" action="" name="formCadastro">
 						<label for="cod_pergunta">Cod. da Pergunta:</label>
-						<input type="number" name="cod_pergunta" id="cod_pergunta" placeholder="Ex: 1" disabled class="form-control"><br>
+						<input type="number" name="cod_pergunta" id="cod_pergunta" placeholder="Ex: 1" disabled class="form-control" value="<?=$resultadoUsuario['id']?>"><br>
 
 						<label for="pergunta">Pergunta:</label>
-						<input type="text" name="pergunta" id="pergunta" class="form-control" placeholder="Ex: Qual a intensidade da dor?"><br>
+						<input type="text" name="pergunta" id="pergunta" class="form-control" placeholder="Ex: Qual a intensidade da dor?" value="<?=$resultadoUsuario['pergunta']?>"><br>
 
 						<label for="reg_incomodo">Região do Incomodo:</label>
-						<input type="text" name="reg_incomodo" id="reg_incomodo" class="form-control" placeholder="Ex: Membros Superiores"><br>
+						<input type="text" name="reg_incomodo" id="reg_incomodo" class="form-control" placeholder="Ex: Membros Superiores" value="<?=$resultadoUsuario['regiao_incomodo']?>"><br>
 
 						<label for="local_incomodo">Local do Incomodo:</label>
-						<input type="text" name="local_incomodo" id="local_incomodo" class="form-control" placeholder="Ex: Ombro"><br>
+						<input type="text" name="local_incomodo" id="local_incomodo" class="form-control" placeholder="Ex: Ombro" value="<?=$resultadoUsuario['local_incomodo']?>"><br>
 
 						<input type="submit" name="btnSalvar" value="Salvar" class="btn btn-success">
 						<input type="submit" name="btnExcluir" value="Excluir" class="btn btn-danger">

@@ -1,3 +1,9 @@
+<?php 
+	require_once('include/conexao.php');
+	require_once('backend/painel_sintomas.php');
+	error_reporting(0);
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,10 +22,10 @@
 				<div class="card-body">
 					<form method="post" action="" name="formCadastro">
 						<label for="cod_sintoma">Cod. do Sintoma:</label>
-						<input type="number" name="cod_sintoma" id="cod_sintoma" placeholder="Ex: 1" disabled class="form-control"><br>
+						<input type="number" name="cod_sintoma" id="cod_sintoma" placeholder="Ex: 1" disabled class="form-control" value="<?=$resultadoUsuario['id']?>"><br>
 
 						<label for="sintoma">Sintoma:</label>
-						<input type="text" name="sintoma" id="sintoma" class="form-control" placeholder="Ex: Inchaço nos dedos"><br>
+						<input type="text" name="sintoma" id="sintoma" class="form-control" placeholder="Ex: Inchaço nos dedos" value="<?=$resultadoUsuario['sintoma']?>"><br>
 
 						<input type="submit" name="btnSalvar" value="Salvar" class="btn btn-success">
 						<input type="submit" name="btnExcluir" value="Excluir" class="btn btn-danger">

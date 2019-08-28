@@ -1,3 +1,10 @@
+<?php 
+	require_once('include/conexao.php');
+	require_once('backend/painel_medico.php');
+	error_reporting(0);
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +14,7 @@
 </head>
 <body style="background-color: rgba(0,0,0,0.6);">
 
-	<?php require_once('include/conexao.php') ?>
+	
 	
 	<div class="container-fluid">
 		<div class="container">
@@ -16,16 +23,16 @@
 				<div class="card-body">
 					<form method="post" action="" name="formCadastro">
 						<label for="cod_medico">Cod. do médico:</label>
-						<input type="number" name="cod_medico" id="cod_medico" placeholder="Ex: 1" disabled class="form-control"><br>
+						<input type="number" name="cod_medico" id="cod_medico" placeholder="Ex: 1" disabled class="form-control" value="<?=$resultadoUsuario['id']?>"><br>
 
 						<label for="nome_medico">Nome do médico:</label>
-						<input type="text" name="nome_medico" id="nome_medico" class="form-control" placeholder="Ex: Dr. Ray"><br>
+						<input type="text" name="nome_medico" id="nome_medico" class="form-control" placeholder="Ex: Dr. Ray" value="<?=$resultadoUsuario['nome']?>"><br>
 
 						<label for="area_atuacao">Área de atuação:</label>
-						<input type="text" name="area_atuacao" id="area_atuacao" class="form-control" placeholder="Ex: Ortopedia"><br>
+						<input type="text" name="area_atuacao" id="area_atuacao" class="form-control" placeholder="Ex: Ortopedia"  value="<?=$resultadoUsuario['area_de_atuacao']?>"><br>
 
 						<label for="hospital">Hospital:</label>
-						<input type="text" name="hospital" id="hospital" class="form-control" placeholder="Ex: Hospital Sírio Líbanes"><br>
+						<input type="text" name="hospital" id="hospital" class="form-control" placeholder="Ex: Hospital Sírio Líbanes"  value="<?=$resultadoUsuario['hospital']?>"><br>
 
 						<input type="submit" name="btnSalvar" value="Salvar" class="btn btn-success">
 						<input type="submit" name="btnExcluir" value="Excluir" class="btn btn-danger">
