@@ -1,3 +1,7 @@
+<?php
+	require_once('include/paginas_restritas.php');
+?>
+
 <!DOCTYPE html>
 <html>
 <head>

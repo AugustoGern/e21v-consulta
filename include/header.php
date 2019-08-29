@@ -1,3 +1,7 @@
+<?php 
+	session_start();
+?>
+
 <!-- ==============================================NAVBAR======================================================= -->
 <nav class="navbar  navbar-expand-lg navbar-light mb-5" style="background-color: rgb(10,68,161,0.90);">
 	<a class="navbar-brand" href="index.php">
