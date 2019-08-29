@@ -40,11 +40,11 @@
 			</div>
 
 			<div class="col-md-5 col-12 ">
-				<h2 class="mt-4 " style="text-align: left;color: rgb(82, 90, 100);font-family: 'Montserrat', sans-serif;"><li>Missão</li></h2>
+				<h3 class="mt-4 " style="text-align: left;color: rgb(82, 90, 100);font-family: 'Montserrat', sans-serif;"><li>Missão</li></h2>
 				<h4 class="ml-5" style="text-align: left;color: rgb(70, 72, 80);font-family: Times New Roman;">Cuidar dos nossos pacientes e usuários, promovendo agilidade e saúde com todo conforto e segurança, empatia e eficiência.</h4>
-				<h2 class="mt-2 " style="text-align: left;color: rgb(82, 90, 100);font-family: 'Montserrat', sans-serif; "><li>Política de Qualidade</li></h2>
+				<h3 class="mt-2 " style="text-align: left;color: rgb(82, 90, 100);font-family: 'Montserrat', sans-serif; "><li>Política de Qualidade</li></h2>
 				<h4 class="ml-5" style="text-align: left;color: rgb(70, 72, 80);font-family: Times New Roman;">Buscar sempre a satisfazer os clientes da melhor forma, prestando serviços de qualidade e acessibilidade.</h4>
-				<h2 class="mt-2 " style="text-align: left;color: rgb(82, 90, 100);font-family: 'Montserrat', sans-serif; "><li>Visão</li></h2>
+				<h3 class="mt-2 " style="text-align: left;color: rgb(82, 90, 100);font-family: 'Montserrat', sans-serif; "><li>Visão</li></h2>
 				<h4 class="ml-5" style="text-align: left;color: rgb(70, 72, 80);font-family: Times New Roman;">Ter uma ótima clientela e satisfazer nosso acessores.</h4>
 			</div>
 

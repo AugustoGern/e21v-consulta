@@ -31,14 +31,14 @@
 	<div class="container-fluid">
 		<div class="container">
 
-			<h1 class="text-center" style="font-size: 35px;  text-transform: uppercase;">É fácil e simples de Consultar!</h1>
-			<h2 class="text-center" style="font-size: 35px;  text-transform: uppercase;"><strong>Como funciona?!</strong></h2>
+			<h1 class="text-center pt-5">É fácil e simples de Consultar!</h1>
+			<h2 class="text-center">Como funciona?!</h2>
 
-			<div class="card mb-5" style="background-image: linear-gradient( white, rgb(88, 148, 245)); border:transparent;">
+			<div class="card mb-5" style="background-image: linear-gradient( white, rgb(100, 155, 200)); border:transparent;">
 				<div class="card-body">
 
 					<div class="row col-12 col-md">
-						<h5 class="pl-5">1</h5>
+						<h5 class="pl-5 d-none d-md-block">1</h5>
 						<div class="col-12 col-md">
 							<li class="pt-5 pl-4">faça seu login ou cadastro, é fácil e rápido</li><br>
 						</div>
@@ -47,12 +47,12 @@
 					<div class="row col-12 col-md">
 						<li  class="pt-5 col-md-10">Ao clicar em <a href="consulta.php">Realizar sua consulta</a> voce poderá identificar o local onde você sente seu desconforto.</li>
 						<div class="col-12 col-md">
-							<h5>2</h5><br>
+							<h5 class=" d-none d-md-block">2</h5><br>
 						</div>
 					</div>
 
 					<div class="row col-12 col-md">
-						<h5 class="pl-5" >3</h5>	
+						<h5 class="pl-5 d-none d-md-block" >3</h5>	
 						<div class="col-12 col-md">
 							<li  class="pt-5 col-md-11"> Após identificar seu desconforto, irá ser apresentado uma série de perguntas com possíveis sintomas e você deverá selecionar o sintoma que mais se identifica de acordo com o seu desconforto.</li> <br>
 						</div>
@@ -61,12 +61,12 @@
 					<div class="row col-12 col-md">
 						<li  class="pt-5 col-md-10"> Assim que finalizar sua "consulta" iremos fornecer como resposta o profissional mais adequado para o seu possível problema.</li>
 						<div class="col-12 col-md">
-							<h5>4</h5><br>
+							<h5 class=" d-none d-md-block">4</h5><br>
 						</div>
 					</div>
 
 					<div class="row col-12 col-md">
-						<h5 class="pl-5" >5</h5>	
+						<h5 class="pl-5 d-none d-md-block " >5</h5>	
 						<div class="col-12 col-md">
 							<li  class="pt-5 col-md-11">Finalizando sua consulta, forneceremos tambem um relatório e histórico de suas pesquisas até o momento. </li> 
 						</div>
@@ -74,8 +74,7 @@
 				</div>
 			</div>
 		</div>
-	
-	</div>
+	</div> 
 
 	<!-- =========================================FOOTER============================== -->
 
