@@ -2,6 +2,10 @@
 	require_once('include/conexao.php');
 	require_once('backend/painel_perguntas.php');
 	error_reporting(0);
+
+	// PEGAR OS SINTOMAS
+	$sql = "SELECT * FROM tb_sintomas";
+	$querySintomas = mysqli_query($con, $sql);
 ?>
 
 <!DOCTYPE html>
@@ -27,11 +31,12 @@
 						<label for="pergunta">Pergunta:</label>
 						<input type="text" name="pergunta" id="pergunta" class="form-control" placeholder="Ex: Qual a intensidade da dor?" value="<?=$resultadoUsuario['pergunta']?>"><br>
 
-						<label for="reg_incomodo">Região do Incomodo:</label>
-						<input type="text" name="reg_incomodo" id="reg_incomodo" class="form-control" placeholder="Ex: Membros Superiores" value="<?=$resultadoUsuario['regiao_incomodo']?>"><br>
-
-						<label for="local_incomodo">Local do Incomodo:</label>
-						<input type="text" name="local_incomodo" id="local_incomodo" class="form-control" placeholder="Ex: Ombro" value="<?=$resultadoUsuario['local_incomodo']?>"><br>
+						<label for="sintoma">Sintoma Relacionado</label>
+						<select name="sintoma" id="sintoma" class="custom-select mb-4">
+							<?php while($resultadoSintomas = mysqli_fetch_array($querySintomas)) { ?>
+								<option value="<?=$resultadoSintomas['id']?>" <?= ($resultadoUsuario['fk_sin']==$resultadoSintomas['id']) ? 'selected' : ''?> ><?=$resultadoSintomas['sintoma']?></option>
+							<?php } ?>
+						</select>
 
 						<input type="submit" name="btnSalvar" value="Salvar" class="btn btn-success">
 						<input type="submit" name="btnExcluir" value="Excluir" class="btn btn-danger">

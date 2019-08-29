@@ -23,14 +23,13 @@
 	if (isset($_POST['btnSalvar'])) {
 		// Recebimento dos campos
 		$pergunta = $_POST['pergunta'];
-		$regIncomodo = $_POST['reg_incomodo'];
-		$localIncomodo = $_POST['local_incomodo'];
+		$sintoma = $_POST['sintoma'];
 
 		// Verifica se é edição ou cadastro de usuario
 		if (isset($id_usuario)) {
-			$sql = "UPDATE tb_perguntas SET pergunta = '$pergunta', regiao_incomodo = '$regIncomodo', local_incomodo = '$localIncomodo' WHERE id = $id_usuario";
+			$sql = "UPDATE tb_perguntas SET fk_sin = '$sintoma', pergunta = '$pergunta' WHERE id = $id_usuario";
 		} else {
-			$sql = "INSERT INTO tb_perguntas VALUES (DEFAULT, '$pergunta', '$regIncomodo', '$localIncomodo')";
+			$sql = "INSERT INTO tb_perguntas VALUES (DEFAULT, '$sintoma', '$pergunta')";
 		}
 
 		if (mysqli_query($con, $sql)) {

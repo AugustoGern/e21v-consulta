@@ -3,7 +3,8 @@
   require_once('include/conexao.php');
   
   //Junta as informações das perguntas
-  $sql = "SELECT * FROM tb_perguntas";
+  $sql = "SELECT p.*, s.sintoma AS sintoma FROM tb_perguntas p
+          JOIN tb_sintomas s ON s.id = p.fk_sin";
   $queryListagem = mysqli_query($con, $sql);
 
 ?>
@@ -72,16 +73,16 @@
               <thead>
                 <tr>
                   <th scope="col">Id</th>
-                  <th scope="col">Região do incomodo</th>
-                  <th scope="col">Local do incomodo</th>
+                  <th scope="col">Pergunta</th>
+                  <th scope="col">Sintoma Relacionado</th>
                 </tr>
               </thead>
               <tbody>
                 <?php while($resultado = mysqli_fetch_array($queryListagem)) { ?>
                 <tr>
                   <th><?=$resultado['id']?></th>
-                    <td><?=$resultado['regiao_incomodo']?></td>
-                    <td><?=$resultado['local_incomodo']?></td>
+                    <td><?=$resultado['pergunta']?></td>
+                    <td><?=$resultado['sintoma']?></td>
                     <td style="float: right;">
                     <a href="cadastro_perguntas.php?id=<?=$resultado['id']?>" class="btn btn-primary btn-sm">   Editar   </a>
                     </td>
