@@ -1,5 +1,6 @@
 <?php 
 	session_start();
+
 ?>
 
 <!-- ==============================================NAVBAR======================================================= -->
@@ -19,19 +20,39 @@
 			<li class="nav-item">
 				<a class="nav-link text-white" href="sobre.php">Sobre</a>
 			</li>
-			<li class="nav-item">
-				<a class="nav-link text-white" href="consulta.php">Consultar</a>
-			</li>
-		</ul>
-		<form class="form-inline my-2 my-lg-0">
-			<a class="navbar-brand text-light " href="historico.php">
-				<i class="fas fa-history nav-link ml-2" href="#"></i>
-			</a>
+			<!-- ==============consultar============= -->
+				<?php if (isset($_SESSION['logado']) && $_SESSION['logado'] == true) { ?>
+				<li class="nav-item">
+					<a class="nav-link text-white" href="consulta.php">Consultar</a>
+				</li>
+				<?php } ?> 
+				<!-- ===================================== -->
 
-			<a class="navbar-brand text-light " href="#">
-				<i class="fas fa-user nav-link ml-2   " data-target="#exampleModall"  href="#" data-toggle="modal" 
-				data-whatever="@fat" ></i>
-			</a>
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+
+				<!-- ==============historico============== -->
+				<?php if (isset($_SESSION['logado']) && $_SESSION['logado'] == true) { ?>
+				<a class="navbar-brand text-light " href="historico.php">
+					<i class="fas fa-history nav-link ml-2" href="#"></i>
+				</a>
+				<?php } ?>
+				<!-- ===================================== -->
+
+				<!-- ================login================ -->
+				<?php if (isset($_SESSION['logado']) && $_SESSION['logado'] == true) { ?>
+
+				<a class="navbar-brand text-light " href="cadastro.php">
+					<i class="fas fa-user nav-link ml-2" 
+					data-whatever="@fat" ></i>
+				</a>
+				<?php } else { ?> 
+				<a class="navbar-brand text-light " href="#">
+					<i class="fas fa-user nav-link ml-2   " data-target="#exampleModall"  href="#" data-toggle="modal" 
+					data-whatever="@fat" ></i>
+				</a>
+				<?php } ?>
+				<!-- ===================================== -->
 
 			<a class="navbar-brand text-light " href="#">
 				<i class="fas fa-user-plus nav-link ml-2 " data-target="#exampleModal"  href="#" data-toggle="modal" 
