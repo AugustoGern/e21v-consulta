@@ -3,7 +3,9 @@
   require_once('include/conexao.php');
   
   //Junta as informações dos médicos
-  $sql = "SELECT * FROM tb_medicos";
+  $sql = "SELECT m.*, h.nome AS hospital, a.area_medica AS area_medica FROM tb_medicos m
+          JOIN tb_hospital h ON h.id = m.fk_hospital
+          JOIN tb_area_medica a ON a.id = m.fk_am";
   $queryListagem = mysqli_query($con, $sql);
 
 ?>
@@ -42,7 +44,7 @@
               <a class="nav-link" href="perguntas_painel.php">Perguntas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="respostas.php">Respostas</a>
+              <a class="nav-link" href="respostas.php">Sintomas</a>
             </li>   
             <li class="nav-item d-block d-sm-none">
               <a class="nav-link" href="index.php">Sair</a>
@@ -81,7 +83,7 @@
                 <tr>
                   <th><?=$resultado['id']?></th>
                     <td><?=$resultado['nome']?></td>
-                    <td><?=$resultado['area_de_atuacao']?></td>
+                    <td><?=$resultado['area_medica']?></td>
                     <td><?=$resultado['hospital']?></td>
                     <td style="float: right;">
                     <a href="cadastro_medico.php?id=<?=$resultado['id']?>" class="btn btn-primary btn-sm">   Editar   </a>

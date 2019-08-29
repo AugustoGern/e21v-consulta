@@ -2,6 +2,14 @@
 	require_once('include/conexao.php');
 	require_once('backend/painel_medico.php');
 	error_reporting(0);
+
+	// PEGAR AS AREAS MEDICAS CADASTRADAS
+	$sql = "SELECT * FROM tb_area_medica";
+	$queryAreas = mysqli_query($con, $sql);
+
+	// PEGAR OS HOSPITAIS CADASTRADOS
+	$sql = "SELECT * FROM tb_hospital";
+	$queryHospital = mysqli_query($con, $sql);
 ?>
 
 
@@ -28,15 +36,29 @@
 						<label for="nome_medico">Nome do médico:</label>
 						<input type="text" name="nome_medico" id="nome_medico" class="form-control" placeholder="Ex: Dr. Ray" value="<?=$resultadoUsuario['nome']?>"><br>
 
-						<label for="area_atuacao">Área de atuação:</label>
-						<input type="text" name="area_atuacao" id="area_atuacao" class="form-control" placeholder="Ex: Ortopedia"  value="<?=$resultadoUsuario['area_de_atuacao']?>"><br>
+						<label for="telefone">Telefone:</label>
+						<input type="text" name="telefone" id="telefone" class="form-control" placeholder="(47) 33236098" value="<?=$resultadoUsuario['telefone']?>">
 
-						<label for="hospital">Hospital:</label>
-						<input type="text" name="hospital" id="hospital" class="form-control" placeholder="Ex: Hospital Sírio Líbanes"  value="<?=$resultadoUsuario['hospital']?>"><br>
+						<label for="email" class="pt-4">Email:</label>
+						<input type="email" name="email" id="email" class="form-control" placeholder="dr.hercules@gmail.com" value="<?=$resultadoUsuario['email']?>">
 
-						<input type="submit" name="btnSalvar" value="Salvar" class="btn btn-success">
-						<input type="submit" name="btnExcluir" value="Excluir" class="btn btn-danger">
-						<a href="profissional.php" class="btn btn-dark">Voltar</a>
+						<label for="area_medica" class="pt-4">Área Médica</label>
+						<select name="area_medica" id="area_medica" class="custom-select">
+							<?php while($resultadoAreas = mysqli_fetch_array($queryAreas)) { ?>
+								<option value="<?=$resultadoAreas['id']?>" <?= ($resultadoUsuario['fk_am']==$resultadoAreas['id']) ? 'selected' : ''?> ><?=$resultadoAreas['area_medica']?></option>
+							<?php } ?>
+						</select>
+
+						<label for="hospital" class="pt-4">Hospital:</label>
+						<select name="hospital" id="hospital" class="custom-select">
+							<?php while($resultadoHospital = mysqli_fetch_array($queryHospital)) { ?>
+								<option value="<?=$resultadoHospital['id']?>"  <?= ($resultadoUsuario['fk_hospital']==$resultadoHospital['id']) ? 'selected' : ''?>><?=$resultadoHospital['nome']?></option>
+							<?php } ?>									
+						</select>
+
+						<input type="submit" name="btnSalvar" value="Salvar" class="btn btn-success mt-4">
+						<input type="submit" name="btnExcluir" value="Excluir" class="btn btn-danger mt-4">
+						<a href="profissional.php" class="btn btn-dark mt-4">Voltar</a>
 
 					</form>
 				</div>

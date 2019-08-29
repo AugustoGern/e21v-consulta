@@ -23,14 +23,16 @@
 	if (isset($_POST['btnSalvar'])) {
 		// Recebimento dos campos
 		$nomeMedico = $_POST['nome_medico'];
-		$areaAtuacao = $_POST['area_atuacao'];
+		$telefone = $_POST['telefone'];
+		$email = $_POST['email'];
+		$areaMedica = $_POST['area_medica'];
 		$hospital = $_POST['hospital'];
 
 		// Verifica se é edição ou cadastro de usuario
 		if (isset($id_usuario)) {
-			$sql = "UPDATE tb_medicos SET nome = '$nomeMedico', area_de_atuacao = '$areaAtuacao', hospital = '$hospital'WHERE id = $id_usuario";
+			$sql = "UPDATE tb_medicos SET nome = '$nomeMedico', telefone = '$telefone', email = '$email', fk_am = '$areaMedica', fk_hospital = '$hospital' WHERE id = $id_usuario";
 		} else {
-			$sql = "INSERT INTO tb_medicos VALUES (DEFAULT, '$nomeMedico', '$areaAtuacao', '$hospital')";
+			$sql = "INSERT INTO tb_medicos VALUES (DEFAULT, '$nomeMedico', '$telefone', '$email', '$areaMedica', '$hospital')";
 		}
 
 		if (mysqli_query($con, $sql)) {

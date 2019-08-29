@@ -44,7 +44,7 @@
               <a class="nav-link active" href="perguntas_painel.php">Perguntas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="respostas.php">Respostas</a>
+              <a class="nav-link" href="respostas.php">Sintomas</a>
             </li>   
             <li class="nav-item d-block d-sm-none">
               <a class="nav-link" href="index.php">Sair</a>
