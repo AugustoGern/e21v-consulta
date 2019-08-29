@@ -21,9 +21,15 @@
 	</div>
 
 	<!-- botão -->
+	<?php if (isset($_SESSION['logado']) && $_SESSION['logado'] == true) { ?>
 	<div class="text-center ">
 		<a href="consulta.php" class="btn btn-success text-center " style="margin-top: -125px;"> Realize sua consulta </a>
 	</div>
+	<?php } else { ?>
+	<div class="text-center ">
+		<a  class=" btn text-center text-white " style="margin-top: -125px;">Faça seu login ou cadastre-se</a>
+	</div>
+	<?php } ?>
 	<!-- =========== -->
 
 

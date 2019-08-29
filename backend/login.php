@@ -21,7 +21,7 @@ if (!isset($_SESSION['logado']) || $_SESSION['logado'] == false) {
 				$_SESSION['id_usuario'] = $resultadoLogin['id'];
 				$_SESSION['nome_usuario'] = $resultadoLogin['nome'];
 
-				header('Location: perguntas.php');
+				header('Location: index.php');
 		
 		}
 	}

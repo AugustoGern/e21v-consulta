@@ -1,5 +1,5 @@
 <?php 
-	session_start();
+session_start();
 
 ?>
 
@@ -21,43 +21,52 @@
 				<a class="nav-link text-white" href="sobre.php">Sobre</a>
 			</li>
 			<!-- ==============consultar============= -->
-				<?php if (isset($_SESSION['logado']) && $_SESSION['logado'] == true) { ?>
-				<li class="nav-item">
-					<a class="nav-link text-white" href="consulta.php">Consultar</a>
-				</li>
-				<?php } ?> 
-				<!-- ===================================== -->
+			<?php if (isset($_SESSION['logado']) && $_SESSION['logado'] == true) { ?>
+			<li class="nav-item">
+				<a class="nav-link text-white" href="consulta.php">Consultar</a>
+			</li>
+			<?php } ?> 
+			<!-- ===================================== -->
 
-			</ul>
-			<form class="form-inline my-2 my-lg-0">
+		</ul>
+		<form class="form-inline my-2 my-lg-0">
 
-				<!-- ==============historico============== -->
-				<?php if (isset($_SESSION['logado']) && $_SESSION['logado'] == true) { ?>
-				<a class="navbar-brand text-light " href="historico.php">
-					<i class="fas fa-history nav-link ml-2" href="#"></i>
-				</a>
-				<?php } ?>
-				<!-- ===================================== -->
+			<!-- ==============historico============== -->
+			<?php if (isset($_SESSION['logado']) && $_SESSION['logado'] == true) { ?>
+			<a class="navbar-brand text-light " href="historico.php">
+				<i class="fas fa-history nav-link ml-2" href="#"></i>
+			</a>
+			<?php } ?>
+			<!-- ===================================== -->
 
-				<!-- ================login================ -->
-				<?php if (isset($_SESSION['logado']) && $_SESSION['logado'] == true) { ?>
+			<!-- ================login================ -->
+			<?php if (isset($_SESSION['logado']) && $_SESSION['logado'] == true) { ?>
 
-				<a class="navbar-brand text-light " href="cadastro.php">
-					<i class="fas fa-user nav-link ml-2" 
-					data-whatever="@fat" ></i>
-				</a>
-				<?php } else { ?> 
-				<a class="navbar-brand text-light " href="#">
-					<i class="fas fa-user nav-link ml-2   " data-target="#exampleModall"  href="#" data-toggle="modal" 
-					data-whatever="@fat" ></i>
-				</a>
-				<?php } ?>
-				<!-- ===================================== -->
+			<a class="navbar-brand text-light " href="cadastro.php">
+				<i class="fas fa-user nav-link ml-2" 
+				data-whatever="@fat" ></i>
+			</a>
 
+			<?=$_SESSION['nome_usuario']?>
+			<a href="backend/logoff.php" class="nav-link text-white"> SAIR</a>
+
+
+			<?php } else { ?> 
+			<a class="navbar-brand text-light " href="#">
+				<i class="fas fa-user nav-link ml-2   " data-target="#exampleModall"  href="#" data-toggle="modal" 
+				data-whatever="@fat" ></i>
+			</a>
+			<?php } ?>
+			<!-- ===================================== -->
+
+			<?php if (isset($_SESSION['logado'])  == false) { ?>
 			<a class="navbar-brand text-light " href="#">
 				<i class="fas fa-user-plus nav-link ml-2 " data-target="#exampleModal"  href="#" data-toggle="modal" 
 				></i>
 			</a>
+			<?php }  ?>
+			
+			
 		</form>
 	</div>
 </nav>
@@ -79,7 +88,7 @@ require_once('backend/login.php');
 				<!-- E-mail -->
 				<label for="email_login">E-mail</label>
 				<input type="email" class="form-control" name="email_login" id="email_login" placeholder="Fulando@gmail.com"
-				 required="">
+				required="">
 
 				<!-- Senha -->
 				<label for="senha_login">Senha</label>
@@ -92,7 +101,7 @@ require_once('backend/login.php');
 </div>
 
 <!-- =============================================pagina cadastro======================================================== -->
-	<?php require_once('backend/cadastro_usuarios.php'); ?>
+<?php require_once('backend/cadastro_usuarios.php'); ?>
 
 
 <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
