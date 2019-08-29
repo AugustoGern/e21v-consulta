@@ -51,7 +51,7 @@
 					</div>
 
 					<div class="row col-12 col-md">
-						<li  class="pt-5 col-md-10">Ao clicar em <a href="consulta.php">Realizar sua consulta</a> voce poderá identificar o local onde você sente seu desconforto.</li>
+						<li  class="pt-5 col-md-10">Ao clicar em <a href="#">Realizar sua consulta</a> voce poderá identificar o local onde você sente seu desconforto.</li>
 						<div class="col-12 col-md">
 							<h5 class=" d-none d-md-block">2</h5><br>
 						</div>
