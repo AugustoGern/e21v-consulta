@@ -18,7 +18,7 @@
 	<div class="fonte">
 		<div class="containers">
 			<div>
-				<h3 class="text-white text-justify m-4 p-4 "><strong>É comum visitarmos o médico e este informar que estamos com uma virose, ou seja, uma doença transmitida por vírus. Baseando-se nos seus conhecimentos sobre o tema, marque a alternativa que indica o nome de uma virose.</strong></h3>
+				<h3 class="text-white text-justify m-3 p-1 "><strong>É comum visitarmos o médico e este informar que estamos com uma virose, ou seja, uma doença transmitida por vírus. Baseando-se nos seus conhecimentos sobre o tema, marque a alternativa que indica o nome de uma virose.</strong></h3>
 			</div>
 		</div>
 	</div>
@@ -26,29 +26,24 @@
 
 	<!-- Resposta -->
 	<div class="text-center " >
-		<a href="#" class="bbo btn btn-success text-center m-3 ">Febre amarela.</a>
+		<a href="#" class="bbo btn btn-success text-center m-3 ">Sim</a>
 	</div> 
 
 	<div class="text-center ">
-		<a href="#" class="bbo btn btn-success text-center m-3 ">Doença de Chagas.</a>
+		<a href="#" class="bbo btn btn-success text-center m-3 ">Não</a>
 	</div>
 
 	<div class="text-center ">
-		<a href="#" class="bbo btn btn-success text-center m-3 ">Cólera.</a>
+		<a href="#" class="bbo btn btn-success text-center m-3 ">Talvez</a>
+	</div>
+
+	<div class="text-center ">
+		<a href="#" class="bbo btn btn-success text-center m-3 ">Frequente</a>
 	</div>
 
 	<!-- ==========================================FOOTER=========================================================== -->
-
-	<div class="footer" style="background-color: rgb(10,68,161,0.90); position: fixed; width: 100%; bottom:0; text-align: center;">
-		<div class="col-sm mt-2">
-			<div class="container">	
-
-				<p class=" text-light col-sm text-center pr-0 "><strong class="text-success">NomeLogo </strong>© 2019</p>
-				
-				<p class="text-light "><i>Uma empresa Brasileira com muito orgulho.</i></p>
-
-			</div>
-		</div>
+	<div class="mt-5">  
+		<?php require_once('include/footer.php'); ?>
 	</div>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
