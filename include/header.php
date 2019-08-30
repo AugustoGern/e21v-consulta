@@ -1,6 +1,12 @@
 <?php 
 session_start();
 
+	require_once('include/conexao.php');
+	// Junta as informações dos usuarios
+	$sql = "SELECT * FROM tb_usuario WHERE id = '{$_SESSION['id_usuario']}'";
+	$queryEdição = mysqli_query($con, $sql);
+	$resultado = mysqli_fetch_array($queryEdição);
+
 ?>
 
 <!-- ==============================================NAVBAR======================================================= -->
@@ -42,7 +48,7 @@ session_start();
 			<!-- ================login================ -->
 			<?php if (isset($_SESSION['logado']) && $_SESSION['logado'] == true) { ?>
 
-			<a class="navbar-brand text-light " href="cadastro.php">
+			<a class="navbar-brand text-light " href="cadastro.php?id=<?=$resultado['id']?>">
 				<i class="fas fa-user nav-link ml-2" 
 				data-whatever="@fat" ></i>
 			</a>

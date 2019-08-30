@@ -59,22 +59,22 @@
 				<div class="card-body">
 					<form method="post" action="" name="formCadastro">
 						<label for="nome">Nome Completo:<strong class="text-danger"> *</strong></label>
-						<input type="text" name="nome" id="nome" placeholder="Gabriel de Souza" class="form-control"><br>
+						<input type="text" name="nome" id="nome" placeholder="Gabriel de Souza" class="form-control" value="<?=$resultadoUsuario['nome_completo']?>"><br>
 
 						<label for="email">Email:<strong class="text-danger"> *</strong></label>
-						<input type="email" name="email" id="email" class="form-control"><br>
+						<input type="email" name="email" id="email" class="form-control" value="<?=$resultadoUsuario['email']?>"><br>
 
 						<label for="dataNasc">Data de Nascimento: <strong class="text-danger"> *</strong></label>
-						<input type="date" name="dataNasc" id="dataNasc" class="form-control"><br>
+						<input type="date" name="dataNasc" id="dataNasc" class="form-control" value="<?=$resultadoUsuario['data_nascimento']?>"><br>
 
 						<label for="sexo">Sexo: <strong class="text-danger"> *</strong></label>
 						<select class="form-control" name="sexo" id="sexo">
-							<option>Masculino</option>
-							<option>Feminino</option>
+							<option value="Masculino"<?= ($resultadoUsuario['sexo']=="Masculino") ? 'selected' : ''?>>Masculino</option>
+							<option value="Feminino"<?= ($resultadoUsuario['sexo']=="Feminino") ? 'selected' : ''?>>Feminino</option>
 						</select><br>
 
 						<label for="senha">Senha: <strong class="text-danger"> *</strong></label>
-						<input type="password" name="senha" id="senha" class="form-control"><br>
+						<input type="password" name="senha" id="senha" class="form-control" value="<?=$resultadoUsuario['senha']?>"><br>
 
 						<label for="confSenha">Confirmar Senha: <strong class="text-danger"> *</strong></label>
 						<input type="password" name="confSenha" id="confSenha" class="form-control"><br>
