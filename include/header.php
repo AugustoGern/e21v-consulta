@@ -1,5 +1,6 @@
 <?php 
 session_start();
+error_reporting(0);
 
 	require_once('include/conexao.php');
 	// Junta as informações dos usuarios
