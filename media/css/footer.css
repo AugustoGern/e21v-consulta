@@ -1,7 +1,19 @@
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
+.ft{
+	background-color: rgb(10,68,161,0.90);
+	font-family: "Times New Roman", Times, serif;	
+
 }
+
+.ft1{
+	background-color: rgb(10,68,161,0.90);
+	text-align:center;
+}
+
+.nt li{
+	margin-top: 10px;
+	color: white;
+}
+
+ul 	li a {
+	color: white;
+} 

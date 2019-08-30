@@ -1,14 +1,67 @@
-<div class="footer p-0 m-0" style="background-color: rgb(10,68,161,0.90);">
-		<div class="row col-sm" style="text-align: center;">
-			<div class="container">	
-				<p class="text-white mt-3" style="text-decoration: underline;">Nossas Redes Sociais</p>
-				<a href="https://www.instagram.com/accounts/login/?hl=pt-br"><i class="fab fa-instagram mt-2 p-2" style="background-color: rgb(200, 200, 200); border-radius: 20px;  width: 20%;  color: black;"></i></a>
-				<a href="https://pt-br.facebook.com/"><i class="fab fa-facebook-f mt-2 p-2" style="background-color: rgb(200, 200, 200); border-radius: 20px;  width: 20%;  color: black;"></i></a>
-				<a href="https://accounts.google.com/signin/v2/identifier?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=ServiceLogin#__utma=29003808.1180046663.1566925480.1566925480.1566925480.1&__utmb=29003808.0.10.1566925480&__utmc=29003808&__utmx=-&__utmz=29003808.1566925480.1.1.utmcsr=google%7Cutmccn=(organic)%7Cutmcmd=organic%7Cutmctr=(not%20provided)&__utmv=-&__utmk=80740692"><i class="fas fa-at mt-2 p-2" style="background-color: rgb(200, 200, 200); border-radius: 20px;  width: 20%;  color: black;"></i></a>
-				<hr style="color: red	">
-				<p class="text-white mt-3" style="text-decoration: underline;"><i>Direitos Reservedos a equipe do projeto TCC Entra21.</i></p>
 
-					<p class=" text-light col-sm text-center pr-0 mt-3"><strong class="text-success">NomeLogo </strong>© 2019	</p>
-			</div>
-		</div>
-	</div>
+<link rel="stylesheet" type="text/css" href="media/css/footer.css">
+
+<footer class="ft page-footer font-small indigo pt-3">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+
+          <!-- Links -->
+          <h4 class="font-weight-bold text-uppercase mt-4 mb-4 text-white">Redes Sociais</h4>
+          <ul class="nt list-unstyled">
+            <li class="">
+              <i class="fab fa-facebook " ></i>
+              <a href="https://pt-br.facebook.com/pages/category/hospital/?page=4">Facebook </a>
+            </li>
+            <li>
+              <i class="fab fa-instagram "></i>
+              <a href="https://www.instagram.com/hospitalmaededeus/">Instagram</a>
+            </li>
+            <li>
+              <i class="fab f fa-twitter "></i>
+              <a href="https://twitter.com/hashtag/hospital">twitter</a>
+            </li>
+            <li>
+              <i class="fas fa-at" ></i>
+              <a href="https://gmail.com/mail/help/intl/pt_pt/about.html  ">Nosso Email</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+
+          <!-- Links -->
+          <h4 class="font-weight-bold text-uppercase mt-4 mb-4 text-white">Usuário</h4>
+          <ul class="nt list-unstyled">
+            <li>Reportar erros</li>
+            <li>Dúvidas</li>
+            <li>Sugestões</li>
+            <li>Feedback</li>
+          </ul>
+        </div>
+
+        <div class="col-md-6 mt-md-0 mt-3">
+
+          <!-- Content -->
+          <h4 class="text-uppercase font-weight-bold mt-4 mb-4 text-white">Observações</h4>
+          <p class="text-white">Toda a Página está em desenvolvimento, por uma equipe de jovens do programa Entra21 Edição 2019. E esta sendo desenvolvida com muito orgulho s2. Temos como objetivo agradar nossos clientes. Se possível deixe seu feedback e Sujestões ou até mesmo algo que gostaria de ver em nossa pagína.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="ft1 footer-copyright text-center pt-4 pb-2 text-white">
+     <p>Direitos Reservedos a equipe do projeto TCC Entra21.
+       <strong > NomeLogo © 2019</strong>  
+     <a class="pr-2 text-white" style="float: right; color: black;" href="painel.php">Administrador</a>
+     </p>
+
+   </div>
+ </footer>
