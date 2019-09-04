@@ -14,34 +14,8 @@
 <body >
 
 	<!-- ==============================================NAVBAR==================================================== -->
-	<nav class="navbar  navbar-expand-lg navbar-light mb-3" style="background-color: rgb(10,68,161,0.90);">
-		<a class="navbar-brand" href="index.php">
-			<img src="media/images/logo.png" style="width: 40px;  ">
-		</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
+	<?php require_once('include/header.php');  ?>
 
-		<div class="collapse  navbar-collapse " id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
-					<a class="nav-link text-white" href="index.php">Início <span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link text-white" href="sobre.php">Sobre</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link text-white" href="#">Consultar</a>
-				</li>
-			</ul>
-			<form class="form-inline my-2 my-lg-0">
-				<a class="navbar-brand text-light " href="cadastro.php">
-					<i class="fas fa-user-plus nav-link ml-2" 
-					></i>
-				</a>
-			</form>
-		</div>
-	</nav>
 
 	<!-- =========================================================================== -->
 	<div style="background-image: url('media/images/mdc-18.jpg'); min-height: 360px; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -118px; background-repeat: no-repeat;" class="shadow">
@@ -79,7 +53,9 @@
 						<label for="confSenha">Confirmar Senha: <strong class="text-danger"> *</strong></label>
 						<input type="password" name="confSenha" id="confSenha" class="form-control"><br>
 
-						<input type="submit" name="cadastro" id="cadastro" class="btn btn-primary form-control" value="Editar" disabled="">
+						<input type="submit" name="cadastro" id="cadastro" class="btn btn-primary " value="   Editar   " disabled="">
+						<input type="submit" name="btnExcluir" value="   Excluir   " class="btn btn-danger">
+
 					</form>
 				</div>
 			</div>
