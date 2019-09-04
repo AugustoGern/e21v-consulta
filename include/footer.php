@@ -67,7 +67,7 @@
   <!-- Copyright -->
   <div class="ft1 footer-copyright text-center pt-4 pb-2 text-white">
    <p>Direitos Reservedos a equipe do projeto TCC Entra21.
-     <strong > SymDinder © 2019</strong>  
+     <strong > SymFinder © 2019</strong>  
      <a class="pr-3 text-white" style="float: right; color: black;" href="painel.php">Administrador</a>
    </p>
 
