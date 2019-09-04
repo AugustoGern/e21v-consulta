@@ -51,7 +51,7 @@
 
           <!-- Content -->
           <h4 class="text-uppercase font-weight-bold mt-4 mb-4 text-white">Observações</h4>
-          <p class="text-white">Toda a Página está em desenvolvimento, por uma equipe de jovens do programa Entra21 Edição 2019. E esta sendo desenvolvida com muito orgulho s2. Temos como objetivo agradar nossos clientes. Se possível deixe seu feedback e Sujestões ou até mesmo algo que gostaria de ver em nossa pagína.</p>
+          <p class="text-white">Toda a Página está em desenvolvimento, por uma equipe de jovens do programa Entra 21 Edição 2019. E esta sendo desenvolvida com muito orgulho. Temos como objetivo agradar nossos clientes. Se possível deixe seu feedback e Sugestões ou até mesmo algo que gostaria de ver em nossa página.</p>
         </div>
       </div>
     </div>

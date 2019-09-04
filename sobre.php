@@ -21,10 +21,10 @@
 
 	<!-- Container -->
 	<div class="container top pt-4 mb-5 pb-4 col-10"> 
-		<h1>Aqui você sabera tudo sobre nossa página e nossa política de qualidade e muito mais!</h1>
+		<h1>AQUI VOCÊ SABERÁ TUDO SOBRE NOSSA PÁGINA E NOSSA POLÍTICA DE QUALIDADE E MUITO MAIS!</h1>
 		<br>
 		<h4 class="p-4 txt1">
-			A página foi desenvolvida por uma equipe de 4 Alunos do Entra21, Edição de 2019. O “nome do site " foi monitorada e auxiliada por nosso instrutor/professor João de Paula.
+			A página foi desenvolvida por uma equipe de 4 Alunos do Entra 21, Edição de 2019. O “nome do site " foi monitorada e auxiliada por nosso instrutor/professor João de Paula.
 		</h4>
 		<hr>
 		<div class="row">
@@ -32,7 +32,7 @@
 				<img class="img1 m-4 col-10 d-none d-sm-block p-0" src="media/images/mdc-20.jpg">
 			</div>
 			<div class="col-md-12 col-lg-8 mt-3">
-				<h4 class="txt2 m-4 p-0"> A página vem se desenvolvendo a cada dia e com ela, vem o nosso objetivo de entregar um 'processo de atendimento ao cliente e com agilidade em seu procedimento de consulta ou pesquisa de sintomas "possíveis"'. Nossa equipe visa entregar o máximo de conforto e simplicidade aos nossos clientes e tendo com o site o mais importante que é entregar um profissional na área hospitalar que possa cuidar do paciente e auxilia-lo em sua caminhada ao bem-estar.</h4>
+				<h4 class="txt2 m-4 p-0">A página vem se desenvolvendo a cada dia e com ela, vem o nosso objetivo de entregar um 'processo de atendimento ao cliente e com agilidade em seu procedimento de consulta ou pesquisa de sintomas "possíveis"'. Nossa equipe visa entregar o máximo de conforto e simplicidade aos nossos clientes e tendo com o site o mais importante que é entregar um profissional na área hospitalar que possa cuidar do paciente e auxilia-lo em sua caminhada ao bem-estar.</h4>
 			</div>
 			<div class="col-md-5 col-12 ">
 				<h3 class="txt3 mt-4"><li>Missão</li></h3>
@@ -40,7 +40,7 @@
 				<h3 class="txt3 mt-2 "><li>Política de Qualidade</li></h3>
 				<h4 class="txt2 ml-5">Buscar sempre a satisfazer os clientes da melhor forma, prestando serviços de qualidade e acessibilidade.</h4>
 				<h3 class="txt3 mt-2 "><li>Visão</li></h3>
-				<h4 class="txt2 ml-5">Ter uma ótima clientela e satisfazer nosso acessores.</h4>
+				<h4 class="txt2 ml-5">Ter uma ótima clientela e satisfazer nossos assessores.</h4>
 			</div>
 			<div class="col-lg-7 ">
 				<img class="img2 m-4 d-none col-10 d-sm-block p-0" src="media/images/mdc.21.jpg">	
