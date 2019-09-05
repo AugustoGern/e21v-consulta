@@ -60,7 +60,7 @@
 					<div class="row col-12 col-md">
 						<h5 class="pl-5 d-none d-md-block" >3</h5>	
 						<div class="col-12 col-md">
-							<li  class="pt-5 col-md-11">Após identificar seu desconforto, irá ser apresentado uma série de perguntas com possíveis sintomas e você deverá selecionar o sintoma que mais se identifica de acordo com o seu desconforto.</li> <br>
+							<li  class="pt-5 col-md-11">Após identificar seu desconforto, irá ser apresentado uma série de perguntas com possíveis sintomas, e você deverá selecionar o sintoma que mais se identifica de acordo com o seu desconforto.</li> <br>
 						</div>
 					</div>
 
