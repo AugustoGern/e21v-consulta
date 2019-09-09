@@ -20,6 +20,7 @@ if (!isset($_SESSION['logado']) || $_SESSION['logado'] == false) {
 				$_SESSION['logado'] = true;
 				$_SESSION['id_usuario'] = $resultadoLogin['id'];
 				$_SESSION['nome_usuario'] = $resultadoLogin['nome'];
+				$_SESSION['nivel_acesso'] = $resultadoLogin['nivel_acesso'];
 
 				header('Location: index.php');
 		

@@ -68,7 +68,11 @@
   <div class="ft1 footer-copyright text-center pt-4 pb-2 text-white">
    <p>Direitos Reservedos a equipe do projeto TCC Entra21.
      <strong > SymFinder © 2019</strong>  
+     <?php if ($_SESSION['logado'] == true) { 
+              if ($_SESSION['nivel_acesso'] == 'adm') { ?>
      <a class="pr-3 text-white" style="float: right; color: black;" href="painel.php">Administrador</a>
+   <?php } ?>
+ <?php } ?>
    </p>
 
  </div>
