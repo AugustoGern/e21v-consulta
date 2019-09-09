@@ -22,34 +22,7 @@
     margin-bottom: 20px;
 }
 
-.login-box input[type="email"], input[type="password"]
-{
-    border: none;
-    border-bottom: 1px solid #fff;
-    background: transparent;
-    outline: none;
-    height: 40px;
-    color: #fff;
-    font-size: 16px;
-}
 
-.login-box input[type="submit"]
-{
-    border: none;
-    outline: none;
-    height: 40px;
-    background: rgb(10,68,161,0.90);
-    color: white;
-    font-size: 18px;
-    border-radius: 20px;
-}
-
-.login-box input[type="submit"]:hover
-{
-    cursor: pointer;
-    background: #39dc79;
-    color: #000;
-}
 
 .login-box a{
     text-decoration: none;
@@ -66,25 +39,12 @@
     border: none;
     outline: none;
     height: 50px;
-    background: rgb(10,68,161,0.90);
+    background: rgb(10,68,161,0.75);
     color: white;
     font-size: 25px;
     border-radius: 30px;
     padding-right: 30px;
     padding-left: 30px;
-}
-
-.login-box{
-    width: 320px;
-    height: 420px;
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    box-sizing: border-box;
-    padding: 70px 30px;
 }
 
 .login-box p{
@@ -100,6 +60,7 @@
 
 .login-box input[type="email"], input[type="password"]
 {
+    background: rgb(10,68,161,0.75);
     border: none;
     border-bottom: 1px solid #fff;
     background: transparent;
@@ -118,6 +79,7 @@
     color: white;
     font-size: 18px;
     border-radius: 20px;
+    background: rgb(10,68,161,0.75);
 }
 
 .login-box input[type="submit"]:hover
@@ -125,16 +87,6 @@
     cursor: pointer;
     background: #39dc79;
     color: #000;
-}
-
-.login-box a{
-    text-decoration: none;
-    font-size: 14px;
-    color: #fff;
-}
-.login-box a:hover
-{
-    color: #39dc79;
 }
 
 .bbo{
@@ -155,7 +107,7 @@ h5 {
     line-height: 100px;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
-    text-align: center;
+    text-align: center; 
 }
 
 .row{
@@ -164,5 +116,5 @@ h5 {
 
 .container h1, h2{
     font-size: 35px; color: rgb(79, 87, 89);  
-    text-transform: uppercase;
 }
+

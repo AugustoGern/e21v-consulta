@@ -16,7 +16,7 @@
 
 	<div style="background-image: url('media/images/fnd-index.jpg'); min-height: 330px; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -118px; background-repeat: no-repeat;" class="shadow">
 		<div class="text-center my-5">
-			<h1 style="color: #2256aa; font-family: 'Montserrat', sans-serif; font-weight: 900;">Otimize sua vida!</h1>
+			<h1 style="color: #2256aa; font-family: 'Montserrat', sans-serif;    font-weight: 500 !important;  ">Otimize sua vida!</h1>
 		</div> 
 	</div>
 
@@ -37,7 +37,7 @@
 	<div class="container-fluid">
 		<div class="container">
 
-			<h1 class="text-center pt-5">É fácil e simples de Consultar!</h1>
+			<h1 class="text-center pt-5" id="batatinha">É fácil e simples de Consultar!</h1>
 			<h2 class="text-center">Como funciona?!</h2>
 
 			<div class="card mb-5" style="background-image: linear-gradient( white, rgb(100, 155, 200)); border:transparent;">
