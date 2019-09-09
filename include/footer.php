@@ -3,9 +3,6 @@ require_once('include/duvidas.php');
 
 ?>
 
-
-
-
 <link rel="stylesheet" type="text/css" href="media/css/footer.css">
 
 <footer class="ft page-footer font-small indigo pt-3">
@@ -45,7 +42,6 @@ require_once('include/duvidas.php');
             <a class="text-white" href="https://gmail.com/mail/help/intl/pt_pt/about.html" 
             style="text-decoration: none;">Nosso Email</a>
           </li>
-
         </ul>
       </div>
 
