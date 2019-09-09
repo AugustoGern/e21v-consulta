@@ -1,3 +1,10 @@
+<?php 
+require_once('include/duvidas.php');
+
+?>
+
+
+
 
 <link rel="stylesheet" type="text/css" href="media/css/footer.css">
 
@@ -48,10 +55,9 @@
         <!-- Links -->
         <h4 class="font-weight-bold text-uppercase mt-4 mb-4 text-white">Usuário</h4>
         <ul class="nt list-unstyled">
-          <li>Reportar erros</li>
-          <li>Dúvidas</li>
-          <li>Sugestões</li>
-          <li>Feedback</li>
+          <li><a href="#" class="text-white" data-target="#modal_duvidas" data-toggle="modal" style="text-decoration:none;">Dúvidas</a></li>
+          <li><a href="#" class="text-white" data-target="#modal_sugestao" data-toggle="modal" style="text-decoration:none;">Sugestões</a></li>
+          <li><a href="#" class="text-white" data-target="#modal_feedback" data-toggle="modal" style="text-decoration:none;">Feedback</a></li>
         </ul>
       </div>
 
@@ -69,11 +75,11 @@
    <p>Direitos Reservedos a equipe do projeto TCC Entra21.
      <strong > SymFinder © 2019</strong>  
      <?php if ($_SESSION['logado'] == true) { 
-              if ($_SESSION['nivel_acesso'] == 'adm') { ?>
-     <a class="pr-3 text-white" style="float: right; color: black;" href="painel.php">Administrador</a>
-   <?php } ?>
- <?php } ?>
-   </p>
+      if ($_SESSION['nivel_acesso'] == 'adm') { ?>
+      <a class="pr-3 text-white" style="float: right; color: black;" href="painel.php">Administrador</a>
+      <?php } ?>
+      <?php } ?>
+    </p>
 
- </div>
+  </div>
 </footer>
