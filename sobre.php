@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="media/css/index.css">
 	<link rel="stylesheet" type="text/css" href="media/css/cadastro.css">
 	<link rel="stylesheet" type="text/css" href="media/css/sobre.css">
+	<link rel="shortcut icon" type="image/x-icon" href="media/images/4232logo__.ico">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:900,600&display=swap" rel="stylesheet">
 </head>
 <body>

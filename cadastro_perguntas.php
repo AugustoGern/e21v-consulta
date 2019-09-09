@@ -14,6 +14,7 @@
 	<title>Cadastro Pergunta</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:900&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="media/images/4232logo__.ico">
 </head>
 <body style="background-color: rgba(0,0,0,0.6);">
 
