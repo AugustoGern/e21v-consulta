@@ -38,10 +38,10 @@
 	<div class="container-fluid">
 		<div class="container">
 
-			<h1 class="text-center pt-5" id="batatinha">É fácil e simples de Consultar!</h1>
-			<h2 class="text-center">Como funciona?!</h2>
+			
+			<h2 class="text-center pt-5" id="batatinha">Como funciona?!</h2>
 
-			<div class="card mb-5" style="background-image: linear-gradient( white, rgb(100, 155, 200)); border:transparent;">
+			<div class="card mb-5" style=" border:transparent;">
 				<div class="card-body">
 
 					<div class="row col-12 col-md">

@@ -1,17 +1,27 @@
 .ft{
-	background-color: rgb(10,68,161,0.80);
+	/*background-color: rgb(10,68,161,0.80);*/
 }
 
 .ft1{
-	background-color: rgb(10,68,161,0.75);
+	/*background-color: rgb(10,68,161,0.75);*/
 	text-align:center;
 }
 
 .nt li{
 	margin-top: 10px;
-	color: white;
+	color: black;
 }
 
 ul 	li a {
-	color: white;
+	color: black;
+
 } 
+
+.footer{
+	font-size: 1.4rem !important;
+}
+
+body {
+	color:rgb(168, 182, 186) !important;
+ 
+}
