@@ -11,7 +11,7 @@ error_reporting(0);
 ?>
 
 <!-- ==============================================NAVBAR======================================================= -->
-<nav class="navbar  navbar-expand-lg navbar-light mb-5" style="background-color: rgb(10,68,161,0.75);">
+<nav class="navbar  navbar-expand-lg navbar-light mb-5" style="background-color: transparent;">
 	<a class="navbar-brand" href="index.php">
 		<img src="media/images/logo__.png" style="width: 90px;  ">
 	</a>
