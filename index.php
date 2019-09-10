@@ -43,6 +43,8 @@
 			
 			<h2 class="text-center pt-5" id="batatinha">Como funciona?</h2>
 
+			<hr  style="border: 0; margin-top: 20px; height: 3px; width: 400px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(34, 86, 170, 0.75), rgba(0, 0, 0, 0));">
+
 			<div class="card mb-5" style=" border:transparent;">
 				<div class="card-body">
 

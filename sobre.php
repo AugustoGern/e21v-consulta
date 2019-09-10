@@ -23,11 +23,11 @@
 	<!-- Container -->
 	<div class="container top pt-4 mb-5 pb-4 col-10"> 
 		<h1 id="batata">Aqui você saberá tudo sobre nossa página, nossa política de qualidade e muito mais!</h1>
-		<br>
-		<h4 class="p-4 txt1">
+		
+		<h4 class="p-4 mt-5 txt1">
 			A página foi desenvolvida por uma equipe de 4 Alunos do Entra 21, Edição de 2019. A <strong>SymFinder</strong> foi monitorada e auxiliada por nosso instrutor João de Paula.
 		</h4>
-		<hr>
+		<hr  style="border: 0; margin-top: 20px; height: 3px; width: 900px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(34, 86, 170, 0.75), rgba(0, 0, 0, 0));">
 		<div class="row">
 			<div class="col-lg-4 col-md-5  mt-3">
 				<img class="img1 m-4 col-10 d-none d-sm-block p-0" src="media/images/mdc-20.jpg">
