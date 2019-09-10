@@ -16,16 +16,16 @@
 	<?php require_once('include/header.php');?>
 
 	<!-- fundo da Página  -->
-	<div class="shadow" style="background-image: url('media/images/mdc-18.jpg');" >
+	<div class="shadow" style="background-image: url('media/images/mdc-18.jpg');  min-height: 330px; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -154px; background-repeat: no-repeat;" class="shadow">"  >
 		<div class="text-center my-5"></div> 
 	</div>
 
 	<!-- Container -->
 	<div class="container top pt-4 mb-5 pb-4 col-10"> 
-		<h1>AQUI VOCÊ SABERÁ TUDO SOBRE NOSSA PÁGINA, NOSSA POLÍTICA DE QUALIDADE E MUITO MAIS!</h1>
+		<h1 id="batata">Aqui você saberá tudo sobre nossa página, nossa política de qualidade e muito mais!</h1>
 		<br>
 		<h4 class="p-4 txt1">
-			A página foi desenvolvida por uma equipe de 4 Alunos do Entra 21, Edição de 2019. A <strong>SymFinder</strong> foi monitorada e auxiliada por nosso instrutor/professor João de Paula.
+			A página foi desenvolvida por uma equipe de 4 Alunos do Entra 21, Edição de 2019. A <strong>SymFinder</strong> foi monitorada e auxiliada por nosso instrutor João de Paula.
 		</h4>
 		<hr>
 		<div class="row">
@@ -36,11 +36,11 @@
 				<h4 class="txt2 m-4 p-0">A página vem se desenvolvendo a cada dia, e com ela vem o nosso objetivo de entregar um processo de atendimento ao cliente, e com o máximo agilidade em seu procedimento de consulta ou pesquisa de sintomas "possíveis". Nossa equipe visa entregar o máximo de conforto e simplicidade aos nossos clientes, e tendo com o site o mais importante que é entregar um profissional na área hospitalar que possa cuidar do paciente, e auxilia-lo em sua caminhada ao bem-estar.</h4>
 			</div>
 			<div class="col-md-5 col-12 ">
-				<h3 class="txt3 mt-4"><li>Missão</li></h3>
+				<h3 class=" mt-4"><li class="txt3">Missão</li></h3>
 				<h4 class="txt2 ml-5">Cuidar dos nossos pacientes e usuários, promovendo agilidade e saúde com todo conforto e segurança, empatia e eficiência.</h4>
-				<h3 class="txt3 mt-2 "><li>Política de Qualidade</li></h3>
+				<h3 class="mt-2 "><li class="txt3">Política de Qualidade</li></h3>
 				<h4 class="txt2 ml-5">Buscar sempre satisfazer os clientes da melhor forma, prestando serviços de qualidade e acessibilidade.</h4>
-				<h3 class="txt3 mt-2 "><li>Visão</li></h3>
+				<h3 class="mt-2 "><li class="txt3">Visão</li></h3>
 				<h4 class="txt2 ml-5">Ter ótimos clientes e profissionais, em nossa página, e satisfazer nossos assessores.</h4>
 			</div>
 			<div class="col-lg-7 ">

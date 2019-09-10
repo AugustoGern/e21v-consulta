@@ -9,15 +9,17 @@
 	<link rel="stylesheet" type="text/css" href="media/css/cadastro.css">
 	<link rel="shortcut icon" type="image/x-icon" href="media/images/4232logo__.ico">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:900&display=swap" rel="stylesheet">
+	
+
 </head>
 <body>
 	
 	<!-- Inclusão do HEADER -->
 	<?php require_once('include/header.php'); ?>
 
-	<div style="background-image: url('media/images/fnd-index.jpg'); min-height: 330px; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -118px; background-repeat: no-repeat;" class="shadow">
+	<div style="background-image: url('media/images/fnd-index.jpg'); min-height: 330px; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -154px; background-repeat: no-repeat;" class="shadow">
 		<div class="text-center my-5">
-			<h1 style="color: #2256aa; font-family: 'Montserrat', sans-serif;    font-weight: 500 !important;  ">Otimize sua vida!</h1>
+			<h1 style="color: #2256aa;">Otimize sua vida!</h1>
 		</div> 
 	</div>
 
@@ -39,7 +41,7 @@
 		<div class="container">
 
 			
-			<h2 class="text-center pt-5" id="batatinha">Como funciona?!</h2>
+			<h2 class="text-center pt-5" id="batatinha">Como funciona?</h2>
 
 			<div class="card mb-5" style=" border:transparent;">
 				<div class="card-body">

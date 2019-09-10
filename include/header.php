@@ -2,45 +2,46 @@
 session_start();
 error_reporting(0);
 
-	require_once('include/conexao.php');
+require_once('include/conexao.php');
 	// Junta as informações dos usuarios
-	$sql = "SELECT * FROM tb_usuario WHERE id = '{$_SESSION['id_usuario']}'";
-	$queryEdição = mysqli_query($con, $sql);
-	$resultado = mysqli_fetch_array($queryEdição);
+$sql = "SELECT * FROM tb_usuario WHERE id = '{$_SESSION['id_usuario']}'";
+$queryEdição = mysqli_query($con, $sql);
+$resultado = mysqli_fetch_array($queryEdição);
 
 ?>
+<link rel="stylesheet" type="text/css" href="media/css/header.css">
 
 <!-- ==============================================NAVBAR======================================================= -->
 <nav class="navbar  navbar-expand-lg navbar-light mb-5" style="background-color: transparent;">
 	<a class="navbar-brand" href="index.php">
-		<img src="media/images/logo__.png" style="width: 90px;  ">
+		<img src="media/images/logo__.png" style="width: 160px; margin-left: 30px; ">
 	</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	</button>
 
-	<div class="collapse  navbar-collapse " id="navbarSupportedContent">
+	<div class="collapse  navbar-collapse  ml-5" id="navbarSupportedContent">
 		<ul class="navbar-nav mr-auto">
 			<li class="nav-item active">
-				<a class="nav-link text-white" href="index.php">Início <span class="sr-only">(current)</span></a>
+				<a class="nav-link" href="index.php">Início <span class="sr-only">(current)</span></a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link text-white" href="sobre.php">Sobre</a>
+				<a class="nav-link" href="sobre.php">Sobre</a>
 			</li>
 			<!-- ==============consultar============= -->
 			<?php if (isset($_SESSION['logado']) && $_SESSION['logado'] == true) { ?>
 			<li class="nav-item">
-				<a class="nav-link text-white" href="consulta.php">Consultar</a>
+				<a class="nav-link" href="consulta.php">Consultar</a>
 			</li>
 			<?php } ?> 
 			<!-- ===================================== -->
 
 		</ul>
-		<form class="form-inline my-2 my-lg-0">
+		<form class="form-inline my-2 my-lg-0 mr-5">
 
 			<!-- ==============historico============== -->
 			<?php if (isset($_SESSION['logado']) && $_SESSION['logado'] == true) { ?>
-			<a class="navbar-brand text-light " href="historico.php">
+			<a class="navbar-brand  " href="historico.php">
 				<i class="fas fa-history nav-link ml-2" href="#"></i>
 			</a>
 			<?php } ?>
@@ -49,17 +50,21 @@ error_reporting(0);
 			<!-- ================login================ -->
 			<?php if (isset($_SESSION['logado']) && $_SESSION['logado'] == true) { ?>
 
-			<a class="navbar-brand text-light " href="cadastro.php?id=<?=$resultado['id']?>">
+			<a class="navbar-brand" href="cadastro.php?id=<?=$resultado['id']?>">
 				<i class="fas fa-user nav-link ml-2" 
 				data-whatever="@fat" ></i>
 			</a>
 
 			<?=$_SESSION['nome_usuario']?>
-			<a href="backend/logoff.php" class="nav-link text-white"> SAIR</a>
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a href="backend/logoff.php" class="nav-link "> Sair</a>
+				</li>
+			</ul>
 
 
 			<?php } else { ?> 
-			<a class="navbar-brand text-light " href="#">
+			<a class="navbar-brand" href="#">
 				<i class="fas fa-user nav-link ml-2   " data-target="#exampleModall"  href="#" data-toggle="modal" 
 				data-whatever="@fat" ></i>
 			</a>
@@ -67,7 +72,7 @@ error_reporting(0);
 			<!-- ===================================== -->
 
 			<?php if (isset($_SESSION['logado'])  == false) { ?>
-			<a class="navbar-brand text-light " href="#">
+			<a class="navbar-brand " href="#">
 				<i class="fas fa-user-plus nav-link ml-2 " data-target="#exampleModal"  href="#" data-toggle="modal" 
 				></i>
 			</a>
@@ -100,8 +105,7 @@ require_once('backend/login.php');
 				<!-- Senha -->
 				<label for="senha_login">Senha</label>
 				<input type="password" class="form-control" id="senha_login" name="senha_login" placeholder="******">
-				<input type="submit" class="btn" name="botao_login" id="botao_login" value="login"  required="">
-				<a href="#">Esqueceu a senha?</a>    
+				<input type="submit" class="btn" name="botao_login" id="botao_login" value="login"  required="">    
 			</form>
 		</div>
 	</div>
