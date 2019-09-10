@@ -17,7 +17,7 @@
 	<!-- Inclusão do HEADER -->
 	<?php require_once('include/header.php'); ?>
 
-	<div style="background-image: url('media/images/fnd-index.jpg'); min-height: 330px; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -154px; background-repeat: no-repeat;" class="shadow">
+	<div style="background-image: url('media/images/fnd-index.jpg'); min-height: 320px; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -159px; background-repeat: no-repeat;" class="shadow">
 		<div class="text-center my-5">
 			<h1 style="color: #2256aa;">Otimize sua vida!</h1>
 		</div> 

@@ -16,9 +16,11 @@
 	<?php require_once('include/header.php');?>
 
 	<!-- fundo da Página  -->
-	<div class="shadow" style="background-image: url('media/images/mdc-18.jpg');  min-height: 330px; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -154px; background-repeat: no-repeat;" class="shadow">"  >
+
+
+	 <div class="shadow" style="background-image: url('media/images/mdc-17.jpg');  min-height: 330px; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -184px; background-repeat: no-repeat;" class="shadow">
 		<div class="text-center my-5"></div> 
-	</div>
+	</div> 
 
 	<!-- Container -->
 	<div class="container top pt-4 mb-5 pb-4 col-10"> 

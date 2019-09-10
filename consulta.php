@@ -22,14 +22,14 @@
 
 	<?php require_once('include/header.php'); ?>
 
-	<div style="background-image: url('media/images/mdc-17.jpg'); min-height: 330px; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -154px; background-repeat: no-repeat;" class="shadow">
+	<div style="background-image: url('media/images/mdc-17.jpg'); min-height: 260px; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -190px; background-repeat: no-repeat;" class="shadow">
 		<div class="text-center my-5">
 			
 		</div> 
 	</div>
 
 
-	<h1 class="text-center"  style="margin-top: -200px;">Clique exatamente na região do desconforto</h1>
+	<h1 class="text-center"  style="margin-top: -100px;">Clique exatamente na região do desconforto</h1>
 
 	<div class="container-fluid">
 		<div class="container">
