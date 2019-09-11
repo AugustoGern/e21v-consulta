@@ -5,10 +5,28 @@
 	<script src="https://kit.fontawesome.com/3b47dd4ac9.js"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:900,600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="media/css/etapa1.css">
 </head>
 <body>
 	<!-- Inclusão do HEADER -->
 	<?php require_once('include/header.php');?>
+
+	<div class="container-fluid">
+		<div class="container">
+			
+		
+		
+	
+	<h2 class="text-center">Quais desses sintomas vôce esta sentindo no seu corpo?</h2>
+
+		<?php while($resultadoSintomas = mysqli_fetch_array($querySintomas)) { ?>
+			<div class="card bg-light">
+				<label for="check" class="text-center text-dark">paodsaodsaosjdsasajdoi</label>
+				<input type="checkbox" name="check" id="check" class="check">
+			</div>
+		<?php } ?>
+		</div>
+	</div>
 
 
 	<!-- footer -->
