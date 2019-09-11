@@ -107,6 +107,11 @@ require_once('backend/login.php');
 				<input type="password" class="form-control" id="senha_login" name="senha_login" placeholder="******">
 				<input type="submit" class="btn" name="botao_login" id="botao_login" value="login"  required="">    
 			</form>
+			<?php if (isset($alerta)) { ?>
+				<div class="alert alert-<?=$alerta['tipo']?>">
+					<?=$alerta['mensagem']?>
+				</div>
+			<?php } ?>
 		</div>
 	</div>
 </div>
