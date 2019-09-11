@@ -24,6 +24,9 @@ if (!isset($_SESSION['logado']) || $_SESSION['logado'] == false) {
 
 				header('Location: index.php');
 		
+		} else {
+			$alerta['tipo'] = 'danger';
+			$alerta['mensagem'] = 'Credenciais inválidas';
 		}
 	}
 }

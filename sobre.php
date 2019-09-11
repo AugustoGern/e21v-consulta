@@ -18,7 +18,7 @@
 	<!-- fundo da Página  -->
 
 
-	 <div class="shadow" style="background-image: url('media/images/mdc-17.jpg');  min-height: 330px; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -184px; background-repeat: no-repeat;" class="shadow">
+	 <div class="shadow" style="background-image: url('media/images/fundo.jpg');  min-height: 320px; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -184px; background-repeat: no-repeat;" class="shadow">
 		<div class="text-center my-5"></div> 
 	</div> 
 
@@ -27,7 +27,7 @@
 		<h1 id="batata">Aqui você saberá tudo sobre nossa página, nossa política de qualidade e muito mais!</h1>
 		
 		<h4 class="p-4 mt-5 txt1">
-			A página foi desenvolvida por uma equipe de 4 Alunos do Entra 21, Edição de 2019. A <strong>SymFinder</strong> foi monitorada e auxiliada por nosso instrutor João de Paula.
+			A página foi desenvolvida por uma equipe de 4 Alunos do Entra21, Edição de 2019. A <strong>SymFinder</strong> foi monitorada e auxiliada por nosso instrutor João de Paula.
 		</h4>
 		<hr  style="border: 0; margin-top: 20px; height: 3px; width: 900px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(34, 86, 170, 0.75), rgba(0, 0, 0, 0));">
 		<div class="row">
