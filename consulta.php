@@ -22,7 +22,7 @@
 
 	<?php require_once('include/header.php'); ?>
 
-	<div style="background-image: url('media/images/mdc-17.jpg'); min-height: 260px; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -190px; background-repeat: no-repeat;" class="shadow">
+	<div style="background-image: url('media/images/fundo.jpg'); min-height: 260px; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -190px; background-repeat: no-repeat;" class="shadow">
 		<div class="text-center my-5">
 			
 		</div> 
