@@ -63,7 +63,7 @@ require_once('include/duvidas.php');
 
         <!-- Content -->
         <h4 class="text-uppercase mt-4 mb-4  footer">Observações</h4>
-        <p >Toda a Página está em desenvolvimento, por uma equipe de jovens do programa Entra 21 Edição 2019. E esta sendo desenvolvida com muito orgulho. Temos como objetivo agradar nossos clientes. Se possível deixe seu feedback e Sugestões ou até mesmo algo que gostaria de ver em nossa página.</p>
+        <p >Toda a Página está em desenvolvimento, por uma equipe de jovens do programa Entra21 Edição 2019. E esta sendo desenvolvida com muito orgulho. Temos como objetivo agradar nossos clientes. Se possível deixe seu feedback e Sugestões ou até mesmo algo que gostaria de ver em nossa página.</p>
       </div>
     </div>
   </div>
