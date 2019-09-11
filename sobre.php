@@ -18,7 +18,7 @@
 	<!-- fundo da Página  -->
 
 
-	 <div class="shadow" style="background-image: url('media/images/fundo.jpg');  min-height: 330px; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -184px; background-repeat: no-repeat;" class="shadow">
+	 <div class="shadow" style="background-image: url('media/images/fundo.jpg');  min-height: 320px; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -184px; background-repeat: no-repeat;" class="shadow">
 		<div class="text-center my-5"></div> 
 	</div> 
 

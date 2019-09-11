@@ -22,11 +22,9 @@
 
 	<?php require_once('include/header.php'); ?>
 
-	<div style="background-image: url('media/images/fundo.jpg'); min-height: 260px; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -190px; background-repeat: no-repeat;" class="shadow">
-		<div class="text-center my-5">
-			
-		</div> 
-	</div>
+	<div class="shadow" style="background-image: url('media/images/fundo.jpg');  min-height: 320px; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -184px; background-repeat: no-repeat;" class="shadow">
+		<div class="text-center my-5"></div> 
+	</div> 
 
 
 	<h1 class="text-center"  style="margin-top: -100px;">Clique exatamente na região do desconforto</h1>
