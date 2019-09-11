@@ -6,6 +6,7 @@
 	<script src="https://kit.fontawesome.com/3b47dd4ac9.js"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="media/css/index.css">
+	<link rel="stylesheet" type="text/css" href="media/css/media.css">
 	<link rel="stylesheet" type="text/css" href="media/css/cadastro.css">
 	<link rel="shortcut icon" type="image/x-icon" href="media/images/4232logo__.ico">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:900&display=swap" rel="stylesheet">
@@ -17,20 +18,20 @@
 	<!-- Inclusão do HEADER -->
 	<?php require_once('include/header.php'); ?>
 
-	<div style="background-image: url('media/images/fnd-index.jpg'); min-height: 320px; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -159px; background-repeat: no-repeat;" class="shadow">
+	<div style="background-image: url('media/images/fnd-index.jpg'); min-height: 320px; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -159px; background-repeat: no-repeat;" class="shadow img">
 		<div class="text-center my-5">
-			<h1 style="color: #2256aa;">Otimize sua vida!</h1>
+			<h1 class="h1" style="color: #2256aa;">Otimize sua vida!</h1>
 		</div> 
 	</div>
 
 	<!-- botão -->
 	<?php if (isset($_SESSION['logado']) && $_SESSION['logado'] == true) { ?>
 	<div class="text-center ">
-		<a href="consulta.php" class="btn btn-success text-center " style="margin-top: -30px;"> Realize sua consulta </a>
+		<a href="consulta.php" class="btn btn-success botao text-center " style="margin-top: -30px;"> Realize sua consulta </a>
 	</div>
 	<?php } else { ?>
 	<div class="text-center ">
-		<a  class=" btn text-center text-white " style="margin-top: -30px;">Faça seu login ou cadastre-se</a>
+		<a  class=" btn text-center text-white botao " style="margin-top: -30px;">Faça seu login ou cadastre-se</a>
 	</div>
 	<?php } ?>
 	<!-- =========== -->
