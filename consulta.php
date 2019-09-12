@@ -8,6 +8,7 @@
 	<title>Consulta</title>
 </head>
 <link rel="stylesheet" type="text/css" href="media/css/index.css">
+<link rel="stylesheet" type="text/css" href="media/css/media.css">
 <link rel="shortcut icon" type="image/x-icon" href="media/images/4232logo__.ico">
 <script src="https://kit.fontawesome.com/3b47dd4ac9.js"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -22,7 +23,7 @@
 
 	<?php require_once('include/header.php'); ?>
 
-	<div class="shadow" style="background-image: url('media/images/fundo.jpg');  min-height: 320px; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -184px; background-repeat: no-repeat;" class="shadow">
+	<div class="shadow img_sobre" style="background-image: url('media/images/fundo.jpg');  min-height: 320px; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -184px; background-repeat: no-repeat;>
 		<div class="text-center my-5"></div> 
 	</div> 
 
