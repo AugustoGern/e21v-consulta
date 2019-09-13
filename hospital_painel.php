@@ -72,6 +72,8 @@ $queryListagem = mysqli_query($con, $sql);
                 <tr>
                   <th scope="col">Id</th>
                   <th scope="col">Hospital</th>
+                  <th scope="col">Telefone</th>
+                  <th scope="col">Cidade</th>
                 </tr>
               </thead>
               <tbody>
@@ -79,6 +81,8 @@ $queryListagem = mysqli_query($con, $sql);
                   <tr>
                     <th><?=$resultado['id']?></th>
                     <td><?=$resultado['nome']?></td>
+                    <td><?=$resultado['telefone']?></td>
+                    <td><?=$resultado['cidade']?></td>
                     <td style="float: right;">
                       <a href="cadastro_hospital.php?id=<?=$resultado['id']?>" class="btn btn-primary btn-sm">   Editar   </a>
                     </td>

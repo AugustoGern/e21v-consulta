@@ -30,7 +30,7 @@
 						<input type="text" name="telefone" id="telefone" class="form-control" placeholder="(47) 9898-9898" value="<?=$resultadoUsuario['telefone']?>"><br>
 
 						<label for="cidade">Cidade</label>
-						<input type="text" name="cidade" id="cidade" class="form-control" placeholder="Blumenau" value="<?=$['cidade']?>"><br>
+						<input type="text" name="cidade" id="cidade" class="form-control" placeholder="Blumenau" value="<?=$resultadoUsuario['cidade']?>"><br>
 
 						<input type="submit" name="btnSalvar" value="Salvar" class="btn btn-success">
 						<input type="submit" name="btnExcluir" value="Excluir" class="btn btn-danger">
