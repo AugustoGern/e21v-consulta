@@ -24,13 +24,13 @@
 				<div class="card-body">
 					<form method="post" action="" name="formCadastro">
 						<label for="nome_hosp">Nome do Hospital</label>
-						<input type="text" name="nome_hosp" id="nome_hosp" placeholder="Hospital" class="form-control" value="<?=$resultadoHospital['nome']?>"><br>
+						<input type="text" name="nome_hosp" id="nome_hosp" placeholder="Hospital" class="form-control" value="<?=$resultadoUsuario['nome']?>"><br>
 
 						<label for="telefone">Telefone</label>
-						<input type="text" name="telefone" id="telefone" class="form-control" placeholder="(47) 9898-9898" value="<?=$resultadoHospital['telefone']?>"><br>
+						<input type="text" name="telefone" id="telefone" class="form-control" placeholder="(47) 9898-9898" value="<?=$resultadoUsuario['telefone']?>"><br>
 
 						<label for="cidade">Cidade</label>
-						<input type="text" name="cidade" id="cidade" class="form-control" placeholder="Blumenau" value="<?=$resultadoHospital['cidade']?>"><br>
+						<input type="text" name="cidade" id="cidade" class="form-control" placeholder="Blumenau" value="<?=$['cidade']?>"><br>
 
 						<input type="submit" name="btnSalvar" value="Salvar" class="btn btn-success">
 						<input type="submit" name="btnExcluir" value="Excluir" class="btn btn-danger">
