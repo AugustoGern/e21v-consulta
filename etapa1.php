@@ -1,4 +1,4 @@
-<?php require_once('etapa1_backend.php'); ?>
+<?php require_once('backend/etapa1_backend.php'); ?>
 
 
 <!DOCTYPE html>
@@ -9,25 +9,26 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:900,600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="media/css/etapa1.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:900,600&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="bg-light">
 	<!-- Inclusão do HEADER -->
 	<?php require_once('include/header.php');?>
 
 	<div class="container-fluid">
 		<div class="container">
 			
-		
-		
-	
-	<h2 class="text-center">Quais desses sintomas vôce esta sentindo no seu corpo?</h2>
 
-		<?php while($resultadoSintomas = mysqli_fetch_array($querySintomas)) { ?>
-			<div class="card bg-secondary mt-5 divCheck">
+
+
+			<h2 class="text-center mb-5">Quais desses sintomas você esta sentindo no seu corpo?</h2>
+
+			<?php while($resultadoSintomas = mysqli_fetch_array($querySintomas)) { ?>
+			<div class="card bg-secondary divCheck">
 				<label for="check" class="text-center text-white" id="check"><?=$resultadoSintomas['sintoma']?></label>
 				<input type="checkbox" name="check" id="check" class="check">
 			</div>
-		<?php } ?>
+			<?php } ?>
 		</div>
 	</div>
 

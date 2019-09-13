@@ -1,7 +1,7 @@
 <?php
 	
 	// CONEXÃO COM O BANCO DE DADOS
-	requice_once('include/conexao.php');
+	require_once('include/conexao.php');
 
 	//RECUPERAR VIA GET A AREA DO CORPO SELECIONADA
 	if (isset($_GET['area'])) {

@@ -1,3 +1,22 @@
 .check {
 	display: none;
 }
+
+.card{
+	padding: 10px;
+	margin-bottom: 15px !important;
+	margin-top: 30px !important;
+	margin: 280px; 
+	border-radius: 30px;
+}
+label {
+	margin-bottom: .0rem;
+}
+
+h2 {
+	font-size: 40px !important;
+	color: rgb(59, 67, 69) !important;
+	font-weight: 200 !important; 
+	margin-top: 50px !important;
+	text-align: center;
+}

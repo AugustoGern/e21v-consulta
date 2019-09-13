@@ -15,7 +15,7 @@ require_once('include/paginas_restritas.php');
 	<link rel="shortcut icon" type="image/x-icon" href="media/images/4232logo__.ico">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:900,600&display=swap" rel="stylesheet">
 </head>
-<body >
+<body class="bg-light" >
 	<?php require_once('include/header.php'); ?>
 
 	
