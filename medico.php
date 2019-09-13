@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Médico</title>
-	<link rel="stylesheet" type="text/css" href="medico.css">
+	<link rel="stylesheet" type="text/css" href="media/css/medico.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://kit.fontawesome.com/3b47dd4ac9.js"></script>
 
@@ -17,7 +17,7 @@
 		</form>
 	</nav>
 
-	<div style="background-image: url('medico.jpg'); min-height: 390px; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -159px; background-repeat: no-repeat;" class="shadow img">
+	<div style="background-image: url('media/images/medico.jpg'); min-height: 390px; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -159px; background-repeat: no-repeat;" class="shadow img">
 		<div class="text-center my-5 pt-5">
 			<h1 class="h1" style="color: #2256aa;">Em busca do seu Médico?</h1>
 			<h1 class="h1" style="color: #2256aa;">Aqui é o lugar certo!</h1>
