@@ -46,7 +46,10 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="respostas.php">Sintomas</a>
-            </li>   
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="hospital_painel.php">Hospital</a>
+            </li>     
             <li class="nav-item d-block d-sm-none">
               <a class="nav-link" href="index.php">Sair</a>
             </li>   
