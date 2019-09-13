@@ -8,6 +8,12 @@
 		$area = $_GET['area'];
 	}
 
+	if (isset($_GET['step'])) {
+		$step = $_GET['step'];
+	} else {
+		$step = 0;
+	}
+
 	$sql = "SELECT s.sintoma AS sintoma, COUNT(*) FROM tb_ti_sin ti
 				LEFT JOIN tb_sintomas s ON s.id = ti.fk_sin
 				LEFT JOIN tb_tipos_incomodo i ON i.id = ti.fk_ti
@@ -28,8 +34,11 @@
 	}
 
 	$sql .= " GROUP BY ti.fk_sin
-			 ORDER BY COUNT(*) DESC, sintoma ASC
-			 LIMIT 5";
+			 ORDER BY COUNT(*) DESC, sintoma ASC";
+			 
+	if ($step == 0) {
+		$sql .=
+	}		 
 
 		$querySintomas = mysqli_query($con, $sql);
 ?>
