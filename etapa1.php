@@ -17,18 +17,39 @@
 
 	<div class="container-fluid">
 		<div class="container">
-			
-
-
-
 			<h2 class="text-center mb-5">Quais desses sintomas você esta sentindo no seu corpo?</h2>
 
 			<?php while($resultadoSintomas = mysqli_fetch_array($querySintomas)) { ?>
-			<div class="card bg-secondary divCheck">
+			<div class="card cardd bg-secondary divCheck">
 				<label for="check" class="text-center text-white" id="check"><?=$resultadoSintomas['sintoma']?></label>
 				<input type="checkbox" name="check" id="check" class="check">
+
 			</div>
 			<?php } ?>
+			<div class="row mb-5 mt-5">
+				<div class="col-4">
+				<a  class="navbar-brand card" href="consulta.php" style=" border-radius: 100px;">
+					<i class="fas fa-angle-left nav-link text-center" 
+					data-whatever="@fat">   voltar</i>
+				</a>
+				</div>
+
+				<div class="col-4">
+				<a class="navbar-brand card p-1" href="#" style=" border-radius: 100px;">
+					<i class="fas fa-angle-right nav-link text-center" 
+					data-whatever="@fat">   mais opções</i>
+				</a>
+				</div>
+
+			
+				<div class="col-4">
+				<a  class="navbar-brand card p-1" href="#" style=" border-radius: 100px;">
+					<i class="fas fa-angle-double-right nav-link text-center" 
+					data-whatever="@fat">   próxima etapa</i>
+				</a>
+			</div>
+				
+			</div>
 		</div>
 	</div>
 
@@ -42,3 +63,5 @@
 	<script src="media/js/etapa1.js"></script>
 </body>
 </html>
+
+
