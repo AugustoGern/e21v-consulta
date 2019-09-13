@@ -9,19 +9,11 @@
 
 </head>
 <body>
-	<nav class="navbar navbar-light bg-light">
-		<h6 class="navbar-brand text-primary">Digite o nome do seu Médico</h6>
-		<form class="form-inline">
-			<input class="form-control mr-sm-2" type="search" placeholder="Digite" aria-label="Search">
-			<button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Buscar</button>
-		</form>
-	</nav>
 
-	<div style="background-image: url('media/images/medico.jpg'); min-height: 390px; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -159px; background-repeat: no-repeat;" class="shadow img">
-		<div class="text-center my-5 pt-5">
-			<h1 class="h1" style="color: #2256aa;">Em busca do seu Médico?</h1>
-			<h1 class="h1" style="color: #2256aa;">Aqui é o lugar certo!</h1>
-		</div> 
+	<?php require_once('include/header.php'); ?>
+
+	<div style="background-image: url('media/images/medico.jpg'); min-height: 330px; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -250px; background-repeat: no-repeat;" class="shadow img">
+		
 	</div>
 
 	<div class="container-fluid ">
@@ -54,12 +46,18 @@
 					<div class="card-body">
 						<div class="row">
 							<div class="col-4">
-								<img src="medico1.jpg" class="img-fluid">
+								<img src="media/images/mdc-22.jpg" class="img-fluid img_medico">
 							</div>
 							<div class="col-8 p-0">
 								<div>
 									<i class="fas fa-user-md"></i>
 									<strong>Especialidade:</strong> Ortopedista
+									<br>
+									<i class="fas fa-phone-alt"></i>
+									<strong>Telefone:</strong> (47) 994514478
+									<br>
+									<i class="fas fa-at"></i>
+									<strong>E-mail:</strong> mourão_26K8@outlook.com
 									<br>
 									<i class="fas fa-hospital"></i>
 									<strong>Local de Atuação:</strong> Hospital Santa Isabel
@@ -90,7 +88,7 @@
 
 
 
-
+	<?php require_once('include/footer.php'); ?>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
