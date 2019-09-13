@@ -13,6 +13,19 @@ label {
 	margin-bottom: .0rem;
 }
 
+label:hover {
+    cursor: pointer;
+    
+}
+
+
+
+.card:hover {
+    cursor: pointer;
+    background: rgb(40, 167, 69) !important;
+    color: #000 !important;
+}
+
 h2 {
 	font-size: 40px !important;
 	color: rgb(59, 67, 69) !important;
