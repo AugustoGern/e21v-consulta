@@ -28,9 +28,8 @@
 	}
 
 	$sql .= " GROUP BY ti.fk_sin
-			 ORDER BY COUNT(*) DESC
+			 ORDER BY COUNT(*) DESC, sintoma ASC
 			 LIMIT 5";
-
 
 		$querySintomas = mysqli_query($con, $sql);
 ?>
