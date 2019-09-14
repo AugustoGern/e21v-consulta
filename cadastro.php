@@ -11,6 +11,7 @@
 	<script src="https://kit.fontawesome.com/3b47dd4ac9.js"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="shortcut icon" type="image/x-icon" href="media/images/4232logo__.ico">
+	<link rel="stylesheet" type="text/css" href="media/css/media.css">
 </head>
 <body >
 
@@ -19,7 +20,7 @@
 
 
 	<!-- =========================================================================== -->
-	<div style="background-image: url('media/images/mdc-18.jpg'); min-height: 360px; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -118px; background-repeat: no-repeat;" class="shadow">
+	<div class="shadow img_sobre" style="background-image: url('media/images/fundo.jpg');  min-height: 320px; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -184px; background-repeat: no-repeat;">
 		<div class="text-center my-5">
 			
 		</div> 
@@ -28,8 +29,8 @@
 	<!-- CONTEÚDO DA PÁGINA -->
 
 	<div class="container-fluid">
-		<div class="container" style="margin-top: -200px;">
-			<h1 class="text-center pt-3">Edição</h1>
+		<div class="container" style="margin-top: -190px;">
+			<h1 class="text-center" style="font-size: 50px;color: rgb(59, 67, 69); font-weight: 200; margin-top: 50px;">Edição</h1>
 			<div class="card mt-3 mb-3" >
 				<div class="card-body">
 					<form method="post" action="" name="formCadastro">
