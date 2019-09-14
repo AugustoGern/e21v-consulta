@@ -19,7 +19,7 @@ if (!isset($_SESSION['logado']) || $_SESSION['logado'] == false) {
 			// Criar a sessão do usuário
 				$_SESSION['logado'] = true;
 				$_SESSION['id_usuario'] = $resultadoLogin['id'];
-				$_SESSION['nome_usuario'] = $resultadoLogin['nome'];
+				$_SESSION['nome_usuario'] = $resultadoLogin['nome_completo'];
 				$_SESSION['nivel_acesso'] = $resultadoLogin['nivel_acesso'];
 
 				header('Location: index.php');

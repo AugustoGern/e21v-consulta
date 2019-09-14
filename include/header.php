@@ -51,14 +51,17 @@ $resultado = mysqli_fetch_array($queryEdição);
 			<?php if (isset($_SESSION['logado']) && $_SESSION['logado'] == true) { ?>
 
 			<a class="navbar-brand" href="cadastro.php?id=<?=$resultado['id']?>">
-				<i class="fas fa-user nav-link ml-2" 
-				data-whatever="@fat" ></i>
+				<i class="fas fa-user nav-link ml-2 p-0 text-success" 
+				data-whatever="@fat"></i>
 			</a>
 
-			<?=$_SESSION['nome_usuario']?>
+			<div class="text-dark">
+				<a class="navbar-brand"> Olá, <?=$_SESSION['nome_usuario']?></a>
+			</div>
+
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item">
-					<a href="backend/logoff.php" class="nav-link "> Sair</a>
+					<a href="backend/logoff.php" class="nav-link ml-4 "> Sair</a>
 				</li>
 			</ul>
 
@@ -108,9 +111,9 @@ require_once('backend/login.php');
 				<input type="submit" class="btn" name="botao_login" id="botao_login" value="login"  required="">    
 			</form>
 			<?php if (isset($alerta)) { ?>
-				<div class="alert alert-<?=$alerta['tipo']?>">
-					<?=$alerta['mensagem']?>
-				</div>
+			<div class="alert alert-<?=$alerta['tipo']?>">
+				<?=$alerta['mensagem']?>
+			</div>
 			<?php } ?>
 		</div>
 	</div>
