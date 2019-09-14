@@ -1,3 +1,18 @@
+<?php 
+	require_once('include/conexao.php');
+	require_once('backend/painel_medico.php');
+	error_reporting(0);
+ 
+	// PEGAR AS AREAS MEDICAS CADASTRADAS
+	$sql = "SELECT * FROM tb_area_medica";
+	$queryAreas = mysqli_query($con, $sql);
+
+	// PEGAR OS HOSPITAIS CADASTRADOS
+	$sql = "SELECT * FROM tb_hospital";
+	$queryHospital = mysqli_query($con, $sql);
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,17 +43,14 @@
 					<hr>
 					<h5>Especialidade</h5>
 					<form>
+						
 						<select class="form-control mr-sm-2" type="select" > 
-							<option value="0">--</option>
-							<option value="1">Neurologista</option>
-							<option value="2">Ortopedista</option>
-							<option value="3">Fisioterapeuta</option>
-							<option value="4">Cardiologista</option>
-							<option value="5">Otorrinolaringologista</option>
-							<option value="6">Pneumologista</option>
-							<option value="7">Urologista</option>
-							<option value="8">Angiologista</option>
+							<?php while($resultadoAreas = mysqli_fetch_array($queryAreas)) { ?>
+								<option value="<?=$resultadoAreas['id']?>" <?= ($resultadoUsuario['fk_am']==$resultadoAreas['id']) ? 'selected' : ''?> ><?=$resultadoAreas['area_medica']?></option>
+							<?php } ?>
+							
 						</select>
+						
 					</form>
 					<hr>
 				</div>
