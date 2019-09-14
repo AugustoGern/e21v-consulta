@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>Médico</title>
 	<link rel="stylesheet" type="text/css" href="media/css/medico.css">
+	<link rel="stylesheet" type="text/css" href="media/css/media.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://kit.fontawesome.com/3b47dd4ac9.js"></script>
 
@@ -12,14 +13,14 @@
 
 	<?php require_once('include/header.php'); ?>
 
-	<div style="background-image: url('media/images/medico.jpg'); min-height: 330px; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -250px; background-repeat: no-repeat;" class="shadow img">
+	<div style="background-image: url('media/images/medico.jpg'); min-height: 330px !important; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -250px; background-repeat: no-repeat;" class="shadow img">
 		
 	</div>
 
 	<div class="container-fluid ">
 		<div class="container">
-			<div class="row">
-				<div class="col-3 mt-5 ">
+			<div class="row ">
+				<div class="col-lg-3 col-sm-12 mt-5 ">
 					<h5>Informe o profissional desejado</h5>
 					<form>
 						<input class="form-control mr-sm-2 mt-2" type="search" placeholder="Digite Aqui..."	>
@@ -41,7 +42,7 @@
 					</form>
 					<hr>
 				</div>
-				<div class="card col-9 mt-5 p-0">
+				<div class="card col-lg-9 col-sm-12 mt-5 p-0">
 					<h6 class="card-header"><strong>Dr.Sergio Mouro</strong></h6>
 					<div class="card-body">
 						<div class="row">
