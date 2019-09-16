@@ -1,15 +1,23 @@
 <?php 
-	require_once('include/conexao.php');
-	require_once('backend/painel_medico.php');
-	error_reporting(0);
- 
+require_once('include/conexao.php');
+// require_once('backend/painel_medico.php');
+error_reporting(0);
+
+	//PEGAR INFOMAÇÕES DO MEDICO
+$sql = "SELECT m.*, a.area_medica AS area, h.nome AS hospital FROM tb_medicos m
+JOIN tb_area_medica a ON a.id = m.fk_am
+JOIN tb_hospital h ON h.id = m.fk_hospital";
+
+$queryMedico = mysqli_query($con, $sql);
+
 	// PEGAR AS AREAS MEDICAS CADASTRADAS
-	$sql = "SELECT * FROM tb_area_medica";
-	$queryAreas = mysqli_query($con, $sql);
+$sql = "SELECT * FROM tb_area_medica";
+$queryAreas = mysqli_query($con, $sql);
 
 	// PEGAR OS HOSPITAIS CADASTRADOS
-	$sql = "SELECT * FROM tb_hospital";
-	$queryHospital = mysqli_query($con, $sql);
+$sql = "SELECT * FROM tb_hospital";
+$queryHospital = mysqli_query($con, $sql);
+
 ?>
 
 
@@ -28,7 +36,7 @@
 
 	<?php require_once('include/header.php'); ?>
 
-	<div style="background-image: url('media/images/medico.jpg'); min-height: 330px !important; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -250px; background-repeat: no-repeat;" class="shadow img">
+	<div  class="shadow img" style="background-image: url('media/images/medico.jpg'); min-height: 330px !important; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -250px; background-repeat: no-repeat;">
 		
 	</div>
 
@@ -43,55 +51,58 @@
 					<hr>
 					<h5>Especialidade</h5>
 					<form>
-						
 						<select class="form-control mr-sm-2" type="select" > 
+							
 							<?php while($resultadoAreas = mysqli_fetch_array($queryAreas)) { ?>
 								<option value="<?=$resultadoAreas['id']?>" <?= ($resultadoUsuario['fk_am']==$resultadoAreas['id']) ? 'selected' : ''?> ><?=$resultadoAreas['area_medica']?></option>
-							<?php } ?>
-							
+							<?php } ?>	
+
 						</select>
-						
 					</form>
 					<hr>
+					<button class="btn btn-success">Pesquisar</button>
 				</div>
-				<div class="card col-lg-9 col-sm-12 mt-5 p-0">
-					<h6 class="card-header"><strong>Dr.Sergio Mouro</strong></h6>
-					<div class="card-body">
-						<div class="row">
-							<div class="col-4">
-								<img src="media/images/mdc-22.jpg" class="img-fluid img_medico">
-							</div>
-							<div class="col-8 p-0">
-								<div>
-									<i class="fas fa-user-md"></i>
-									<strong>Especialidade:</strong> Ortopedista
-									<br>
-									<i class="fas fa-phone-alt"></i>
-									<strong>Telefone:</strong> (47) 994514478
-									<br>
-									<i class="fas fa-at"></i>
-									<strong>E-mail:</strong> mourão_26K8@outlook.com
-									<br>
-									<i class="fas fa-hospital"></i>
-									<strong>Local de Atuação:</strong> Hospital Santa Isabel
-									<p class="mt-2">
-										<button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-											Mais informações
-										</button>
-									</p>
-									<div class="collapse" id="collapseExample">
-										<div class="card card-body">
-											<strong>Formação:</strong>
-											<li>Especialização: Ortopedia e Traumatologia. 2002</li>
-											<li>ATLS. American College of Surgeons. 2006</li>
-											<li>Médico Assistente, atuando na área de Ortopedia. 2007/-2016</li>
+				
+				<?php while ($resultadoMedico = mysqli_fetch_array($queryMedico)) { ?>
+					<div class="card col-lg-9 col-sm-12 mt-5 p-0">
+						<h6 class="card-header"><strong><?=$resultadoMedico['nome']?></strong></h6>
+						<div class="card-body">
+							<div class="row">
+								<div class="col-4">
+									<img src="media/images/mdc-22.jpg" class="img-fluid img_medico">
+								</div>
+								<div class="col-8 p-0">
+									<div>
+										<i class="fas fa-user-md"></i>
+										<strong>Especialidade:</strong> <?=$resultadoMedico['area']?>
+										<br>
+										<i class="fas fa-phone-alt"></i>
+										<strong>Telefone:</strong> <?=$resultadoMedico['telefone']?>
+										<br>
+										<i class="fas fa-at"></i>
+										<strong>E-mail:</strong> <?=$resultadoMedico['email']?>
+										<br>
+										<i class="fas fa-hospital"></i>
+										<strong>Local de Atuação:</strong> <?=$resultadoMedico['hospital']?>
+										<p class="mt-2">
+											<button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+												Mais informações
+											</button>
+										</p>
+										<div class="collapse" id="collapseExample">
+											<div class="card card-body">
+												<strong>Formação:</strong>
+												<li>Especialização: Ortopedia e Traumatologia. 2002</li>
+												<li>ATLS. American College of Surgeons. 2006</li>
+												<li>Médico Assistente, atuando na área de Ortopedia. 2007/-2016</li>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
+				<?php } ?>
 			</div>
 		</div>		
 	</div>
