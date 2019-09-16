@@ -28,6 +28,16 @@
 		padding-top: 563px !important;
 		margin-top: -423px !important;
 		background-repeat: no-repeat;
+	}
+
+	.img_p_medico{
+		min-height: 100px !important;
+		min-width: 100% !important; 
+		background-size: 200% !important; 
+		background-position: center center;
+		padding-top: 365px !important;
+		margin-top: -420px !important;
+		background-repeat: no-repeat;
 
 	}
 
