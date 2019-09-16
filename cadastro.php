@@ -55,7 +55,7 @@
 						<label for="confSenha">Confirmar Senha: <strong class="text-danger"> *</strong></label>
 						<input type="password" name="confSenha" id="confSenha" class="form-control"><br>
 
-						<input type="submit" name="cadastro" id="cadastro" class="btn btn-primary " value="   Editar   " disabled="">
+						<input type="submit" name="cadastro" id="cadastro" class="btn btn-primary " value="   Editar   ">
 						<input type="submit" name="btnExcluir" value="   Excluir   " class="btn btn-danger">
 
 					</form>

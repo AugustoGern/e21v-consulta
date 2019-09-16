@@ -37,8 +37,12 @@
 			 ORDER BY COUNT(*) DESC, sintoma ASC";
 			 
 	if ($step == 0) {
-		$sql .=
-	}		 
+		$sql .= " LIMIT 5";
+	} else if ($step == 1) {
+		$sql .= " LIMIT 6,5";
+	} else if ($step == 2) {
+		$sql .= " LIMIT 11,5";
+	}
 
 		$querySintomas = mysqli_query($con, $sql);
 ?>
