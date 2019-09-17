@@ -27,17 +27,11 @@
 		$email = $_POST['email'];
 		$areaMedica = $_POST['area_medica'];
 		$hospital = $_POST['hospital'];
-<<<<<<< HEAD
 		$fomacao_1 = $_POST[ 'fomacao_1'];
 		$fomacao_2 = $_POST[ 'fomacao_2'];
 		$fomacao_3 = $_POST[ 'fomacao_3'];
 		$nome_imagem = $_POST[ 'nome_imagem'];
 
-=======
-		$fomacao_1 = $_POST[ 'formacao_1'];
-		$fomacao_2 = $_POST[ 'formacao_2'];
-		$fomacao_3 = $_POST[ 'formacao_3'];
->>>>>>> 9696627a117fe84c72f1cc59f4415d2179179ef1
 
 		// Verifica se é edição ou cadastro de usuario
 		if (isset($id_usuario)) {
