@@ -1,3 +1,5 @@
+<?php require_once ('include/paginas_restritas.php');  ?>
+
 <html>
 <head>
   <meta charset="utf-8">

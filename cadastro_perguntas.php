@@ -1,6 +1,7 @@
 <?php 
 	require_once('include/conexao.php');
 	require_once('backend/painel_perguntas.php');
+	require_once ('include/paginas_restritas.php'); 
 	error_reporting(0);
 
 	// PEGAR OS SINTOMAS

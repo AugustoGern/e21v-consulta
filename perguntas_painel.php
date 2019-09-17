@@ -1,5 +1,5 @@
 <?php 
-  
+  require_once ('include/paginas_restritas.php'); 
   require_once('include/conexao.php');
   
   //Junta as informações das perguntas

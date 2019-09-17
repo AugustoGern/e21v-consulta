@@ -1,5 +1,5 @@
 <?php 
-
+require_once ('include/paginas_restritas.php'); 
 require_once('include/conexao.php');
 
   //Junta as informações das perguntas
@@ -78,13 +78,13 @@ $queryListagem = mysqli_query($con, $sql);
               </thead>
               <tbody>
                 <?php while($resultado = mysqli_fetch_array($queryListagem)) { ?>
-                  <tr>
-                    <th><?=$resultado['id']?></th>
-                    <td><?=$resultado['sintoma']?></td>
-                    <td style="float: right;">
-                      <a href="cadastro_sintomas.php?id=<?=$resultado['id']?>" class="btn btn-primary btn-sm">   Editar   </a>
-                    </td>
-                  </tr>
+                <tr>
+                  <th><?=$resultado['id']?></th>
+                  <td><?=$resultado['sintoma']?></td>
+                  <td style="float: right;">
+                    <a href="cadastro_sintomas.php?id=<?=$resultado['id']?>" class="btn btn-primary btn-sm">   Editar   </a>
+                  </td>
+                </tr>
                 <?php } ?>
               </tbody>
             </table>
