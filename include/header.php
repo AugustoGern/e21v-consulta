@@ -34,7 +34,12 @@ $resultado = mysqli_fetch_array($queryEdição);
 				<a class="nav-link" href="consulta.php">Consultar</a>
 			</li>
 			<?php } ?> 
-			<!-- ===================================== -->
+			<!-- ===============Medico============= -->
+			<?php if (isset($_SESSION['logado']) && $_SESSION['logado'] == true) { ?>
+			<li class="nav-item">
+				<a class="nav-link" href="medico.php">Médico</a>
+			</li>
+			<?php } ?> 
 
 		</ul>
 		<form class="form-inline my-2 my-lg-0 mr-5">

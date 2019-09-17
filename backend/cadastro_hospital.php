@@ -35,7 +35,7 @@ if (isset($_POST['btnSalvar'])) {
 	}
 
 	if (mysqli_query($con, $sql)) {
-		header('Location: profissional.php');
+		header('Location: hospital_painel.php');
 	} else {
 		die("SE FODEU");
 	}

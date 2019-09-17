@@ -38,11 +38,18 @@
 			 
 	if ($step == 0) {
 		$sql .= " LIMIT 5";
-	} else if ($step == 1) {
-		$sql .= " LIMIT 6,5";
-	} else if ($step == 2) {
-		$sql .= " LIMIT 11,5";
+	} else {
+		$sql .= " LIMIT ".(($step*5) + 1).",5";
 	}
 
 		$querySintomas = mysqli_query($con, $sql);
+
+
+	// GERAÇÃO DA VARIAVEL STEP
+	if ($step == 0) {
+		$urlVoltar = "consulta.php";
+	} else {
+		$urlVoltar = "etapa1.php?area=".$area."&step=". ($step - 1);
+	}
+
 ?>

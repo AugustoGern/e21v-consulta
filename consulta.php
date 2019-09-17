@@ -1,5 +1,5 @@
 <?php
-	require_once('include/paginas_restritas.php');
+require_once('include/paginas_restritas.php');
 ?>
 
 <!DOCTYPE html>
@@ -7,17 +7,17 @@
 <head>
 	<title>Consulta</title>
 </head>
-<link rel="stylesheet" type="text/css" href="media/css/index.css">
+<link rel="stylesheet" type="text/css" href="media/css/sobre.css">
 <link rel="stylesheet" type="text/css" href="media/css/media.css">
 <link rel="shortcut icon" type="image/x-icon" href="media/images/4232logo__.ico">
 <script src="https://kit.fontawesome.com/3b47dd4ac9.js"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 <style type="text/css">
-	
-	area:focus {
-		outline: none !important;	
-	}
+
+area:focus {
+	outline: none !important;	
+}
 </style>
 <body>
 
@@ -27,15 +27,16 @@
 		<div class="text-center my-5"></div> 
 	</div> 
 
-
-	<h1 class="text-center"  style="margin-top: -100px;">Clique exatamente na região do desconforto</h1>
+	<div class="container">
+		<h1 class="text-center" id="batata" style="margin-top: -110px !important;">Clique exatamente na região do desconforto</h1>
+	</div>
 
 	<div class="container-fluid">
 		<div class="container">
 			<div class="row">
 				<div class="col">	
 					<div class="card" style="background-color: transparent; border: transparent;">
-						<div class="card-body ml-5">
+						<div class="card-body ml-5 mt-5">
 							<div class="col-sm-6"> 
 
 
@@ -59,33 +60,33 @@
 					</div>
 				</div>
 
-		
-				
-					<div class="card" style="background-color: transparent; border: transparent;">
-						<div class="card-body p-5 mr-5">
-							<div class="col-sm-6">
 
-								<img src="media/images/musculo_2.png" usemap="#parte_frontal" >
-								<map name="parte_frontal" id="parte_frontal">
-									<!-- cabeça -->
-									<area alt="" title="" href="etapa1.php?area=cabeça" shape="poly" coords="149,102,152,98,152,87,150,74,150,66,146,67,142,59,141,50,141,45,145,45,145,39,146,29,147,21,152,15,158,9,164,5,173,3,181,3,188,5,194,8,200,13,203,19,206,26,207,36,207,45,210,44,212,49,212,53,211,57,208,65,202,70,202,77,200,81,198,84,199,89,198,94,199,99,202,101" />
-									<!-- braço -->
-									<area alt="" title="" href="etapa1.php?area=braco" shape="poly" coords="238,219,236,212,234,203,234,194,235,185,237,177,238,165,235,159,233,152,232,145,232,140,235,133,239,126,242,121,250,125,262,136,269,160,269,187,272,202,278,226,284,244,289,267,292,291,295,306,301,328,304,332,311,335,318,340,322,345,328,351,336,357,339,358,338,361,336,364,331,364,326,362,318,356,319,360,322,367,327,375,332,387,336,395,332,399,328,398,318,383,322,394,324,402,321,406,317,403,305,379,306,389,307,399,305,404,300,399,294,388,293,393,290,394,287,393" />
-									<!-- outro braço -->
-									<area alt="" title="" href="etapa1.php?area=braco" shape="poly" coords="119,216,120,200,117,182,116,168,116,158,111,142,105,139,98,132,89,142,85,158,85,178,83,195,79,214,76,230,70,248,65,265,64,283,61,308,56,327,52,336,37,344,32,354,24,359,18,363,19,368,27,368,33,367,34,371,31,376,27,385,23,393,21,400,25,403,30,402,38,392,35,401,35,408,39,411,53,382,53,391,52,402,53,407,57,408,65,391,66,398,71,397" />
-									<!-- tronco -->
-									<area alt="" title="" href="etapa1.php?area=tronco" shape="poly" coords="118,159,234,159,243,310,126,314" />
-									<!-- perna -->
-									<area alt="" title="" href="etapa1.php?area=perna" shape="poly" coords="191,368,209,356,229,349,240,344,249,339,252,378,251,408,246,435,239,458,235,484,233,511,236,533,233,566,226,599,218,633,216,655,213,669,219,677,224,684,221,691,211,690,202,693,192,693,188,692,185,690,187,412,187,394" />
-									<!-- outra perna -->
-									<area alt="" title="" href="etapa1.php?area=perna" shape="poly" coords="183,370,160,355,139,345,123,337,121,350,119,387,120,411,127,450,132,494,131,518,131,533,128,540,128,563,131,583,135,599,139,614,141,637,144,656,146,671,141,674,143,679,140,679,137,681,137,687,140,692,148,693,157,695,165,693,171,693,175,684" />
-								</map>
-							</div>
+				
+				<div class="card" style="background-color: transparent; border: transparent;">
+					<div class="card-body p-5 mr-5 mt-5 ">
+						<div class="col-sm-6">
+
+							<img src="media/images/musculo_2.png" usemap="#parte_frontal" >
+							<map name="parte_frontal" id="parte_frontal">
+								<!-- cabeça -->
+								<area alt="" title="" href="etapa1.php?area=cabeca" shape="poly" coords="149,102,152,98,152,87,150,74,150,66,146,67,142,59,141,50,141,45,145,45,145,39,146,29,147,21,152,15,158,9,164,5,173,3,181,3,188,5,194,8,200,13,203,19,206,26,207,36,207,45,210,44,212,49,212,53,211,57,208,65,202,70,202,77,200,81,198,84,199,89,198,94,199,99,202,101" />
+								<!-- braço -->
+								<area alt="" title="" href="etapa1.php?area=braco" shape="poly" coords="238,219,236,212,234,203,234,194,235,185,237,177,238,165,235,159,233,152,232,145,232,140,235,133,239,126,242,121,250,125,262,136,269,160,269,187,272,202,278,226,284,244,289,267,292,291,295,306,301,328,304,332,311,335,318,340,322,345,328,351,336,357,339,358,338,361,336,364,331,364,326,362,318,356,319,360,322,367,327,375,332,387,336,395,332,399,328,398,318,383,322,394,324,402,321,406,317,403,305,379,306,389,307,399,305,404,300,399,294,388,293,393,290,394,287,393" />
+								<!-- outro braço -->
+								<area alt="" title="" href="etapa1.php?area=braco" shape="poly" coords="119,216,120,200,117,182,116,168,116,158,111,142,105,139,98,132,89,142,85,158,85,178,83,195,79,214,76,230,70,248,65,265,64,283,61,308,56,327,52,336,37,344,32,354,24,359,18,363,19,368,27,368,33,367,34,371,31,376,27,385,23,393,21,400,25,403,30,402,38,392,35,401,35,408,39,411,53,382,53,391,52,402,53,407,57,408,65,391,66,398,71,397" />
+								<!-- tronco -->
+								<area alt="" title="" href="etapa1.php?area=tronco" shape="poly" coords="118,159,234,159,243,310,126,314" />
+								<!-- perna -->
+								<area alt="" title="" href="etapa1.php?area=perna" shape="poly" coords="191,368,209,356,229,349,240,344,249,339,252,378,251,408,246,435,239,458,235,484,233,511,236,533,233,566,226,599,218,633,216,655,213,669,219,677,224,684,221,691,211,690,202,693,192,693,188,692,185,690,187,412,187,394" />
+								<!-- outra perna -->
+								<area alt="" title="" href="etapa1.php?area=perna" shape="poly" coords="183,370,160,355,139,345,123,337,121,350,119,387,120,411,127,450,132,494,131,518,131,533,128,540,128,563,131,583,135,599,139,614,141,637,144,656,146,671,141,674,143,679,140,679,137,681,137,687,140,692,148,693,157,695,165,693,171,693,175,684" />
+							</map>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 	<?php require_once('include/footer.php'); ?>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

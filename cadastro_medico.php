@@ -57,6 +57,16 @@
 							<?php } ?>									
 						</select>
 
+						<label for="formacao_1" class="pt-4">Formação 1</label>
+						<input type="text" name="formacao_1" id="formacao_1" class="form-control" placeholder="Especialização" value="<?=$resultadoUsuario['formacao_1']?>">
+
+						<label for="formacao_2" class="pt-4">Formação 2</label>
+						<input type="text" name="formacao_2" id="formacao_2" class="form-control" placeholder="Especialização" value="<?=$resultadoUsuario['formacao_2']?>">
+
+						<label for="formacao_3" class="pt-4">Formação 3</label>
+						<input type="text" name="formacao_3" id="formacao_3" class="form-control" placeholder="Especialização" value="<?=$resultadoUsuario['formacao_3']?>">
+
+
 						<input type="submit" name="btnSalvar" value="Salvar" class="btn btn-success mt-4">
 						<input type="submit" name="btnExcluir" value="Excluir" class="btn btn-danger mt-4">
 						<a href="profissional.php" class="btn btn-dark mt-4">Voltar</a>

@@ -2,13 +2,14 @@
 
 /* XS */
 @media(max-width: 576px) {
+
 	.img{
 		min-height: 100px !important;
-		min-width: 100% !important; 
-		background-size: 200% !important; 
+		min-width: 100% !important;
+		background-size: 220% !important;
 		background-position: center center;
-		padding-top: 365px !important;
-		margin-top: -420px !important;
+		padding-top: 480px !important;
+		margin-top: -535px !important;
 		background-repeat: no-repeat;
 	}
 
@@ -22,11 +23,21 @@
 
 	.img_sobre{
 		min-height: 100px !important;
-		min-width: 100% !important; 
-		background-size: 200% !important; 
+		min-width: 100% !important;
+		background-size: 205% !important;
 		background-position: center center;
-		padding-top: 563px !important;
-		margin-top: -423px !important;
+		padding-top: 650px !important;
+		margin-top: -509px !important;
+		background-repeat: no-repeat;
+	}
+
+	.img_p_medico{
+		min-height: 100px !important;
+		min-width: 100% !important;
+		background-size: 320% !important;
+		background-position: center center;
+		padding-top: 659px !important;
+		margin-top: -519px !important;
 		background-repeat: no-repeat;
 
 	}
