@@ -17,6 +17,7 @@ if (!isset($_SESSION['logado']) || $_SESSION['logado'] == false) {
 
 		if ($resultadoLogin != null) {
 			// Criar a sessão do usuário
+				$_SESSION['opcao_selec'] = array();
 				$_SESSION['logado'] = true;
 				$_SESSION['id_usuario'] = $resultadoLogin['id'];
 				$_SESSION['nome_usuario'] = $resultadoLogin['nome_completo'];

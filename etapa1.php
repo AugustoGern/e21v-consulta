@@ -24,9 +24,9 @@
 			<h2 class="text-center mb-5">Quais destes sintomas você esta sentindo no seu corpo?</h2>
 
 			<?php while($resultadoSintomas = mysqli_fetch_array($querySintomas)) { ?>
-			<div class="card cardd bg-secondary divCheck <?=(!in_array($resultadoSintomas['id'], $_SESSION['opcao_selec'])) ? "bg-success" : '' ?>" data-id="<?=$resultadoSintomas['id']?>">
+			<div class="card cardd bg-secondary divCheck <?=(in_array($resultadoSintomas['id'], $_SESSION['opcao_selec'])) ? "bg-success" : '' ?>" data-id="<?=$resultadoSintomas['id']?>">
 				<label for="check" class="text-center text-white" id="check"><?=$resultadoSintomas['sintoma']?></label>
-				<input type="checkbox" name="check" id="check" class="check" <?=(!in_array($resultadoSintomas['id'], $_SESSION['opcao_selec'])) ? "checked" : '' ?>>
+				<input type="checkbox" name="check" id="check" class="check" <?=(in_array($resultadoSintomas['id'], $_SESSION['opcao_selec'])) ? "checked" : '' ?>>
 
 			</div>
 			<?php } ?>
