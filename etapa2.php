@@ -1,10 +1,10 @@
-<?php require_once('backend/etapa1_backend.php'); 
+<?php //require_once('backend/etapa2_backend.php'); 
 	  require_once('include/paginas_restritas.php');
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Etapa 1</title>
+	<title>Etapa 2</title>
 	<script src="https://kit.fontawesome.com/3b47dd4ac9.js"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:900,600&display=swap" rel="stylesheet">
@@ -17,7 +17,8 @@
 
 	<div class="container-fluid">
 		<div class="container">
-			<h2 class="text-center mb-5">Quais destes sintomas você esta sentindo no seu corpo?</h2>
+			<h2 class="text-center mb-5">De acordo com os sintomas selecionados na etapa anterior, separamos novos sintomas que você talvez possa estar sentindo, poderia nos informar quais?</h2>
+
 			<?php while($resultadoSintomas = mysqli_fetch_array($querySintomas)) { ?>
 			<div class="card cardd bg-secondary divCheck <?=(in_array($resultadoSintomas['id'], $_SESSION['opcao_selec'])) ? "bg-success" : '' ?>" data-id="<?=$resultadoSintomas['id']?>">
 				<label for="check" class="text-center text-white" id="check"><?=$resultadoSintomas['sintoma']?></label>
@@ -43,7 +44,7 @@
 			<?php } ?>
 
 				<div class="col-4">
-				<a  class="navbar-brand card p-1" href="etapa2.php?area=<?=$area?>" style=" border-radius: 100px;">
+				<a  class="navbar-brand card p-1" href="#" style=" border-radius: 100px;">
 					<i class="fas fa-angle-double-right nav-link text-center" 
 					data-whatever="@fat">   próxima etapa</i>
 				</a>
