@@ -20,7 +20,6 @@ $queryHospital = mysqli_query($con, $sql);
 
 ?>
 
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,87 +29,88 @@ $queryHospital = mysqli_query($con, $sql);
 	<link rel="stylesheet" type="text/css" href="media/css/media.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://kit.fontawesome.com/3b47dd4ac9.js"></script>
-
 </head>
 <body>
 
 	<?php require_once('include/header.php'); ?>
 
-	<div  class="shadow img" style="background-image: url('media/images/medico.jpg'); min-height: 330px !important; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -250px; background-repeat: no-repeat;">
-		
+	<div  class="shadow img_p_medico" style="background-image: url('media/images/medico.jpg'); min-height: 330px !important; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -250px; background-repeat: no-repeat;">
 	</div>
 
 	<div class="container-fluid ">
-		<div class="container">
+		<div class="container ">
 			<div class="row ">
 				<div class="col-lg-3 col-sm-12 mt-5 ">
-					<h5>Informe o profissional desejado</h5>
-					<form>
-						<input class="form-control mr-sm-2 mt-2" type="search" placeholder="Digite Aqui..."	>
-					</form>
-					<hr>
-					<h5>Especialidade</h5>
-					<form>
-						<select class="form-control mr-sm-2" type="select" > 
-							
-							<?php while($resultadoAreas = mysqli_fetch_array($queryAreas)) { ?>
-								<option value="<?=$resultadoAreas['id']?>" <?= ($resultadoUsuario['fk_am']==$resultadoAreas['id']) ? 'selected' : ''?> ><?=$resultadoAreas['area_medica']?></option>
-							<?php } ?>	
-
-						</select>
-					</form>
-					<hr>
-					<button class="btn btn-success">Pesquisar</button>
+					<div class="row">
+						<div class="col-12">			
+							<h5>Informe o profissional desejado</h5>
+							<form>
+								<input class="form-control mr-sm-2 mt-2" type="search" placeholder="Digite Aqui..."	>
+							</form>
+							<hr>
+							<h5>Especialidade</h5>
+							<form>
+								<select class="form-control mr-sm-2" type="select" > 
+									<?php while($resultadoAreas = mysqli_fetch_array($queryAreas)) { ?>
+									<option value="<?=$resultadoAreas['id']?>" <?= ($resultadoUsuario['fk_am']==$resultadoAreas['id']) ? 'selected' : ''?> ><?=$resultadoAreas['area_medica']?></option>
+									<?php } ?>	
+								</select>
+							</form>
+							<hr>
+							<button class="btn btn-success">Pesquisar</button>
+						</div>
+					</div>
 				</div>
-				
-				<?php while ($resultadoMedico = mysqli_fetch_array($queryMedico)) { ?>
-					<div class="card col-lg-9 col-sm-12 mt-5 p-0">
-						<h6 class="card-header"><strong><?=$resultadoMedico['nome']?></strong></h6>
-						<div class="card-body">
-							<div class="row">
-								<div class="col-4">
-									<img  src="<?=$resultadoMedico['nome_imagem']?>" class="img-fluid img_medico">
-								</div>
-								<div class="col-8 p-0">
-									<div>
-										<i class="fas fa-user-md"></i>
-										<strong>Especialidade:</strong> <?=$resultadoMedico['area']?>
-										<br>
-										<i class="fas fa-phone-alt"></i>
-										<strong>Telefone:</strong> <?=$resultadoMedico['telefone']?>
-										<br>
-										<i class="fas fa-at"></i>
-										<strong>E-mail:</strong> <?=$resultadoMedico['email']?>
-										<br>
-										<i class="fas fa-hospital"></i>
-										<strong>Local de Atuação:</strong> <?=$resultadoMedico['hospital']?>
-										<p class="mt-2">
-											<button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-												Mais informações
-											</button>
-										</p>
-										<div class="collapse" id="collapseExample">
-											<div class="card card-body">
-												<strong>Formação:</strong>
-												<li>Especialização: Ortopedia e Traumatologia. 2002</li>
-												<li>ATLS. American College of Surgeons. 2006</li>
-												<li>Médico Assistente, atuando na área de Ortopedia. 2007/-2016</li>
+
+				<div class="col-lg-9 col-sm-12 mt-5 p-0" >
+					<div class="row">
+						<?php while ($resultadoMedico = mysqli_fetch_array($queryMedico)) { ?>
+						<div class="col-12 pt-4">
+							<div class="card">
+								<h6 class="card-header"><strong><?=$resultadoMedico['nome']?></strong></h6>
+								<div class="card-body">
+									<div class="row">
+										<div class="col-4">
+											<img  src="<?=$resultadoMedico['nome_imagem']?>" class="img-fluid img_medico">
+										</div>
+										<div class="col-8 p-0">
+											<div>
+												<i class="fas fa-user-md"></i>
+												<strong>Especialidade:</strong> <?=$resultadoMedico['area']?>
+												<br>
+												<i class="fas fa-phone-alt"></i>
+												<strong>Telefone:</strong> <?=$resultadoMedico['telefone']?>
+												<br>
+												<i class="fas fa-at"></i>
+												<strong>E-mail:</strong> <?=$resultadoMedico['email']?>
+												<br>
+												<i class="fas fa-hospital"></i>
+												<strong>Local de Atuação:</strong> <?=$resultadoMedico['hospital']?>
+												<p class="mt-2">
+													<button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseExample<?=$resultadoMedico['id']?>" aria-expanded="false" aria-controls="collapseExample<?=$resultadoMedico['id']?>">
+														Mais informações
+													</button>
+												</p>
+												<div class="collapse" id="collapseExample<?=$resultadoMedico['id']?>">
+													<div class="card card-body">
+														<strong>Formação:</strong>
+														<li><?=$resultadoMedico['formacao1']?></li>
+														<li><?=$resultadoMedico['formacao2']?></li>
+														<li><?=$resultadoMedico['formacao3']?></li>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
+						<?php } ?>
 					</div>
-				<?php } ?>
+				</div>
 			</div>
 		</div>		
 	</div>
-
-
-
-
-
 
 	<?php require_once('include/footer.php'); ?>
 
