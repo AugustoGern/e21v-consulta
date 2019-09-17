@@ -1,8 +1,6 @@
-
 <?php require_once('backend/etapa1_backend.php'); 
 	  require_once('include/paginas_restritas.php');
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,14 +13,11 @@
 </head>
 <body class="bg-light">
 	<!-- Inclusão do HEADER -->
-	<?php require_once('include/header.php');
-
-	?>
+	<?php require_once('include/header.php'); ?>
 
 	<div class="container-fluid">
 		<div class="container">
 			<h2 class="text-center mb-5">Quais destes sintomas você esta sentindo no seu corpo?</h2>
-
 			<?php while($resultadoSintomas = mysqli_fetch_array($querySintomas)) { ?>
 			<div class="card cardd bg-secondary divCheck <?=(in_array($resultadoSintomas['id'], $_SESSION['opcao_selec'])) ? "bg-success" : '' ?>" data-id="<?=$resultadoSintomas['id']?>">
 				<label for="check" class="text-center text-white" id="check"><?=$resultadoSintomas['sintoma']?></label>
@@ -52,12 +47,10 @@
 					<i class="fas fa-angle-double-right nav-link text-center" 
 					data-whatever="@fat">   próxima etapa</i>
 				</a>
-			</div>
-				
+				</div>
 			</div>
 		</div>
 	</div>
-
 
 	<!-- footer -->
 	<?php require_once('include/footer.php'); ?>
@@ -68,5 +61,3 @@
 	<script src="media/js/etapa1.js"></script>
 </body>
 </html>
-
-
