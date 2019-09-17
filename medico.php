@@ -36,7 +36,7 @@ $queryHospital = mysqli_query($con, $sql);
 
 	<?php require_once('include/header.php'); ?>
 
-	<div  class="shadow img_p_medico" style="background-image: url('media/images/medico.jpg'); min-height: 330px !important; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -250px; background-repeat: no-repeat;">
+	<div  class="shadow img_p_medico" style="background-image: url('media/images/medico.jpg'); min-height: 330px !important; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -195px; background-repeat: no-repeat;">
 		
 	</div>
 
