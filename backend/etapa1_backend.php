@@ -14,7 +14,7 @@
 		$step = 0;
 	}
 
-	$sql = "SELECT s.sintoma AS sintoma, COUNT(*) FROM tb_ti_sin ti
+	$sql = "SELECT s.sintoma AS sintoma, COUNT(*), s.id AS id FROM tb_ti_sin ti
 				LEFT JOIN tb_sintomas s ON s.id = ti.fk_sin
 				LEFT JOIN tb_tipos_incomodo i ON i.id = ti.fk_ti
 				LEFT JOIN tb_partes_corpo p ON p.id = i.fk_parte_corpo ";
@@ -51,5 +51,7 @@
 	} else {
 		$urlVoltar = "etapa1.php?area=".$area."&step=". ($step - 1);
 	}
+
+	
 
 ?>

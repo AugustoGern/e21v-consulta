@@ -1,5 +1,7 @@
 
-<?php require_once('backend/etapa1_backend.php'); ?>
+<?php require_once('backend/etapa1_backend.php'); 
+	  require_once('include/paginas_restritas.php');
+?>
 
 <!DOCTYPE html>
 <html>
@@ -13,16 +15,18 @@
 </head>
 <body class="bg-light">
 	<!-- Inclusão do HEADER -->
-	<?php require_once('include/header.php');?>
+	<?php require_once('include/header.php');
+
+	?>
 
 	<div class="container-fluid">
 		<div class="container">
 			<h2 class="text-center mb-5">Quais destes sintomas você esta sentindo no seu corpo?</h2>
 
 			<?php while($resultadoSintomas = mysqli_fetch_array($querySintomas)) { ?>
-			<div class="card cardd bg-secondary divCheck" data-id="<?=$resultadoSintomas['id']?>">
+			<div class="card cardd bg-secondary divCheck <?=(!in_array($resultadoSintomas['id'], $_SESSION['opcao_selec'])) ? "bg-success" : '' ?>" data-id="<?=$resultadoSintomas['id']?>">
 				<label for="check" class="text-center text-white" id="check"><?=$resultadoSintomas['sintoma']?></label>
-				<input type="checkbox" name="check" id="check" class="check">
+				<input type="checkbox" name="check" id="check" class="check" <?=(!in_array($resultadoSintomas['id'], $_SESSION['opcao_selec'])) ? "checked" : '' ?>>
 
 			</div>
 			<?php } ?>
@@ -58,7 +62,7 @@
 	<!-- footer -->
 	<?php require_once('include/footer.php'); ?>
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<script src="media/js/etapa1.js"></script>
