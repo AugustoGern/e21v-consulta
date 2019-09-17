@@ -8,4 +8,11 @@
 		$area = $_GET['area'];
 	}
 
+	// CONTA AS PAGINAS DE SINTOMAS APRESENTADOS
+	if (isset($_GET['step'])) {
+		$step = $_GET['step'];
+	} else {
+		$step = 0;
+	}
+
 ?>
