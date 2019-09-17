@@ -64,6 +64,41 @@ $queryHospital = mysqli_query($con, $sql);
 						</div>
 					</div>
 				</div>
+<<<<<<< HEAD
+				
+				<?php while ($resultadoMedico = mysqli_fetch_array($queryMedico)) { ?>
+					<div class="card col-lg-9 col-sm-12 mt-5 p-0">
+						<h6 class="card-header"><strong><?=$resultadoMedico['nome']?></strong></h6>
+						<div class="card-body">
+							<div class="row">
+								<div class="col-4">
+									<img  src="<?=$resultadoMedico['nome_imagem']?>" class="img-fluid img_medico">
+								</div>
+								<div class="col-8 p-0">
+									<div>
+										<i class="fas fa-user-md"></i>
+										<strong>Especialidade:</strong> <?=$resultadoMedico['area']?>
+										<br>
+										<i class="fas fa-phone-alt"></i>
+										<strong>Telefone:</strong> <?=$resultadoMedico['telefone']?>
+										<br>
+										<i class="fas fa-at"></i>
+										<strong>E-mail:</strong> <?=$resultadoMedico['email']?>
+										<br>
+										<i class="fas fa-hospital"></i>
+										<strong>Local de Atuação:</strong> <?=$resultadoMedico['hospital']?>
+										<p class="mt-2">
+											<button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+												Mais informações
+											</button>
+										</p>
+										<div class="collapse" id="collapseExample">
+											<div class="card card-body">
+												<strong>Formação:</strong>
+												<li>Especialização: Ortopedia e Traumatologia. 2002</li>
+												<li>ATLS. American College of Surgeons. 2006</li>
+												<li>Médico Assistente, atuando na área de Ortopedia. 2007/-2016</li>
+=======
 
 				<div class="col-lg-9 col-sm-12 mt-5 p-0" >
 					<div class="row">
@@ -104,6 +139,7 @@ $queryHospital = mysqli_query($con, $sql);
 														</div>
 													</div>
 												</div>
+>>>>>>> 9696627a117fe84c72f1cc59f4415d2179179ef1
 											</div>
 										</div>
 									</div>
