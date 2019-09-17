@@ -46,7 +46,7 @@ if (isset($_POST['btnExcluir'])) {
 	$sql = "DELETE FROM tb_hospital WHERE id = $id_usuario";
 
 	if (mysqli_query($con, $sql)) {
-		header('Location: profissional.php');
+		header('Location: hospital_painel.php');
 	} else {
 		die("DEU RUIM");
 	}

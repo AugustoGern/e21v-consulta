@@ -30,12 +30,14 @@
 		$fomacao_1 = $_POST[ 'fomacao_1'];
 		$fomacao_2 = $_POST[ 'fomacao_2'];
 		$fomacao_3 = $_POST[ 'fomacao_3'];
+		$nome_imagem = $_POST[ 'nome_imagem'];
+
 
 		// Verifica se é edição ou cadastro de usuario
 		if (isset($id_usuario)) {
-			$sql = "UPDATE tb_medicos SET nome = '$nomeMedico', telefone = '$telefone', email = '$email', fk_am = '$areaMedica', fk_hospital = '$hospital', formacao1 = '$fomacao_1', formacao2 = '$fomacao_2', formacao3 = '$fomacao_3' WHERE id = $id_usuario";
+			$sql = "UPDATE tb_medicos SET nome = '$nomeMedico', telefone = '$telefone', email = '$email', fk_am = '$areaMedica', fk_hospital = '$hospital', formacao1 = '$fomacao_1', formacao2 = '$fomacao_2', formacao3 = '$fomacao_3', nome_imagem = '$nome_imagem' WHERE id = $id_usuario";
 		} else {
-			$sql = "INSERT INTO tb_medicos VALUES (DEFAULT, '$nomeMedico', '$telefone', '$email', '$areaMedica', '$hospital','$fomacao_1', '$fomacao_2', '$fomacao_3')";
+			$sql = "INSERT INTO tb_medicos VALUES (DEFAULT, '$nomeMedico', '$telefone', '$email', '$areaMedica', '$hospital','$fomacao_1', '$fomacao_2', '$fomacao_3', '$nome_imagem')";
 		}
 
 		if (mysqli_query($con, $sql)) {

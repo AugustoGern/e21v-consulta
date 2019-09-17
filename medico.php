@@ -69,7 +69,7 @@ $queryHospital = mysqli_query($con, $sql);
 						<div class="card-body">
 							<div class="row">
 								<div class="col-4">
-									<img src="media/images/mdc-22.jpg" class="img-fluid img_medico">
+									<img  src="<?=$resultadoMedico['nome_imagem']?>" class="img-fluid img_medico">
 								</div>
 								<div class="col-8 p-0">
 									<div>
