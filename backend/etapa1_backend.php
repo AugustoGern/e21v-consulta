@@ -6,6 +6,8 @@
 	// RECUPERAR VIA GET A AREA DO CORPO SELECIONADA
 	if (isset($_GET['area'])) {
 		$area = $_GET['area'];
+	} else {
+		header('Location: erros.php');
 	}
 
 	// CONTA AS PAGINAS DE SINTOMAS APRESENTADOS

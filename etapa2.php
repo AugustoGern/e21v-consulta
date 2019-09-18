@@ -1,4 +1,4 @@
-<?php //require_once('backend/etapa2_backend.php'); 
+<?php 
 	  require_once('include/paginas_restritas.php');
 ?>
 <!DOCTYPE html>
@@ -13,19 +13,20 @@
 </head>
 <body class="bg-light">
 	<!-- Inclusão do HEADER -->
-	<?php require_once('include/header.php'); ?>
+	<?php 	require_once('include/header.php');
+			require_once('backend/etapa2_backend.php');  
+	?>
 
 	<div class="container-fluid">
 		<div class="container">
-			<h2 class="text-center mb-5">De acordo com os sintomas selecionados na etapa anterior, separamos novos sintomas que você talvez possa estar sentindo, poderia nos informar quais?</h2>
+			<h2 class="text-center mb-5">Sobre este sintoma: <strong><?=$resultado['sintoma']?></strong>. Qual sua frequêcia e intensidade?</h2>
 
-			<?php while($resultadoSintomas = mysqli_fetch_array($querySintomas)) { ?>
-			<div class="card cardd bg-secondary divCheck <?=(in_array($resultadoSintomas['id'], $_SESSION['opcao_selec'])) ? "bg-success" : '' ?>" data-id="<?=$resultadoSintomas['id']?>">
-				<label for="check" class="text-center text-white" id="check"><?=$resultadoSintomas['sintoma']?></label>
-				<input type="checkbox" name="check" id="check" class="check" <?=(in_array($resultadoSintomas['id'], $_SESSION['opcao_selec'])) ? "checked" : '' ?>>
-
+			<div class="card cardd bg-secondary divCheck">
+				<label for="radio" class="text-center text-white" id="radio"></label>
+				<input type="radio" name="radio" id="radio">
 			</div>
-			<?php } ?>
+
+
 			<div class="row mb-5 mt-5">
 				<div class="col-4">
 				<a  class="navbar-brand card" href="<?=$urlVoltar?>" style="border-radius: 100px;">
@@ -34,7 +35,7 @@
 				</a>
 				</div>
 
-				<?php if ($step < 2) { ?>
+				<?php if ($step < 12) { ?>
 				<div class="col-4">
 				<a class="navbar-brand card p-1" href="?area=<?=$area?>&step=<?=($step+1)?>" style=" border-radius: 100px;">
 					<i class="fas fa-angle-right nav-link text-center opcao" 

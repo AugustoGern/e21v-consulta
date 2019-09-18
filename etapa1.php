@@ -43,7 +43,7 @@
 			<?php } ?>
 
 				<div class="col-4">
-				<a  class="navbar-brand card p-1" href="etapa2.php?area=<?=$area?>" style=" border-radius: 100px;">
+				<a  class="navbar-brand card p-1" href="etapa2.php?area=<?=$area?>&step=1" style=" border-radius: 100px;">
 					<i class="fas fa-angle-double-right nav-link text-center" 
 					data-whatever="@fat">   próxima etapa</i>
 				</a>
