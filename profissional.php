@@ -5,7 +5,8 @@
   //Junta as informações dos médicos
   $sql = "SELECT m.*, h.nome AS hospital, a.area_medica AS area_medica FROM tb_medicos m
           JOIN tb_hospital h ON h.id = m.fk_hospital
-          JOIN tb_area_medica a ON a.id = m.fk_am";
+          JOIN tb_area_medica a ON a.id = m.fk_am
+          ORDER BY m.id";
   $queryListagem = mysqli_query($con, $sql);
 
 ?>

@@ -59,13 +59,13 @@
 						</select>
 
 						<label for="formacao_1" class="pt-4">Formação 1</label>
-						<input type="text" name="formacao_1" id="formacao_1" class="form-control" placeholder="Especialização" value="<?=$resultadoUsuario['formacao_1']?>">
+						<input type="text" name="formacao_1" id="formacao_1" class="form-control" placeholder="Especialização" value="<?=$resultadoUsuario['formacao1']?>">
 
 						<label for="formacao_2" class="pt-4">Formação 2</label>
-						<input type="text" name="formacao_2" id="formacao_2" class="form-control" placeholder="Especialização" value="<?=$resultadoUsuario['formacao_2']?>">
+						<input type="text" name="formacao_2" id="formacao_2" class="form-control" placeholder="Especialização" value="<?=$resultadoUsuario['formacao2']?>">
 
 						<label for="formacao_3" class="pt-4">Formação 3</label>
-						<input type="text" name="formacao_3" id="formacao_3" class="form-control" placeholder="Especialização" value="<?=$resultadoUsuario['formacao_3']?>">
+						<input type="text" name="formacao_3" id="formacao_3" class="form-control" placeholder="Especialização" value="<?=$resultadoUsuario['formacao3']?>">
 
 
 						<input type="submit" name="btnSalvar" value="Salvar" class="btn btn-success mt-4">
