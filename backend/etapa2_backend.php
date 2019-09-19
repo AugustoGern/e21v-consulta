@@ -34,4 +34,13 @@
 		$urlVoltar = "etapa2.php?area=".$area."&step=". ($step - 1);
 	}
 
+	$sql = "SELECT * FROM tb_respostas";
+	$queryResp = mysqli_query($con, $sql);
+
+	$count = count($_SESSION['opcao_selec']);
+
+
+
+
+
 ?>

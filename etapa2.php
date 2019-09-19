@@ -1,5 +1,7 @@
 <?php 
 	  require_once('include/paginas_restritas.php');
+
+	  var_dump($count);
 ?>
 <!DOCTYPE html>
 <html>
@@ -21,14 +23,16 @@
 		<div class="container">
 			<h2 class="text-center mb-5">Sobre este sintoma: <strong><?=$resultado['sintoma']?></strong>. Qual sua frequêcia e intensidade?</h2>
 
-			<div class="card cardd bg-secondary divCheck">
-				<label for="radio" class="text-center text-white" id="radio"></label>
-				<input type="radio" name="radio" id="radio">
+			<?php while ($resultResp = mysqli_fetch_array($queryResp)) { ?>
+			<div class="card carddd bg-secondary divCheck <?=($_SESSION['resp_selec'][$resultado['id']]==$resultResp['id']) ? "bg-success" : '' ?>">
+				<label for="radio<?=$resultResp['id']?>" class="text-center text-white p-1 label_radio" id="radio" data-id-resposta="<?=$resultResp['id']?>" data-id-sintoma="<?=$resultado['id']?>"><?=$resultResp['frequencia']?> e <?=$resultResp['nivel']?></label>
+				<input type="radio" name="radio" id="radio<?=$resultResp['id']?>" class="radioB" <?=($_SESSION['resp_selec'][$resultado['id']]==$resultResp['id']) ? "checked" : '' ?>>
 			</div>
+		<?php } ?>
 
 
 			<div class="row mb-5 mt-5">
-				<div class="col-4">
+				<div class="col-6">
 				<a  class="navbar-brand card" href="<?=$urlVoltar?>" style="border-radius: 100px;">
 					<i class="fas fa-angle-left nav-link text-center" 
 					data-whatever="@fat">   voltar</i>
@@ -36,20 +40,15 @@
 				</div>
 
 				<?php if ($step < 12) { ?>
-				<div class="col-4">
-				<a class="navbar-brand card p-1" href="?area=<?=$area?>&step=<?=($step+1)?>" style=" border-radius: 100px;">
-					<i class="fas fa-angle-right nav-link text-center opcao" 
-					data-whatever="@fat">   mais opções</i>
-				</a>
-				</div>
-			<?php } ?>
-
-				<div class="col-4">
-				<a  class="navbar-brand card p-1" href="#" style=" border-radius: 100px;">
+				<div class="col-6">
+				<a  class="navbar-brand card p-1" href="?area=<?=$area?>&step=<?=($step+1)?>" style=" border-radius: 100px;">
 					<i class="fas fa-angle-double-right nav-link text-center" 
 					data-whatever="@fat">   próxima etapa</i>
 				</a>
 				</div>
+			<?php } ?>
+
+				
 			</div>
 		</div>
 	</div>
@@ -60,6 +59,6 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<script src="media/js/etapa1.js"></script>
+	<script src="media/js/etapa2.js"></script>
 </body>
 </html>

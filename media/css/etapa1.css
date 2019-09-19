@@ -2,8 +2,24 @@
 	display: none;
 }
 
+.radioB{
+	display: none !important;
+}
+
+.label_radio {
+	padding: 25px;
+}
+
 .cardd{
 	padding: 10px;
+	margin-bottom: 15px !important;
+	margin-top: 30px !important;
+	margin: 280px; 
+	border-radius: 30px;
+}
+
+.carddd{
+	padding: 5px;
 	margin-bottom: 15px !important;
 	margin-top: 30px !important;
 	margin: 280px; 
