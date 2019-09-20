@@ -1,7 +1,5 @@
 <?php 
 	  require_once('include/paginas_restritas.php');
-
-	  var_dump($count);
 ?>
 <!DOCTYPE html>
 <html>
@@ -39,16 +37,21 @@
 				</a>
 				</div>
 
-				<?php if ($step < 12) { ?>
+				<?php if ($step < $contador) { ?>
 				<div class="col-6">
 				<a  class="navbar-brand card p-1" href="?area=<?=$area?>&step=<?=($step+1)?>" style=" border-radius: 100px;">
 					<i class="fas fa-angle-double-right nav-link text-center" 
 					data-whatever="@fat">   próxima etapa</i>
 				</a>
 				</div>
-			<?php } ?>
-
-				
+			<?php } else { ?>
+				<div class="col-6">
+				<a  class="navbar-brand card p-1" href="etapa3.php?area=<?=$area?>" style=" border-radius: 100px;">
+					<i class="fas fa-angle-double-right nav-link text-center" 
+					data-whatever="@fat">   próxima etapa</i>
+				</a>
+				</div>
+				<?php } ?>
 			</div>
 		</div>
 	</div>

@@ -37,7 +37,7 @@
 	$sql = "SELECT * FROM tb_respostas";
 	$queryResp = mysqli_query($con, $sql);
 
-	$count = count($_SESSION['opcao_selec']);
+	$contador = count($_SESSION['opcao_selec']);
 
 
 
