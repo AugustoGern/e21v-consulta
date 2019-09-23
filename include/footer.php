@@ -7,13 +7,13 @@ require_once('include/duvidas.php');
 
 <footer class="ft page-footer font-small indigo pt-3">
 
-<hr style="background-color: rgb(168, 182, 186); width: 1200px; height: 1px; ">
 
   <!-- Footer Links -->
   <div class="container text-center text-md-left">
 
     <!-- Grid row -->
     <div class="row">
+<hr style="background-color: rgb(168, 182, 186); width: 1200px; height: 1px; ">
 
       <!-- Grid column -->
       <div class="col-md-2 mx-auto">
