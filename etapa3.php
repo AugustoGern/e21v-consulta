@@ -12,10 +12,18 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:900,600&display=swap" rel="stylesheet">
 </head>
 <body class="bg-light">
-	<!-- Inclusão do HEADER -->
-	<?php 	require_once('include/header.php');
-			require_once('backend/etapa2_backend.php');
-			var_dump($_SESSION['resp_selec']);
+	
+	<!-- HEADER -->
+	<?php 	
+		require_once('include/header.php');
+		require_once('backend/etapa2_backend.php');
+		require_once('backend/etapa3_backend.php');
+		//var_dump($_SESSION['resp_selec']);
+		echo "<pre>";
+		// var_dump($pesos);
+		echo "<br>";
+		// var_dump($tipo);
+		echo "<br>";
 	?>
 
 
