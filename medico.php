@@ -1,24 +1,24 @@
 <?php 
-require_once('include/conexao.php');
-// require_once('backend/painel_medico.php');
-error_reporting(0);
+	require_once('include/conexao.php');
+	require_once('include/paginas_restritas.php');
+	// require_once('backend/painel_medico.php');
+	error_reporting(0);
 
-	//PEGAR INFOMAÇÕES DO MEDICO
-$sql = "SELECT m.*, a.area_medica AS area, h.nome AS hospital FROM tb_medicos m
-JOIN tb_area_medica a ON a.id = m.fk_am
-JOIN tb_hospital h ON h.id = m.fk_hospital
-ORDER BY m.id ASC";
+		//PEGAR INFOMAÇÕES DO MEDICO
+	$sql = "SELECT m.*, a.area_medica AS area, h.nome AS hospital FROM tb_medicos m
+	JOIN tb_area_medica a ON a.id = m.fk_am
+	JOIN tb_hospital h ON h.id = m.fk_hospital
+	ORDER BY m.id ASC";
 
-$queryMedico = mysqli_query($con, $sql);
+	$queryMedico = mysqli_query($con, $sql);
 
-	// PEGAR AS AREAS MEDICAS CADASTRADAS
-$sql = "SELECT * FROM tb_area_medica";
-$queryAreas = mysqli_query($con, $sql);
+		// PEGAR AS AREAS MEDICAS CADASTRADAS
+	$sql = "SELECT * FROM tb_area_medica";
+	$queryAreas = mysqli_query($con, $sql);
 
-	// PEGAR OS HOSPITAIS CADASTRADOS
-$sql = "SELECT * FROM tb_hospital";
-$queryHospital = mysqli_query($con, $sql);
-
+		// PEGAR OS HOSPITAIS CADASTRADOS
+	$sql = "SELECT * FROM tb_hospital";
+	$queryHospital = mysqli_query($con, $sql);
 ?>
 
 <!DOCTYPE html>
@@ -33,6 +33,7 @@ $queryHospital = mysqli_query($con, $sql);
 </head>
 <body>
 
+	<!-- HEADER -->
 	<?php require_once('include/header.php'); ?>
 
 	<div  class="shadow img_p_medico" style="background-image: url('media/images/medico.jpg'); min-height: 385px !important; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -250px; background-repeat: no-repeat;">
@@ -53,7 +54,7 @@ $queryHospital = mysqli_query($con, $sql);
 							<form>
 								<select class="form-control mr-sm-2" type="select" > 
 									<?php while($resultadoAreas = mysqli_fetch_array($queryAreas)) { ?>
-									<option value="<?=$resultadoAreas['id']?>" <?= ($resultadoUsuario['fk_am']==$resultadoAreas['id']) ? 'selected' : ''?> ><?=$resultadoAreas['area_medica']?></option>
+										<option value="<?=$resultadoAreas['id']?>" <?= ($resultadoUsuario['fk_am']==$resultadoAreas['id']) ? 'selected' : ''?> ><?=$resultadoAreas['area_medica']?></option>
 									<?php } ?>	
 								</select>
 							</form>
@@ -66,38 +67,39 @@ $queryHospital = mysqli_query($con, $sql);
 				<div class="col-lg-9 col-sm-12 mt-5 p-0" >
 					<div class="row">
 						<?php while ($resultadoMedico = mysqli_fetch_array($queryMedico)) { ?>
-						<div class="col-12 pt-4">
-							<div class="card">
-								<h6 class="card-header"><strong><?=$resultadoMedico['nome']?></strong></h6>
-								<div class="card-body">
-									<div class="row">
-										<div class="col-4">
-											<img  src="<?=$resultadoMedico['nome_imagem']?>" class="img-fluid img_medico">
-										</div>
-										<div class="col-8 p-0">
-											<div>
-												<i class="fas fa-user-md"></i>
-												<strong>Especialidade:</strong> <?=$resultadoMedico['area']?>
-												<br>
-												<i class="fas fa-phone-alt"></i>
-												<strong>Telefone:</strong> <?=$resultadoMedico['telefone']?>
-												<br>
-												<i class="fas fa-at"></i>
-												<strong>E-mail:</strong> <?=$resultadoMedico['email']?>
-												<br>
-												<i class="fas fa-hospital"></i>
-												<strong>Local de Atuação:</strong> <?=$resultadoMedico['hospital']?>
-												<p class="mt-2">
-													<button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseExample<?=$resultadoMedico['id']?>" aria-expanded="false" aria-controls="collapseExample<?=$resultadoMedico['id']?>">
-														Mais informações
-													</button>
-												</p>
-												<div class="collapse" id="collapseExample<?=$resultadoMedico['id']?>">
-													<div class="card card-body">
-														<strong>Formação:</strong>
-														<li><?=$resultadoMedico['formacao1']?></li>
-														<li><?=$resultadoMedico['formacao2']?></li>
-														<li><?=$resultadoMedico['formacao3']?></li>
+							<div class="col-12 pt-4">
+								<div class="card">
+									<h6 class="card-header"><strong><?=$resultadoMedico['nome']?></strong></h6>
+									<div class="card-body">
+										<div class="row">
+											<div class="col-4">
+												<img  src="<?=$resultadoMedico['nome_imagem']?>" class="img-fluid img_medico">
+											</div>
+											<div class="col-8 p-0">
+												<div>
+													<i class="fas fa-user-md"></i>
+													<strong>Especialidade:</strong> <?=$resultadoMedico['area']?>
+													<br>
+													<i class="fas fa-phone-alt"></i>
+													<strong>Telefone:</strong> <?=$resultadoMedico['telefone']?>
+													<br>
+													<i class="fas fa-at"></i>
+													<strong>E-mail:</strong> <?=$resultadoMedico['email']?>
+													<br>
+													<i class="fas fa-hospital"></i>
+													<strong>Local de Atuação:</strong> <?=$resultadoMedico['hospital']?>
+													<p class="mt-2">
+														<button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseExample<?=$resultadoMedico['id']?>" aria-expanded="false" aria-controls="collapseExample<?=$resultadoMedico['id']?>">
+															Mais informações
+														</button>
+													</p>
+													<div class="collapse" id="collapseExample<?=$resultadoMedico['id']?>">
+														<div class="card card-body">
+															<strong>Formação:</strong>
+															<li><?=$resultadoMedico['formacao1']?></li>
+															<li><?=$resultadoMedico['formacao2']?></li>
+															<li><?=$resultadoMedico['formacao3']?></li>
+														</div>
 													</div>
 												</div>
 											</div>
@@ -105,7 +107,6 @@ $queryHospital = mysqli_query($con, $sql);
 									</div>
 								</div>
 							</div>
-						</div>
 						<?php } ?>
 					</div>
 				</div>
@@ -113,8 +114,10 @@ $queryHospital = mysqli_query($con, $sql);
 		</div>		
 	</div>
 
+	<!-- FOOTER -->
 	<?php require_once('include/footer.php'); ?>
 
+	<!-- BOOTSTRAP -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

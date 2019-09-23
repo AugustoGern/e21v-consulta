@@ -1,5 +1,5 @@
 <?php
-require_once('include/paginas_restritas.php');
+	require_once('include/paginas_restritas.php');
 ?>
 
 <!DOCTYPE html>
@@ -15,54 +15,38 @@ require_once('include/paginas_restritas.php');
 	<link rel="shortcut icon" type="image/x-icon" href="media/images/4232logo__.ico">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:900,600&display=swap" rel="stylesheet">
 </head>
-<body class="bg-light" >
+<body class="bg-light">
+
+	<!-- HEADER -->
 	<?php require_once('include/header.php'); ?>
 
-	
-
-	<!-- =========================================================================== -->
-	<div class="shadow img_sobre" style="background-image: url('media/images/fundo.jpg');  min-height: 320px; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -184px; background-repeat: no-repeat;"">
+	<div class="shadow img_sobre" style="background-image: url('media/images/fundo.jpg');  min-height: 320px; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -184px; background-repeat: no-repeat;">
 		<div class="text-center my-5">
 			
 		</div> 
 	</div>
-	<!-- ==============================================CONTEUDO==================================================== -->
-
+	
 	<div class="container-fluid">
-		<div class="container pb-5"  style=" margin-top: -200px; ">
-
+		<div class="container pb-5"  style=" margin-top: -200px;">
 			<h1 id="batata">Seu histórico de consultas:</h1>
-			
 			<div class="card mt-5">
 				<div class="card-body">
 					<div class="row col-12 col-md">
-
-
 						<table class="table table-hover table-striped m-0">
 							<tbody>
 								<?php foreach ($historico_alteracoes as $k => $v) { ?>
-								<tr class="table-<?=$v['tipo']?>">
-									<td><?=$v['mensagem']?></td>
-								</tr>
+									<tr class="table-<?=$v['tipo']?>">
+										<td><?=$v['mensagem']?></td>
+									</tr>
 								<?php } ?>
 							</tbody>
 							<a href="index.php" class="btn btn-success text-center"> Voltar </a>
 						</table>
 					</div>
-
-					
 				</div>
 			</div>
 		</div>
 	</div>
-
-
-
-
-
-
-
-
 
 	<!-- FOOTER -->
 	<?php require_once('include/footer.php'); ?>

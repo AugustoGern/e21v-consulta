@@ -13,17 +13,14 @@
 	<link rel="shortcut icon" type="image/x-icon" href="media/images/4232logo__.ico">
 	<link rel="stylesheet" type="text/css" href="media/css/media.css">
 </head>
-<body >
-
-	<!-- ==============================================NAVBAR==================================================== -->
+<body>
+	
+	<!-- HEADER -->
 	<?php require_once('include/header.php');  ?>
 
-
-	<!-- =========================================================================== -->
+	<!-- imagem de fundo -->
 	<div class="shadow img_sobre" style="background-image: url('media/images/fundo.jpg');  min-height: 320px; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -184px; background-repeat: no-repeat;">
-		<div class="text-center my-5">
-			
-		</div> 
+		<div class="text-center my-5"></div> 
 	</div>
 
 	<!-- CONTEÚDO DA PÁGINA -->
@@ -31,7 +28,7 @@
 	<div class="container-fluid">
 		<div class="container" style="margin-top: -190px;">
 			<h1 class="text-center" style="font-size: 50px;color: rgb(59, 67, 69); font-weight: 200; margin-top: 50px;">Edição</h1>
-			<div class="card mt-3 mb-3" >
+			<div class="card mt-3 mb-3">
 				<div class="card-body">
 					<form method="post" action="" name="formCadastro">
 						<label for="nome">Nome Completo:<strong class="text-danger"> *</strong></label>
@@ -56,8 +53,7 @@
 						<input type="password" name="confSenha" id="confSenha" class="form-control"><br>
 
 						<input type="submit" name="cadastro" id="cadastro" class="btn btn-primary " value="   Editar   ">
-						<input type="submit" name="btnExcluir" value="   Excluir   " class="btn btn-danger">
-
+						<input type="submit" name="btnExcluir" value="   Excluir  " class="btn btn-danger">
 					</form>
 				</div>
 			</div>
@@ -66,7 +62,6 @@
 
 	<!-- FOOTER -->
 	<?php require_once('include/footer.php'); ?>
-
 
 	<!-- BOOTSTRAP -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

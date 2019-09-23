@@ -1,12 +1,11 @@
 <?php 
-
-require_once('include/conexao.php');
+  require_once('include/conexao.php');
 
   //Junta as informações das perguntas
-$sql = "SELECT * FROM tb_hospital";
-$queryListagem = mysqli_query($con, $sql);
-
+  $sql = "SELECT * FROM tb_hospital";
+  $queryListagem = mysqli_query($con, $sql);
 ?>
+
 <head>
   <meta charset="utf-8">
   <title>Hospital</title>
@@ -14,9 +13,9 @@ $queryListagem = mysqli_query($con, $sql);
   <link rel="shortcut icon" type="image/x-icon" href="media/images/4232logo__.ico">
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
 </head>
 <body>
+
   <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
     <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">SymFinder</a>
     <ul class="navbar-nav px-3">
@@ -25,6 +24,7 @@ $queryListagem = mysqli_query($con, $sql);
       </li>
     </ul>
   </nav>
+
   <div class="container-fluid">
     <div class="row">
       <nav class="col-md-2 bg-light sidebar" style="border-bottom: 1px solid rgba(0, 0, 0, 0.1);">
@@ -51,6 +51,7 @@ $queryListagem = mysqli_query($con, $sql);
           </ul>
         </div>
       </nav>
+
       <div class="col-md-10">
         <h1 class="mt-5" style="text-align: center;">Alterações e Criações de Hospitais são feitas nesta página! </h1>
         <h5 class="mt-4" style="text-align: center;">Todos os Hospitais criados e editados, serão feitos pelo painel!</h5>
@@ -67,7 +68,7 @@ $queryListagem = mysqli_query($con, $sql);
             <a href="cadastro_hospital.php" class="btn btn-success">Criar</a> 
             <!-- Tabela de alterações -->
 
-             <table class="table table-striped table-dark mt-3">
+            <table class="table table-striped table-dark mt-3">
               <thead>
                 <tr>
                   <th scope="col">Id</th>
@@ -76,6 +77,7 @@ $queryListagem = mysqli_query($con, $sql);
                   <th scope="col">Cidade</th>
                 </tr>
               </thead>
+
               <tbody>
                 <?php while($resultado = mysqli_fetch_array($queryListagem)) { ?>
                   <tr>
@@ -90,13 +92,14 @@ $queryListagem = mysqli_query($con, $sql);
                 <?php } ?>
               </tbody>
             </table>
-
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
-</html>
+
+    <!-- BOOTSTRAP -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+  </html>
