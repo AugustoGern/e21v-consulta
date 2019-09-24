@@ -32,14 +32,14 @@ foreach ($pesos as $id_sintoma => $peso) {
 
 }
 
-	// removendo dupliciade
+	// removendo duplicidade
 $tipo = array_unique($tipo);
 
 // percorrendo todos os possiveis tipos de incomodo
 foreach ($tipo as $chave => $tipo_incomodo) {
-	// percorrendo todas as respostas de sintomas, se o incomo atual tiver o sintoma, entra na conta senao pula o sintoma
+	// percorrendo todas as respostas de sintomas, se o incomodo atual tiver o sintoma, entra na conta senao pula o sintoma
 	foreach ($pesos as $id_sintoma => $peso) {
-		$sql = "SELECT * FROM tb_ti_sin WHERE fk_sin = '$id_sintoma'";
+		$sql = "SELECT * FROM tb_ti_sin WHERE fk_sin = '$id_sintoma' AND fk_ti = '$tipo_incomodo'";
 		$queryTipo = mysqli_query($con, $sql);
 		$resultados = mysqli_num_rows($queryTipo);
 
@@ -49,11 +49,11 @@ foreach ($tipo as $chave => $tipo_incomodo) {
 			}
 
 			if ($peso == 48) {
-				$desempate += $peso;					
+				$desempate += $peso;
 			}
 
 			if ($peso < 48) {
-				$desconsideravel += $peso;	
+				$desconsideravel += $peso;
 			}
 		}
 
@@ -62,13 +62,58 @@ foreach ($tipo as $chave => $tipo_incomodo) {
 	$resultadoFinal[$tipo_incomodo] = [
 		'nr_sintoma_consideravel' => $consideravel,
 		'nr_sintoma_desconsideravel' => $desconsideravel,
-		'nr_sintoma_desempate' => $desempate,
+		'nr_sintoma_desempate' => $desempate
 	];	
+
+	$consideravel = 0;
+	$desconsideravel = 0;
+	$desempate = 0;
 
 }
 
-echo '<pre>';
-var_dump($resultadoFinal);
-echo '</pre>';
+	$resultadoFinalDef = array();
+	$maior = [
+		'tipo_incomodo' => null,
+		'peso' => 0
+	];
+	foreach ($resultadoFinal as $tipo_incomodo => $peso) {
+		$subtracao = $resultadoFinal[$tipo_incomodo]['nr_sintoma_consideravel'] - $resultadoFinal[$tipo_incomodo]['nr_sintoma_desconsideravel'];
+		if ($subtracao < 0) {
+			$subtracao = 0;
+		}
+
+		$resultadoFinalDef["$tipo_incomodo"] = $subtracao;
+
+		if ($maior['tipo_incomodo'] == null || $maior['peso'] < $subtracao) {
+			$maior = [
+				'tipo_incomodo' => $tipo_incomodo,
+				'peso' => $subtracao
+			];		
+		}
+
+		if ($maior['peso'] == $subtracao) {
+			if ($resultadoFinal[$tipo_incomodo]['nr_sintoma_desempate'] > $resultadoFinal[$maior['tipo_incomodo']]['nr_sintoma_desempate']) {
+					$maior = [
+						'tipo_incomodo' => $tipo_incomodo,
+						'peso' => $subtracao
+					];	
+			}
+		}
+
+	}
+
+	// PUXANDO AS INFORMAÇÕES DOS MEDICOS PARA MOSTRAR NO RESULTADO FINAL
+	$sqlMedicos = "SELECT m.*, a.area_medica AS area, h.nome AS hospital, i.tipo_incomodo AS tipo FROM tb_medicos m
+			JOIN tb_area_medica a ON a.id = m.fk_am
+			JOIN tb_hospital h ON h.id = m.fk_hospital
+			JOIN tb_tipos_incomodo i ON i.fk_am = a.id
+			WHERE i.id = '{$maior['tipo_incomodo']}'";
+	$queryMedicos = mysqli_query($con, $sqlMedicos);
+
+// echo '<pre>';
+// var_dump($resultadoFinal);
+// var_dump($resultadoFinalDef);
+// var_dump($maior);
+// echo '</pre>';
 
 ?>
