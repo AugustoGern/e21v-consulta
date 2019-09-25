@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:900,600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="media/css/etapa1.css">
+	<link rel="stylesheet" type="text/css" href="media/css/media.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:900,600&display=swap" rel="stylesheet">
 </head>
 <body class="bg-light">
@@ -31,7 +32,7 @@
 			<?php } ?>
 
 			<div class="row mb-5 mt-5">
-				<div class="col-6">
+				<div class="col-lg-6 col-sm">
 					<a  class="navbar-brand card" href="<?=$urlVoltar?>" style="border-radius: 100px;">
 						<i class="fas fa-angle-left nav-link text-center" 
 						data-whatever="@fat">   voltar</i>
@@ -39,14 +40,14 @@
 				</div>
 
 				<?php if ($step < $contador) { ?>
-					<div class="col-6">
+					<div class="col-lg-6 col-sm">
 						<a  class="navbar-brand card p-1" href="?area=<?=$area?>&step=<?=($step+1)?>" style=" border-radius: 100px;">
 							<i class="fas fa-angle-double-right nav-link text-center" 
 							data-whatever="@fat">   próxima etapa</i>
 						</a>
 					</div>
 				<?php } else { ?>
-					<div class="col-6">
+					<div class="col-lg-6 col-sm">
 						<a  class="navbar-brand card p-1" href="etapa3.php?area=<?=$area?>" style=" border-radius: 100px;">
 							<i class="fas fa-angle-double-right nav-link text-center" 
 							data-whatever="@fat">   próxima etapa</i>

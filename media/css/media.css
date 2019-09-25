@@ -42,21 +42,45 @@
 
 	}
 
+	.cardd {		
+		margin: 30px;
+	}
+	.carddd {		
+		margin: 30px;
+	}
+
 }
 
 /* SM */
 @media(min-width: 576px) and (max-width: 768px) {
+	.cardd {		
+		margin: 30px;
+	}
+	.carddd {		
+		margin: 30px;
+	}
 
 }
 
 /* MD */
 @media(min-width: 768px) and (max-width: 992px) {
-	
+	.cardd {		
+		margin: 80px;
+	}
+	.carddd {		
+		margin: 80px;
+	}
+
 }
 
 /* LG */
 @media(min-width: 992px) and (max-width: 1200px) {
-
+	.cardd {		
+		margin: 180px;
+	}
+	.carddd {		
+		margin: 180px;
+	}
 }
 
 /* XL */
