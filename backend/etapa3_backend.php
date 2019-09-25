@@ -10,21 +10,21 @@ $pesos = array();
 $resultadoFinal = array();
 $tipo = array();
 	// CONVERTER AS RESPOSTAS PARA ID_SINTOMA E PESO
-foreach ($_SESSION['resp_selec'] as $id_sintoma => $id_resposta) {
-	$sql = "SELECT * FROM tb_respostas WHERE id = '$id_resposta'";
-	$queryPeso = mysqli_query($con, $sql);
-	$resultPeso = mysqli_fetch_array($queryPeso);
-	$pesos["$id_sintoma"] = $resultPeso['peso'];
-	unset($sql);
+	foreach ($_SESSION['resp_selec'] as $id_sintoma => $id_resposta) {
+		$sql = "SELECT * FROM tb_respostas WHERE id = '$id_resposta'";
+		$queryPeso = mysqli_query($con, $sql);
+		$resultPeso = mysqli_fetch_array($queryPeso);
+		$pesos["$id_sintoma"] = $resultPeso['peso'];
+		unset($sql);
 	
 }
 
 	// BUSCAR TODAS AS POSSIVEIS DOENCAS PARA OS SINTOMAS CONVERTIDOS ACIMA
-foreach ($pesos as $id_sintoma => $peso) {
-	$sql = "SELECT * FROM tb_ti_sin WHERE fk_sin = '$id_sintoma'";
-	$queryTipo = mysqli_query($con, $sql);
-	$resultTipo = mysqli_fetch_all($queryTipo, MYSQLI_ASSOC);	
-	unset($sql);
+	foreach ($pesos as $id_sintoma => $peso) {
+		$sql = "SELECT * FROM tb_ti_sin WHERE fk_sin = '$id_sintoma'";
+		$queryTipo = mysqli_query($con, $sql);
+		$resultTipo = mysqli_fetch_all($queryTipo, MYSQLI_ASSOC);	
+		unset($sql);
 
 	foreach ($resultTipo as $chave => $resultadoTipo) {
 		$tipo[] = $resultTipo[$chave]['fk_ti'];
@@ -33,7 +33,7 @@ foreach ($pesos as $id_sintoma => $peso) {
 }
 
 	// removendo duplicidade
-$tipo = array_unique($tipo);
+	$tipo = array_unique($tipo);
 
 // percorrendo todos os possiveis tipos de incomodo
 foreach ($tipo as $chave => $tipo_incomodo) {
@@ -112,8 +112,42 @@ foreach ($tipo as $chave => $tipo_incomodo) {
 
 // echo '<pre>';
 // var_dump($resultadoFinal);
-// var_dump($resultadoFinalDef);
-// var_dump($maior);
+//var_dump($resultadoFinalDef);
+//var_dump($maior);
 // echo '</pre>';
 
+
+
+
+	// HISTÓRICO
+	$historico = mysqli_fetch_array($queryMedicos);
+	$areaMedica = $historico['area'];
+	$areaP = $_GET['area'];
+
+	$sqlArea = "SELECT * FROM tb_area_medica WHERE area_medica = '$areaMedica'";
+	$queryArea = mysqli_query($con, $sqlArea);
+	$area = mysqli_fetch_array($queryArea);
+	$areaMedica = $area['id'];
+	
+	if ($areaP == 'cabeca') {
+		$areaP = 4;
+	} else if ($areaP == 'braco') {
+		$areaP = 1;
+	} else if ($areaP == 'tronco') {
+		$areaP = 3;
+	} else if ($areaP == 'perna') {
+		$areaP = 2;
+	}
+
+
+	if (isset($_POST['finaliza'])) {
+		$sql = "INSERT INTO tb_historico VALUES (DEFAULT, '$areaMedica', '$areaP')";
+		if (mysqli_query($con, $sql)) {
+			unset($_SESSION['opcao_selec']);
+			unset($_SESSION['resp_selec']);
+			header('Location: index.php');
+		} else {
+			die("Deu erro!");
+		}
+	}
 ?>

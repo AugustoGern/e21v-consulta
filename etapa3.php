@@ -64,11 +64,16 @@
 					</div>
 				</div>
 				<div class="mr-5 mt-2">
-					<img  src="media/images/mdc-20.jpg" class="img-fluid img_medico_etp3">
+					<img  src="media/images/mdc-20.jpg" class="img-fluid img_medico_etp3 d-none d-sm-block">
 				</div>
 			</div>	
 			<?php } ?>
 		</div>
+			<form method="post" action="">	
+				<div class="text-center">	
+					<input type="submit" name="finaliza" id="finaliza" class="btn btn-info" value="    Finalizar    ">
+				</div>
+			</form>
 	</div>
 
 	<!-- footer -->
