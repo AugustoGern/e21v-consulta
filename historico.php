@@ -18,7 +18,10 @@
 <body class="bg-light">
 
 	<!-- HEADER -->
-	<?php require_once('include/header.php'); ?>
+	<?php 
+		require_once('include/header.php');
+		require_once('backend/backend_historico.php');
+	?>
 
 	<div class="shadow img_sobre" style="background-image: url('media/images/fundo.jpg');  min-height: 320px; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -184px; background-repeat: no-repeat;">
 		<div class="text-center my-5">
@@ -33,14 +36,24 @@
 				<div class="card-body">
 					<div class="row col-12 col-md">
 						<table class="table table-hover table-striped m-0">
+							<thead>
+								<tr>
+									<th scope="col">Área Médica</th>
+									<th scope="col">Parte do Corpo</th>
+								</tr>
+							</thead>
+
 							<tbody>
-								<?php foreach ($historico_alteracoes as $k => $v) { ?>
-									<tr class="table-<?=$v['tipo']?>">
-										<td><?=$v['mensagem']?></td>
-									</tr>
-								<?php } ?>
+								<?php while ($resultadoConsulta = mysqli_fetch_array($queryConsulta)) { ?>
+								<tr>	
+									<td><?=$resultadoConsulta['area']?></td>	
+									<td><?=$resultadoConsulta['parte']?></td>
+									<td style="float: right;">
+										<a href="historico_visualizacao.php?=<?=$resultadoConsulta['id']?>" class="btn btn-primary text-center"> Visualizar </a>
+									</td>
+								</tr>
+							<?php } ?>
 							</tbody>
-							<a href="index.php" class="btn btn-success text-center"> Voltar </a>
 						</table>
 					</div>
 				</div>

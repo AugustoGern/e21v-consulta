@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Etapa 3</title>
+	<title>Histórico</title>
 	<script src="https://kit.fontawesome.com/3b47dd4ac9.js"></script>
 	<script src="https://kit.fontawesome.com/3b47dd4ac9.js"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -19,8 +19,7 @@
 	<!-- HEADER -->
 	<?php 	
 		require_once('include/header.php');
-		require_once('backend/etapa2_backend.php');
-		require_once('backend/etapa3_backend.php');
+		require_once('backend/backend_historico.php');
 	?>
 
 	<div class="container-fluid">
@@ -64,16 +63,14 @@
 					</div>
 				</div>
 				<div class="mr-5 mt-2">
-					<img  src="<?=$resultadoMedicos['nome_imagem']?>" class="img-fluid img_medico_etp3 d-none d-sm-block">
+					<img  src="media/images/mdc-20.jpg" class="img-fluid img_medico_etp3 d-none d-sm-block">
 				</div>
 			</div>	
 			<?php } ?>
 		</div>
-			<form method="post" action="">	
 				<div class="text-center">	
-					<input type="submit" name="finaliza" id="finaliza" class="btn btn-info" value="    Finalizar    ">
+					<a href="historico.php" class="btn btn-info">Voltar</a>
 				</div>
-			</form>
 	</div>
 
 	<!-- footer -->
