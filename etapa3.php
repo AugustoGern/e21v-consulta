@@ -11,8 +11,9 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:900,600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="media/css/etapa1.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:900,600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="media/css/medico.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:900,600&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="media/images/4232logo__.ico">
 </head>
 <body class="bg-light">
 	
@@ -30,10 +31,12 @@
 			</div>
 
 			<?php while ($resultadoMedicos = mysqli_fetch_array($queryMedicos)) { ?>
-			<hr style="background-color: rgb(168, 182, 186); width: 1000px; margin-top:50px; height: 1px; ">
+			<div class="row">
+				<hr style="background-color: rgb(168, 182, 186); width: 1000px; margin-top:50px; height: 1px; ">
+			</div>
 			<div class="media mt-4 ">
 				<div class="media-body pl-5">
-					<div class="ml-5">
+					<div class="ml-5 ">
 						<h5>Informações do médico:</h5>
 						<li>
 							<i class="fas fa-user mt-1 mr-2"></i>
@@ -60,20 +63,19 @@
 							<strong>Telefone: </strong><?=$resultadoMedicos['telefone']?>
 						</li>
 						<a href="medico.php" class="btn btn-secondary mt-3">Mais informações</a>
-
 					</div>
 				</div>
 				<div class="mr-5 mt-2">
-					<img  src="<?=$resultadoMedicos['nome_imagem']?>" class="img-fluid img_medico_etp3 d-none d-sm-block">
+					<img  src="<?=$resultadoMedicos['nome_imagem']?>" class=" img-fluid img_medico_etp3 d-none d-lg-block">
 				</div>
 			</div>	
 			<?php } ?>
 		</div>
-			<form method="post" action="">	
-				<div class="text-center">	
-					<input type="submit" name="finaliza" id="finaliza" class="btn btn-info" value="    Finalizar    ">
-				</div>
-			</form>
+		<form method="post" action="">	
+			<div class="text-center">	
+				<input type="submit" name="finaliza" id="finaliza" class="btn btn-info" value="    Finalizar    ">
+			</div>
+		</form>
 	</div>
 
 	<!-- footer -->

@@ -1,12 +1,12 @@
 <?php 
-session_start();
-error_reporting(0);
+	session_start();
+	error_reporting(0);
 
-require_once('include/conexao.php');
-	// Junta as informações dos usuarios
-$sql = "SELECT * FROM tb_usuario WHERE id = '{$_SESSION['id_usuario']}'";
-$queryEdição = mysqli_query($con, $sql);
-$resultado = mysqli_fetch_array($queryEdição);
+	require_once('include/conexao.php');
+		// Junta as informações dos usuarios
+	$sql = "SELECT * FROM tb_usuario WHERE id = '{$_SESSION['id_usuario']}'";
+	$queryEdição = mysqli_query($con, $sql);
+	$resultado = mysqli_fetch_array($queryEdição);
 
 ?>
 <link rel="stylesheet" type="text/css" href="media/css/header.css">
@@ -19,39 +19,37 @@ $resultado = mysqli_fetch_array($queryEdição);
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	</button>
-
-	<div class="collapse  navbar-collapse  ml-5" id="navbarSupportedContent">
+	<div class="collapse  navbar-collapse  ml-2	" id="navbarSupportedContent">
 		<ul class="navbar-nav mr-auto">
-			<li class="nav-item active">
+			<li class="nav-item active ml-5">
 				<a class="nav-link" href="index.php">Início <span class="sr-only">(current)</span></a>
 			</li>
-			<li class="nav-item">
+			<li class="nav-item ml-5">
 				<a class="nav-link" href="sobre.php">Sobre</a>
 			</li>
 			<!-- ==============consultar============= -->
 			<?php if (isset($_SESSION['logado']) && $_SESSION['logado'] == true) { ?>
-			<li class="nav-item">
+			<li class="nav-item ml-5">
 				<a class="nav-link" href="consulta.php">Consultar</a>
 			</li>
 			<?php } ?> 
 			<!-- ===============Medico============= -->
 			<?php if (isset($_SESSION['logado']) && $_SESSION['logado'] == true) { ?>
-			<li class="nav-item">
+			<li class="nav-item ml-5">
 				<a class="nav-link" href="medico.php">Médico</a>
 			</li>
-			<?php } ?> 
-
-		</ul>
-		<form class="form-inline my-2 my-lg-0 mr-5">
+			<?php } ?>
 
 			<!-- ==============historico============== -->
 			<?php if (isset($_SESSION['logado']) && $_SESSION['logado'] == true) { ?>
-			<a class="navbar-brand  " href="historico.php">
-				<i class="fas fa-history nav-link ml-2" href="#"></i>
-			</a>
+				<li class="nav-item ml-5">
+					<a class="nav-link mr-4" href="historico.php">Histórico</a>
+				</li>
 			<?php } ?>
-			<!-- ===================================== -->
-
+	 
+		</ul>
+		<form class="form-inline my-2 my-lg-0 mr-5">
+			
 			<!-- ================login================ -->
 			<?php if (isset($_SESSION['logado']) && $_SESSION['logado'] == true) { ?>
 
@@ -70,29 +68,25 @@ $resultado = mysqli_fetch_array($queryEdição);
 				</li>
 			</ul>
 
-
 			<?php } else { ?> 
 			<a class="navbar-brand" href="#">
 				<i class="fas fa-user nav-link ml-2   " data-target="#exampleModall"  href="#" data-toggle="modal" 
 				data-whatever="@fat" ></i>
 			</a>
 			<?php } ?>
-			<!-- ===================================== -->
 
+			<!-- =============cadastro============ -->
 			<?php if (isset($_SESSION['logado'])  == false) { ?>
 			<a class="navbar-brand " href="#">
 				<i class="fas fa-user-plus nav-link ml-2 " data-target="#exampleModal"  href="#" data-toggle="modal" 
 				></i>
 			</a>
 			<?php }  ?>
-			
-			
 		</form>
 	</div>
 </nav>
 
-<!-- ==========================================Pagina login======================================================== -->
-
+<!--Pagina login -->
 <?php 
 require_once('backend/login.php');
 
@@ -124,9 +118,8 @@ require_once('backend/login.php');
 	</div>
 </div>
 
-<!-- =============================================pagina cadastro======================================================== -->
+<!-- pagina cadastro -->
 <?php require_once('backend/cadastro_usuarios.php'); ?>
-
 
 <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	<div id="exampleModall" class="login-box rounded pt-0">
@@ -170,8 +163,6 @@ require_once('backend/login.php');
 						<input type="password" name="confSenha" id="confSenha" class="form-control" required=""><br>
 					</div>
 				</div>
-
-
 				<input type="submit" name="cadastro" id="cadastro" class="btn btn-primary " value="Cadastre-se" disabled="">
 			</form>
 		</div>

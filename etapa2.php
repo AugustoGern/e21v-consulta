@@ -11,6 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="media/css/etapa1.css">
 	<link rel="stylesheet" type="text/css" href="media/css/media.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:900,600&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="media/images/4232logo__.ico">
 </head>
 <body class="bg-light">
 
