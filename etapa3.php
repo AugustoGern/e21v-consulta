@@ -1,5 +1,5 @@
 <?php 
-require_once('include/paginas_restritas.php');
+	require_once('include/paginas_restritas.php');
 ?>
 
 <!DOCTYPE html>
@@ -18,9 +18,9 @@ require_once('include/paginas_restritas.php');
 	
 	<!-- HEADER -->
 	<?php 	
-	require_once('include/header.php');
-	require_once('backend/etapa2_backend.php');
-	require_once('backend/etapa3_backend.php');
+		require_once('include/header.php');
+		require_once('backend/etapa2_backend.php');
+		require_once('backend/etapa3_backend.php');
 	?>
 
 	<div class="container-fluid">
@@ -51,12 +51,12 @@ require_once('include/paginas_restritas.php');
 						</li>
 
 						<li class="mt-1">
-							<i class="fas fa-at mr-2"></i>
+							<i class="fas fa-at mr-1"></i>
 							<strong>E-mail: </strong><?=$resultadoMedicos['email']?>
 						</li>
 
 						<li class="mt-1">
-							<i class="fas fa-phone-alt mr-2"></i>
+							<i class="fas fa-phone-alt mr-1"></i>
 							<strong>Telefone: </strong><?=$resultadoMedicos['telefone']?>
 						</li>
 						<a href="medico.php" class="btn btn-secondary mt-3">Mais informações</a>
