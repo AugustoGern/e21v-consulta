@@ -22,28 +22,28 @@
 	<div class="collapse  navbar-collapse  ml-2	" id="navbarSupportedContent">
 		<ul class="navbar-nav mr-auto">
 			<li class="nav-item active ml-5">
-				<a class="nav-link" href="index.php">Início <span class="sr-only">(current)</span></a>
+				<a class="nav-link slide-center-out" href="index.php">Início <span class="sr-only">(current)</span></a>
 			</li>
 			<li class="nav-item ml-5">
-				<a class="nav-link" href="sobre.php">Sobre</a>
+				<a class="nav-link slide-center-out" href="sobre.php">Sobre</a>
 			</li>
 			<!-- ==============consultar============= -->
 			<?php if (isset($_SESSION['logado']) && $_SESSION['logado'] == true) { ?>
 			<li class="nav-item ml-5">
-				<a class="nav-link" href="consulta.php">Consultar</a>
+				<a class="nav-link slide-center-out" href="consulta.php">Consultar</a>
 			</li>
 			<?php } ?> 
 			<!-- ===============Medico============= -->
 			<?php if (isset($_SESSION['logado']) && $_SESSION['logado'] == true) { ?>
 			<li class="nav-item ml-5">
-				<a class="nav-link" href="medico.php">Médico</a>
+				<a class="nav-link slide-center-out" href="medico.php">Médico</a>
 			</li>
 			<?php } ?>
 
 			<!-- ==============historico============== -->
 			<?php if (isset($_SESSION['logado']) && $_SESSION['logado'] == true) { ?>
 				<li class="nav-item ml-5">
-					<a class="nav-link mr-4" href="historico.php">Histórico</a>
+					<a class="nav-link slide-center-out mr-4" href="historico.php">Histórico</a>
 				</li>
 			<?php } ?>
 	 
@@ -64,7 +64,7 @@
 
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item">
-					<a href="backend/logoff.php" class="nav-link ml-4 "> Sair</a>
+					<a href="backend/logoff.php" class="nav-link ml-4  slide-center-out"> Sair</a>
 				</li>
 			</ul>
 
