@@ -60,7 +60,7 @@
 				
 				<div class="card" style="background-color: transparent; border: transparent;">
 					<div class="card-body p-5 mr-5 mt-5 ">
-						<div class="col-sm-6">
+						<div class="col-sm-6 ml-4">
 
 							<img src="media/images/musculo_2.png" usemap="#parte_frontal" >
 							<map name="parte_frontal" id="parte_frontal">

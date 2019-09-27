@@ -16,33 +16,26 @@ require_once('include/duvidas.php');
 <hr style="background-color: rgb(168, 182, 186); width: 1200px; height: 1px; ">
 
       <!-- Grid column -->
-      <div class="col-md-2 mx-auto">
+      <div class="col-md-3 mx-auto">
 
         <!-- Links -->
-        <h4 class="text-uppercase mt-4 mb-4  footer">Redes Sociais</h4>
+        <h4 class="text-uppercase mt-4 mb-4 footer">Redes Sociais</h4>
         <ul class="nt list-unstyled">
           <li class="">
             <i class="fab fa-facebook " ></i>
-            <a href="https://pt-br.facebook.com/pages/category/hospital/?page=4"
+            <a href="https://www.facebook.com/symfinder.symfinder.9"
             style="text-decoration: none;">Facebook </a>
           </li>
 
           <li>
             <i class="fab fa-instagram "></i>
-            <a  href="https://www.instagram.com/hospitalmaededeus/"
+            <a  href="https://www.instagram.com/symfinder/"
             style="text-decoration: none;">Instagram</a>
           </li>
 
           <li>
-            <i class="fab f fa-twitter "></i>
-            <a href="https://twitter.com/hashtag/hospital" 
-            style="text-decoration: none;">twitter</a>
-          </li>
-
-          <li>
-            <i class="fas fa-at" ></i>
-            <a href="https://gmail.com/mail/help/intl/pt_pt/about.html" 
-            style="text-decoration: none;">Nosso Email</a>
+            <i class="fas fa-at"></i>
+            <a style="text-decoration: none;">symfinder@gmail.com</a>
           </li>
         </ul>
       </div>
