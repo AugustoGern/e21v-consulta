@@ -19,16 +19,17 @@
 	<!-- HEADER -->
 	<?php 	
 		require_once('include/header.php');
+		
 		require_once('backend/backend_historico.php');
 	?>
 
 	<div class="container-fluid">
 		<div class="container mb-5 pb-5">
 			<div class="row">		
-				<h2>De acordo com as informações coletadas nas etapas anteriores, acreditamos que para o seu bem-estar você deveria marcar uma consulta com um desses profissionais:</h2>
+				<h2>Historico</h2>
 			</div>
 
-			<?php while ($resultadoMedicos = mysqli_fetch_array($queryMedicos)) { ?>
+			<?php while ($resultadoHistorico = mysqli_fetch_array($queryHistorico)) { ?>
 			<hr style="background-color: rgb(168, 182, 186); width: 1000px; margin-top:50px; height: 1px; ">
 			<div class="media mt-4 ">
 				<div class="media-body pl-5">
@@ -36,34 +37,34 @@
 						<h5>Informações do médico:</h5>
 						<li>
 							<i class="fas fa-user mt-1 mr-2"></i>
-							<strong>Nome: </strong><?=$resultadoMedicos['nome']?>
+							<strong>Nome: </strong><?=$resultadoHistorico['nome']?>
 						</li>
 
 						<li class="mt-1">
 							<i class="fas fa-user-md mr-2"></i>
-							<strong>Especialidade: </strong><?=$resultadoMedicos['area']?>
+							<strong>Especialidade: </strong><?=$resultadoHistorico['area']?>
 						</li>
 
 						<li class="mt-1">
 							<i class="fas fa-hospital mr-2"></i>
-							<strong>Local de Atuação: </strong><?=$resultadoMedicos['hospital']?>
+							<strong>Local de Atuação: </strong><?=$resultadoHistorico['hospital']?>
 						</li>
 
 						<li class="mt-1">
 							<i class="fas fa-at mr-1"></i>
-							<strong>E-mail: </strong><?=$resultadoMedicos['email']?>
+							<strong>E-mail: </strong><?=$resultadoHistorico['email']?>
 						</li>
 
 						<li class="mt-1">
 							<i class="fas fa-phone-alt mr-1"></i>
-							<strong>Telefone: </strong><?=$resultadoMedicos['telefone']?>
+							<strong>Telefone: </strong><?=$resultadoHistorico['telefone']?>
 						</li>
 						<a href="medico.php" class="btn btn-secondary mt-3">Mais informações</a>
 
 					</div>
 				</div>
 				<div class="mr-5 mt-2">
-					<img  src="media/images/mdc-20.jpg" class="img-fluid img_medico_etp3 d-none d-sm-block">
+					<img  src="<?=$resultadoHistorico['nome_imagem']?>" class="img-fluid img_medico_etp3 d-none d-sm-block">
 				</div>
 			</div>	
 			<?php } ?>

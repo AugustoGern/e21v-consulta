@@ -110,15 +110,6 @@ foreach ($tipo as $chave => $tipo_incomodo) {
 			WHERE i.id = '{$maior['tipo_incomodo']}'";
 	$queryMedicos = mysqli_query($con, $sqlMedicos);
 
-// echo '<pre>';
-// var_dump($resultadoFinal);
-//var_dump($resultadoFinalDef);
-//var_dump($maior);
-// echo '</pre>';
-
-
-
-
 	// HISTÓRICO
 	$historico = mysqli_fetch_array($queryMedicos);
 	$areaMedica = $historico['area'];
@@ -139,9 +130,11 @@ foreach ($tipo as $chave => $tipo_incomodo) {
 		$areaP = 2;
 	}
 
+	$id_hist = $_SESSION['id_usuario'];
+	$tipo_inco = $maior['tipo_incomodo'];
 
 	if (isset($_POST['finaliza'])) {
-		$sql = "INSERT INTO tb_historico VALUES (DEFAULT, '$areaMedica', '$areaP')";
+		$sql = "INSERT INTO tb_historico VALUES (DEFAULT, '$areaMedica', '$areaP', '$id_hist', '$tipo_inco')";
 		if (mysqli_query($con, $sql)) {
 			unset($_SESSION['opcao_selec']);
 			unset($_SESSION['resp_selec']);
@@ -150,4 +143,6 @@ foreach ($tipo as $chave => $tipo_incomodo) {
 			die("Deu erro!");
 		}
 	}
+
+	$_SESSION['tipo'] = $tipo_inco;	
 ?>
