@@ -1,6 +1,10 @@
 <?php 
-	require_once('backend/cadastro_usuarios.php');
-	require_once('include/conexao.php');
+require_once('backend/cadastro_usuarios.php');
+require_once('include/conexao.php');
+
+
+
+
 ?>
 
 <!DOCTYPE html>
