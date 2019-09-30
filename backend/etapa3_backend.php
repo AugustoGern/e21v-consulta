@@ -1,6 +1,5 @@
 <?php
 require_once('include/conexao.php');
-session_start(); 
 
 $consideravel = 0;
 $desempate = 0;
@@ -111,7 +110,7 @@ foreach ($tipo as $chave => $tipo_incomodo) {
 	$queryMedicos = mysqli_query($con, $sqlMedicos);
 
 	// HISTÓRICO
-	$historico = mysqli_fetch_array($queryMedicos);
+	$historico = mysqli_fetch_array(mysqli_query($con, $sqlMedicos));
 	$areaMedica = $historico['area'];
 	$areaP = $_GET['area'];
 
@@ -138,7 +137,7 @@ foreach ($tipo as $chave => $tipo_incomodo) {
 		if (mysqli_query($con, $sql)) {
 			unset($_SESSION['opcao_selec']);
 			unset($_SESSION['resp_selec']);
-			header('Location: index.php');
+			header('Location: index.php') or die('pau na kombi');
 		} else {
 			die("Deu erro!");
 		}

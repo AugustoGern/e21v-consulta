@@ -1,5 +1,7 @@
 <?php 
 	require_once('include/paginas_restritas.php');
+	require_once('backend/etapa2_backend.php');
+	require_once('backend/etapa3_backend.php');
 ?>
 
 <!DOCTYPE html>
@@ -20,8 +22,7 @@
 	<!-- HEADER -->
 	<?php 	
 		require_once('include/header.php');
-		require_once('backend/etapa2_backend.php');
-		require_once('backend/etapa3_backend.php');
+
 	?>
 
 	<div class="container-fluid">

@@ -24,7 +24,7 @@
 	$resultTipo = mysqli_fetch_array($queryTipo);
 
 	$tipo = $resultTipo['fk_tipo'];
-	var_dump($id_consulta);
+	
 
 	$sqlHistorico = "SELECT m.*, a.area_medica AS area, h.nome AS hospital, i.tipo_incomodo AS tipo FROM tb_medicos m
 			JOIN tb_area_medica a ON a.id = m.fk_am
@@ -32,4 +32,18 @@
 			JOIN tb_tipos_incomodo i ON i.fk_am = a.id
 			WHERE i.id = '$tipo'";
 	$queryHistorico = mysqli_query($con, $sqlHistorico);
+
+
+	// Verificando ação de EXCLUIR
+	
+	if (isset($_POST['btnExcluir'])) {
+
+		$sqlExcluir = "DELETE FROM tb_historico WHERE id_consulta ";
+
+		if (mysqli_query($con, $sqlExcluir)) {
+			header('Location: historico.php');
+		} else {
+			die("DEU RUIM");
+		}
+	}	
 ?>

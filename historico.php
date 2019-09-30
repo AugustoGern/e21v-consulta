@@ -1,5 +1,6 @@
 <?php
 	require_once('include/paginas_restritas.php');
+	require_once('backend/backend_historico.php');
 ?>
 
 <!DOCTYPE html>
@@ -18,8 +19,7 @@
 
 	<!-- HEADER -->
 	<?php 
-		require_once('include/header.php');
-		require_once('backend/backend_historico.php');
+	require_once('include/header.php');
 	?>
 
 	<div class="shadow img_sobre" style="background-image: url('media/images/fundo.jpg');  min-height: 320px; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -184px; background-repeat: no-repeat;">
@@ -42,17 +42,20 @@
 								</tr>
 							</thead>
 
-							<tbody>
-								<?php while ($resultadoConsulta = mysqli_fetch_array($queryConsulta)) { ?>
-								<tr>	
-									<td><?=$resultadoConsulta['area']?></td>	
-									<td><?=$resultadoConsulta['parte']?></td>
-									<td style="float: right;">
-										<a href="historico_visualizacao.php?id_consulta=<?=$resultadoConsulta['id']?>" class="btn btn-info text-center"> Visualizar </a>
-									</td>
-								</tr>
-							<?php } ?>
-							</tbody>
+							<form method="post" action="">
+								<tbody>
+									<?php while ($resultadoConsulta = mysqli_fetch_array($queryConsulta)) { ?>
+									<tr>	
+										<td><?=$resultadoConsulta['area']?></td>	
+										<td><?=$resultadoConsulta['parte']?></td>
+										<td style="float: right;">
+											<a href="historico_visualizacao.php?id_consulta=<?=$resultadoConsulta['id']?>" class="btn btn-info text-center"> Visualizar </a>
+											<input type="submit" name="btnExcluir" value="Excluir" class="btn btn-danger ">
+										</td>
+									</tr>
+									<?php } ?>
+								</tbody>
+							</form>
 						</table>
 					</div>
 				</div>
