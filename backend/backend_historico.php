@@ -34,11 +34,10 @@
 			WHERE i.id = '$tipo'";
 	$queryHistorico = mysqli_query($con, $sqlHistorico);
 
-
 	// Verificando ação de EXCLUIR
-	if (isset($_POST['btnExcluir'])) {
+	if (isset($_POST['btnExcluirFoda'])) {
 		$sqlExcluir = "DELETE FROM tb_historico WHERE id = '$id_deletar'";
-		
+
 		if (mysqli_query($con, $sqlExcluir)) {
 			header('Location: historico.php');
 		} else {

@@ -1,5 +1,6 @@
 <?php 
 	require_once('include/paginas_restritas.php');
+	require_once('backend/backend_historico.php');
 ?>
 
 <!DOCTYPE html>
@@ -19,7 +20,6 @@
 	<!-- HEADER -->
 	<?php 	
 		require_once('include/header.php');
-		require_once('backend/backend_historico.php');
 	?>
 
 	<div class="container-fluid">
@@ -71,7 +71,7 @@
 				<form method="post" action="">
 					<div class="text-center">	
 						<a href="historico.php" class="btn btn-info">Voltar</a>
-						<input type="submit" name="btnExcluir" value="Excluir" class="btn btn-danger">
+						<input type="submit" name="btnExcluirFoda" value="Excluir" class="btn btn-danger">
 					</div>
 				</form>
 	</div>
