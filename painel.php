@@ -34,9 +34,6 @@
               <a class="nav-link" href="profissional.php">Profissional</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="perguntas_painel.php">Perguntas</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="respostas.php">Sintomas</a>
             </li> 
             <li class="nav-item">
