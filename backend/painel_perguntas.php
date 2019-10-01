@@ -35,7 +35,7 @@
 		if (mysqli_query($con, $sql)) {
 			header('Location: perguntas_painel.php');
 		} else {
-			die("SE FODEU");
+			die("Erro!!!");
 		}
 	}
 
@@ -46,7 +46,7 @@
 		if (mysqli_query($con, $sql)) {
 			header('Location: cadastro_perguntas.php');
 		} else {
-			die("DEU RUIM");
+			die("Erro!!!");
 		}
 	}	
 

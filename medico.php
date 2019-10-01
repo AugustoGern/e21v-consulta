@@ -14,6 +14,7 @@
 	<meta charset="utf-8">
 	<title>Médico</title>
 	<link rel="stylesheet" type="text/css" href="media/css/medico.css">
+	<link rel="stylesheet" type="text/css" href="media/css/sobre.css">
 	<link rel="stylesheet" type="text/css" href="media/css/media.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://kit.fontawesome.com/3b47dd4ac9.js"></script>
@@ -26,32 +27,14 @@
 	<div  class="shadow img_p_medico" style="background-image: url('media/images/medico.jpg'); min-height: 385px !important; min-width: 100%; background-size: 100%; background-position: center center; padding-top: 128px; margin-top: -250px; background-repeat: no-repeat;">
 	</div>
 
-	<div class="container-fluid ">
-		<div class="container ">
-			<div class="row ">
-				<div class="col-lg-3 col-sm-12 mt-5 ">
-					<div class="row">
-						<div class="col-12">			
-							<h5>Informe o profissional desejado</h5>
-							<form>
-								<input class="form-control mr-sm-2 mt-2" type="search" placeholder="Digite Aqui..."	>
-							</form>
-							<hr>
-							<h5>Especialidade</h5>
-							<form>
-								<select class="form-control mr-sm-2" type="select" > 
-									<?php while($resultadoAreas = mysqli_fetch_array($queryAreas)) { ?>
-										<option value="<?=$resultadoAreas['id']?>" <?= ($resultadoUsuario['fk_am']==$resultadoAreas['id']) ? 'selected' : ''?> ><?=$resultadoAreas['area_medica']?></option>
-									<?php } ?>	
-								</select>
-							</form>
-							<hr>
-							<button class="btn btn-success">Pesquisar</button>
-						</div>
-					</div>
-				</div>
+	<div class="container-fluid">
+		<div class="container">
+			<div class="row">
+			<div class="col-12 text-center">
+				<h1 id="batata">Aqui você encontrará nossos proficionais:</h1>
+			</div>
 
-				<div class="col-lg-9 col-sm-12 mt-5 p-0" >
+				<div class="col-lg-12 col-sm-12 mt-5 p-0 " >
 					<div class="row">
 						<?php while ($resultadoMedico = mysqli_fetch_array($queryMedico)) { ?>
 							<div class="col-12 pt-4">

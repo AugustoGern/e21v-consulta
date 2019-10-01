@@ -43,7 +43,7 @@
 		if (mysqli_query($con, $sql)) {
 			header('Location: profissional.php');
 		} else {
-			die("SE FODEU");
+			die("Erro!!!");
 		}
 	}
 
@@ -54,7 +54,7 @@
 		if (mysqli_query($con, $sql)) {
 			header('Location: profissional.php');
 		} else {
-			die("DEU RUIM");
+			die("Erro!!!");
 		}
 	}	
 

@@ -33,12 +33,13 @@
 			<h1 id="batata">Seu histórico de consultas:</h1>
 			<div class="card mt-5">
 				<div class="card-body">
-					<div class="row col-12 col-md">
-						<table class="table table-hover table-striped m-0">
+					<div class="row col-12 col-md m-0">
+						<table class="table table-hover table-striped m-0 p-0">
 							<thead>
 								<tr>
 									<th scope="col">Área Médica</th>
 									<th scope="col">Parte do Corpo</th>
+									<th></th>
 								</tr>
 							</thead>
 
@@ -49,7 +50,7 @@
 										<td><?=$resultadoConsulta['area']?></td>	
 										<td><?=$resultadoConsulta['parte']?></td>
 										<td style="float: right;">
-											<a href="historico_visualizacao.php?id_consulta=<?=$resultadoConsulta['id']?>" class="btn btn-info text-center"> Visualizar </a>
+											<a href="historico_visualizacao.php?id_consulta=<?=$resultadoConsulta['id']?>" class="btn btn-info text-center">Visualizar</a>
 										</td>
 									</tr>
 									<?php } ?>

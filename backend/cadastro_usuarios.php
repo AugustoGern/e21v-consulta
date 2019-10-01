@@ -39,7 +39,7 @@ if (isset($_POST['cadastro'])) {
 	if (mysqli_query($con, $sql)) {
 		header('Location: index.php');
 	} else {
-		die("SE FODEU");
+		die("Erro!!!");
 	}
 }
 
@@ -50,7 +50,7 @@ if (isset($_POST['btnExcluir'])) {
 	if (mysqli_query($con, $sql)) {
 		header('Location: backend/logoff.php');
 	} else {
-		die("DEU RUIM");
+		die("Erro!!!");
 	}
 }			
 

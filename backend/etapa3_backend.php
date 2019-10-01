@@ -139,7 +139,7 @@ foreach ($tipo as $chave => $tipo_incomodo) {
 			unset($_SESSION['resp_selec']);
 			header('Location: index.php') or die('pau na kombi');
 		} else {
-			die("Deu erro!");
+			die("Erro!!!");
 		}
 	}
 

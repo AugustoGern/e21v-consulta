@@ -34,7 +34,7 @@
 		if (mysqli_query($con, $sql)) {
 			header('Location: respostas.php');
 		} else {
-			die("SE FODEU");
+			die("Erro!!!");
 		}
 	}
 
@@ -45,7 +45,7 @@
 		if (mysqli_query($con, $sql)) {
 			header('Location: respostas.php');
 		} else {
-			die("DEU RUIM");
+			die("Erro!!!");
 		}
 	}	
 
