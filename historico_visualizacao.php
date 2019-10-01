@@ -11,15 +11,14 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:900,600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="media/css/etapa1.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:900,600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="media/css/medico.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:900,600&display=swap" rel="stylesheet">
 </head>
 <body class="bg-light">
 	
 	<!-- HEADER -->
 	<?php 	
 		require_once('include/header.php');
-		
 		require_once('backend/backend_historico.php');
 	?>
 
@@ -69,9 +68,12 @@
 			</div>	
 			<?php } ?>
 		</div>
-				<div class="text-center">	
-					<a href="historico.php" class="btn btn-info">Voltar</a>
-				</div>
+				<form method="post" action="">
+					<div class="text-center">	
+						<a href="historico.php" class="btn btn-info">Voltar</a>
+						<input type="submit" name="btnExcluir" value="Excluir" class="btn btn-danger">
+					</div>
+				</form>
 	</div>
 
 	<!-- footer -->

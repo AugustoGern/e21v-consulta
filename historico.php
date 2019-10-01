@@ -50,7 +50,6 @@
 										<td><?=$resultadoConsulta['parte']?></td>
 										<td style="float: right;">
 											<a href="historico_visualizacao.php?id_consulta=<?=$resultadoConsulta['id']?>" class="btn btn-info text-center"> Visualizar </a>
-											<input type="submit" name="btnExcluir" value="Excluir" class="btn btn-danger ">
 										</td>
 									</tr>
 									<?php } ?>

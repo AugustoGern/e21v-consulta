@@ -16,6 +16,7 @@
 	// MOSTRA AS INFORMAÇÕES DO MEDICO RECOMENDADO PARA O USUARIO
 	if (isset($_GET['id_consulta'])) {
 		$id_consulta = $_GET['id_consulta'];
+		$id_deletar = $_GET['id_consulta'];
 	}
 
 	$sqlTipo = "SELECT * FROM tb_historico
@@ -35,15 +36,13 @@
 
 
 	// Verificando ação de EXCLUIR
-	
 	if (isset($_POST['btnExcluir'])) {
-
-		$sqlExcluir = "DELETE FROM tb_historico WHERE id_consulta ";
-
+		$sqlExcluir = "DELETE FROM tb_historico WHERE id = '$id_deletar'";
+		
 		if (mysqli_query($con, $sqlExcluir)) {
 			header('Location: historico.php');
 		} else {
-			die("DEU RUIM");
+			die("Erro!!!");
 		}
-	}	
+	}
 ?>
