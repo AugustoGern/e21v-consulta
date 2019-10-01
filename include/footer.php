@@ -63,7 +63,7 @@ require_once('include/duvidas.php');
 
   <!-- Copyright -->
   <div class="ft1 footer-copyright text-center pt-4 pb-2">
-   <p>Direitos Reservedos a equipe do projeto TCC Entra21.
+   <p>Direitos Reservados a equipe do projeto TCC Entra21.
      <strong > SymFinder © 2019</strong>  
      <?php if ($_SESSION['logado'] == true) { 
       if ($_SESSION['nivel_acesso'] == 'adm') { ?>
