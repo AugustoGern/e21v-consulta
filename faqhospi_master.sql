@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: 20-Set-2019 às 14:41
+-- Generation Time: 26-Set-2019 às 16:52
 -- Versão do servidor: 5.6.39-log
 -- PHP Version: 5.6.30
 
@@ -48,6 +48,34 @@ INSERT INTO `tb_area_medica` (`id`, `area_medica`) VALUES
 (6, 'UROLOGISTA'),
 (7, 'NEUROLOGISTA'),
 (8, 'OTORRINOLARINGOLOGISTA');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `tb_historico`
+--
+
+CREATE TABLE `tb_historico` (
+  `id` int(11) NOT NULL,
+  `fk_am` int(11) DEFAULT NULL,
+  `fk_parte` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `tb_historico`
+--
+
+INSERT INTO `tb_historico` (`id`, `fk_am`, `fk_parte`) VALUES
+(27, 8, 4),
+(30, 6, 1),
+(32, 7, 4),
+(33, 3, 2),
+(41, 8, 4),
+(42, 5, 3),
+(43, 8, 4),
+(45, 7, 4),
+(46, 7, 4),
+(48, 8, 4);
 
 -- --------------------------------------------------------
 
@@ -99,22 +127,22 @@ CREATE TABLE `tb_medicos` (
 --
 
 INSERT INTO `tb_medicos` (`id`, `nome`, `telefone`, `email`, `fk_am`, `fk_hospital`, `formacao1`, `formacao2`, `formacao3`, `nome_imagem`) VALUES
-(1, 'Dr. Lucas Almeida', '(47) 99657-7616', 'dr.lucas@terra.com.br', 1, 2, 'Ortopedia e Traumatologia. 2002', 'ATLS. American College of Surgeons. 2006', 'MÃ©dico Assistente, atuando na Ã¡rea de Ortopedia. 2007/-2016', ''),
-(6, 'Dra. Maryna Roberta Gonsalvez', '(47) 3878-1348', 'dr.MaryGonsalvez_HP@gmail.com', 1, 14, 'Ortopedia e Traumatologia - 1997', 'GraduaÃ§Ã£o em Medicina - 2009', 'MÃ©dico, atuando na Ã¡rea de Ortopedia. 2012/-2018', 'media/images/mdc-20.jpg'),
-(7, 'Dr. JoÃ£o Manoel ', '(47) 9328-5748', 'dr.manoel_joao@hotmail.com', 5, 15, 'GraduaÃ§Ã£o: Medicina Universidade Federal de SC - 2003', 'EspecializaÃ§Ã£o: Cirurgia do Aparelho Digestivo - 2012', 'EspecializaÃ§Ã£o: Cirurgia Vascular Hospital do PulmÃ£o - 2015', ''),
-(8, 'Dra. Marcela De Souza', '(47) 1988-4841', 'Hosp_Souza2017@outlook.com', 8, 18, ' EspecializaÃ§Ã£o em Otorrinolaringologia - 2000', ' Especialista em Otorrinolaringologia pela AssociaÃ§Ã£o Brasileira de Otorrinolaringologia e Cirurgia â€“ 2008', 'Especialista em Cirurgia de CabeÃ§a e PescoÃ§o â€“ 2015', ''),
-(10, 'Dr. Carlos Schimts', '(47) 9040-4408', 'CarlosSchimts_sp@gmail.com', 3, 16, 'GraduaÃ§Ã£o: Medicina Faculdade de Medicina - 2000', 'EspecializaÃ§Ã£o: Angiologia e Cirurgia Vascular - 2007', 'EspecializaÃ§Ã£o: Ginecologia e ObstetrÃ­cia - 2015', ''),
-(11, 'Dr. Matheus Dos Santos ', '(47) 9597-9722', 'Martheus_neuro@hotmail.com', 7, 17, 'GraduaÃ§Ã£o: Medicina Universidade de BrasÃ­lia - 1999', 'EspecializaÃ§Ã£o: GenÃ©tica MÃ©dica - 2007', 'EspecializaÃ§Ã£o: Reumatologia Sociedade Brasileira de Reumatologia - 2010', ''),
-(12, 'Dra. Jennyfer Da Costa ', '(47) 9487-2388', 'Dra_dacosta@gmail.com', 8, 19, 'EspecializaÃ§Ã£o: Otorrinolaringologia -2003', 'GraduaÃ§Ã£o: Psicologia - 2010', 'GraduaÃ§Ã£o: Medicina Escola Superior - 2016', ''),
-(13, 'Dr.  Fernando Gomes', '(47) 9918-8734', 'drfernandogomes07@outlook.com', 2, 19, 'GraduaÃ§Ã£o: Medicina Universidade de SC- 2007', 'EspecializaÃ§Ã£o: Medicina Intensiva - 2013 ', 'EspecializaÃ§Ã£o: Cardiologia Hospital SC - 2017', ''),
-(14, 'Dr. Guilherme Antonio', '(47) 9977-7368', 'guilherme022@outlook.com', 6, 16, 'GraduaÃ§Ã£o: Medicina Universidade Federal de SC - 2001', 'EspecializaÃ§Ã£o: Urologia Secretaria de Estado de SaÃºde - 2008', 'GraduaÃ§Ã£o: NutriÃ§Ã£o Faculdade Anhanguera de BrasÃ­lia - 2018', ''),
-(15, 'Dr. VinÃ­cios De Paula ', '(47) 9576-4234', 'dr_depaula@hotmail.com', 5, 15, 'GraduaÃ§Ã£o: Psicologia - 2003', 'EspecializaÃ§Ã£o: Sociedade Brasileira de Pneumologia - 2009', 'EspecializaÃ§Ã£o: Pneumologia PediÃ¡trica - 2013', ''),
-(16, 'Dr. Edimilson felÃ­pino ', '(47) 9845-6487', 'dr_edimilson_2002@gmail.com', 3, 14, 'GraduaÃ§Ã£o: Medicina Escola de CiÃªncias MÃ©dicas de SC- 1998 ', 'EspecializaÃ§Ã£o: Ginecologia e ObstetrÃ­cia Hospital Regional de Blumenau - 2005', 'EspecializaÃ§Ã£o: Cirurgia Vascular Hospital de Base do Distrito Federal - 2017', ''),
-(17, 'Dra. JÃ©ssica Almeida', '(47) 9411-4199', 'Jeedealmeida@outlook.com', 4, 2, 'GraduaÃ§Ã£o: Medicina Universidade Severino Sombra - 2007 ', 'EspecializaÃ§Ã£o: Nutrologia AssociaÃ§Ã£o Brasileira de Nutrologia - 2015', 'GraduaÃ§Ã£o: Fisioterapia Faculdades Integradas - 2019', ''),
-(18, 'Dra. Maria Suzane ', '(47) 3841-7051', 'SuhMariadh@hotmail.com', 7, 17, 'GraduaÃ§Ã£o: Medicina Universidade Federal de GoiÃ¡s - 2011', 'EspecializaÃ§Ã£o: Neurologia Hospital SC - 2017', 'EspecializaÃ§Ã£o: Neurologia Faculdade de CiÃªncias MÃ©dicas - 2019', ''),
-(19, 'Dr. Iago Lacerda', '(47) 9828-5748', 'Iagoo_drlacerda@gmail.com', 2, 18, 'GraduaÃ§Ã£o: Medicina Escola Superior de CiÃªncias da SaÃºde - Manaus- 2004', 'EspecializaÃ§Ã£o: Cardiologia Hospital UniversitÃ¡rio de SC- 2011', 'GraduaÃ§Ã£o: NutriÃ§Ã£o Universidade de SC - 2019', ''),
-(20, 'Dr. Jucelino Nunes', '(47) 3496-9115', 'Dr_nunesblu@hotmail', 4, 17, 'GraduaÃ§Ã£o: Fisioterapia Faculdade de ReabilitaÃ§Ã£o do Planalto Central - 2003', 'GraduaÃ§Ã£o: Fisioterapia Centro UniversitÃ¡rio Planalto do Distrito Federal - 2008', 'EspecializaÃ§Ã£o: Urologia Universidade - 2017', ''),
-(21, 'Dr. Everaldo Carvalho ', '(47) 9481-7835', 'everaldocarvalho@outlook.com', 6, 2, 'GraduaÃ§Ã£o: Medicina Universidade de SC - 2007', 'EspecializaÃ§Ã£o: Cirurgia Geral Hospital Regional - 2012', 'EspecializaÃ§Ã£o: Urologia Hospital UniversitÃ¡rio de BrasÃ­lia - 2019', '');
+(1, 'Dr. Lucas Almeida', '(47) 99657-7616', 'dr.lucas@terra.com.br', 1, 2, 'Ortopedia e Traumatologia. 2002', 'ATLS. American College of Surgeons. 2006', 'MÃ©dico Assistente, atuando na Ã¡rea de Ortopedia. 2007/-2016', 'media/images/med-1.jpg'),
+(6, 'Dra. Maryna Roberta Gonsalvez', '(47) 3878-1348', 'dr.MaryGonsalvez_HP@gmail.com', 1, 14, 'Ortopedia e Traumatologia - 1997', 'GraduaÃ§Ã£o em Medicina - 2009', 'MÃ©dico, atuando na Ã¡rea de Ortopedia. 2012/-2018', 'media/images/med-5.jpg'),
+(7, 'Dr. JoÃ£o Manoel ', '(47) 9328-5748', 'dr.manoel_joao@hotmail.com', 5, 15, 'GraduaÃ§Ã£o: Medicina Universidade Federal de SC - 2003', 'EspecializaÃ§Ã£o: Cirurgia do Aparelho Digestivo - 2012', 'EspecializaÃ§Ã£o: Cirurgia Vascular Hospital do PulmÃ£o - 2015', 'media/images/med-11.jpg'),
+(8, 'Dra. Marcela De Souza', '(47) 1988-4841', 'Hosp_Souza2017@outlook.com', 8, 18, ' EspecializaÃ§Ã£o em Otorrinolaringologia - 2000', ' Especialista em Otorrinolaringologia pela AssociaÃ§Ã£o Brasileira de Otorrinolaringologia e Cirurgia â€“ 2008', 'Especialista em Cirurgia de CabeÃ§a e PescoÃ§o â€“ 2015', 'media/images/med-9.jpg'),
+(10, 'Dr. Carlos Schimts', '(47) 9040-4408', 'CarlosSchimts_sp@gmail.com', 3, 16, 'GraduaÃ§Ã£o: Medicina Faculdade de Medicina - 2000', 'EspecializaÃ§Ã£o: Angiologia e Cirurgia Vascular - 2007', 'EspecializaÃ§Ã£o: Ginecologia e ObstetrÃ­cia - 2015', 'media/images/med-19.jpg'),
+(11, 'Dr. Matheus Dos Santos ', '(47) 9597-9722', 'Martheus_neuro@hotmail.com', 7, 17, 'GraduaÃ§Ã£o: Medicina Universidade de BrasÃ­lia - 1999', 'EspecializaÃ§Ã£o: GenÃ©tica MÃ©dica - 2007', 'EspecializaÃ§Ã£o: Reumatologia Sociedade Brasileira de Reumatologia - 2010', 'media/images/med-13.jpg'),
+(12, 'Dra. Jennyfer Da Costa ', '(47) 9487-2388', 'Dra_dacosta@gmail.com', 8, 19, 'EspecializaÃ§Ã£o: Otorrinolaringologia -2003', 'GraduaÃ§Ã£o: Psicologia - 2010', 'GraduaÃ§Ã£o: Medicina Escola Superior - 2016', 'media/images/med-3.jpg'),
+(13, 'Dr.  Fernando Gomes', '(47) 9918-8734', 'drfernandogomes07@outlook.com', 2, 19, 'GraduaÃ§Ã£o: Medicina Universidade de SC- 2007', 'EspecializaÃ§Ã£o: Medicina Intensiva - 2013 ', 'EspecializaÃ§Ã£o: Cardiologia Hospital SC - 2017', 'media/images/med-16.jpg'),
+(14, 'Dr. Guilherme Antonio', '(47) 9977-7368', 'guilherme022@outlook.com', 6, 16, 'GraduaÃ§Ã£o: Medicina Universidade Federal de SC - 2001', 'EspecializaÃ§Ã£o: Urologia Secretaria de Estado de SaÃºde - 2008', 'GraduaÃ§Ã£o: NutriÃ§Ã£o Faculdade Anhanguera de BrasÃ­lia - 2018', 'media/images/med-10.jpg'),
+(15, 'Dr. VinÃ­cios De Paula ', '(47) 9576-4234', 'dr_depaula@hotmail.com', 5, 15, 'GraduaÃ§Ã£o: Psicologia - 2003', 'EspecializaÃ§Ã£o: Sociedade Brasileira de Pneumologia - 2009', 'EspecializaÃ§Ã£o: Pneumologia PediÃ¡trica - 2013', 'media/images/med-8.jpg'),
+(16, 'Dr. Edimilson felÃ­pino ', '(47) 9845-6487', 'dr_edimilson_2002@gmail.com', 3, 14, 'GraduaÃ§Ã£o: Medicina Escola de CiÃªncias MÃ©dicas de SC- 1998 ', 'EspecializaÃ§Ã£o: Ginecologia e ObstetrÃ­cia Hospital Regional de Blumenau - 2005', 'EspecializaÃ§Ã£o: Cirurgia Vascular Hospital de Base do Distrito Federal - 2017', 'media/images/med-4.jpg'),
+(17, 'Dra. JÃ©ssica Almeida', '(47) 9411-4199', 'Jeedealmeida@outlook.com', 4, 2, 'GraduaÃ§Ã£o: Medicina Universidade Severino Sombra - 2007 ', 'EspecializaÃ§Ã£o: Nutrologia AssociaÃ§Ã£o Brasileira de Nutrologia - 2015', 'GraduaÃ§Ã£o: Fisioterapia Faculdades Integradas - 2019', 'media/images/med-7.jpg'),
+(18, 'Dra. Maria Suzane ', '(47) 3841-7051', 'SuhMariadh@hotmail.com', 7, 17, 'GraduaÃ§Ã£o: Medicina Universidade Federal de GoiÃ¡s - 2011', 'EspecializaÃ§Ã£o: Neurologia Hospital SC - 2017', 'EspecializaÃ§Ã£o: Neurologia Faculdade de CiÃªncias MÃ©dicas - 2019', 'media/images/med-17.jpg'),
+(19, 'Dr. Iago Lacerda', '(47) 9828-5748', 'Iagoo_drlacerda@gmail.com', 2, 18, 'GraduaÃ§Ã£o: Medicina Escola Superior de CiÃªncias da SaÃºde - Manaus- 2004', 'EspecializaÃ§Ã£o: Cardiologia Hospital UniversitÃ¡rio de SC- 2011', 'GraduaÃ§Ã£o: NutriÃ§Ã£o Universidade de SC - 2019', 'media/images/med-2.jpg'),
+(20, 'Dr. Jucelino Nunes', '(47) 3496-9115', 'Dr_nunesblu@hotmail', 4, 17, 'GraduaÃ§Ã£o: Fisioterapia Faculdade de ReabilitaÃ§Ã£o do Planalto Central - 2003', 'GraduaÃ§Ã£o: Fisioterapia Centro UniversitÃ¡rio Planalto do Distrito Federal - 2008', 'EspecializaÃ§Ã£o: Urologia Universidade - 2017', 'media/images/med-12.jpg'),
+(22, 'Dr. Everaldo Carvalho ', '(47) 9481-7835', 'everaldocarvalho@outlook.com', 6, 2, 'GraduaÃ§Ã£o: Medicina Universidade de SC - 2007', 'EspecializaÃ§Ã£o: Cirurgia Geral Hospital Regional - 2012', 'EspecializaÃ§Ã£o: Urologia Hospital UniversitÃ¡rio de BrasÃ­lia - 2019', 'media/images/med-18.jpg');
 
 -- --------------------------------------------------------
 
@@ -362,7 +390,7 @@ CREATE TABLE `tb_usuario` (
 --
 
 INSERT INTO `tb_usuario` (`id`, `nome_completo`, `email`, `data_nascimento`, `sexo`, `senha`, `nivel_acesso`) VALUES
-(3, 'Augusto', 'augustogern@outlook.com', '2000-03-12', 'Masculino', '1234', 'null'),
+(3, 'Augusto', 'augustogern@outlook.com', '2000-03-12', 'Masculino', '1234', 'adm'),
 (4, 'Thiago Lacerda', 'lacerdathiagosilva.99@gmail.com', '1999-12-15', 'Masculino', 'aaa', 'adm'),
 (6, 'Vinicios', 'v@gmail.com', '2003-02-26', 'Masculino', '123', 'adm'),
 (8, 'Adriano Serpa', 'Adrianoserpa002@gmail.com', '2002-01-04', 'Masculino', 'adrianoserpa2016', 'adm'),
@@ -377,6 +405,14 @@ INSERT INTO `tb_usuario` (`id`, `nome_completo`, `email`, `data_nascimento`, `se
 --
 ALTER TABLE `tb_area_medica`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tb_historico`
+--
+ALTER TABLE `tb_historico`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `fk_am` (`fk_am`),
+  ADD KEY `fk_parte` (`fk_parte`);
 
 --
 -- Indexes for table `tb_hospital`
@@ -450,6 +486,12 @@ ALTER TABLE `tb_area_medica`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
+-- AUTO_INCREMENT for table `tb_historico`
+--
+ALTER TABLE `tb_historico`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
+
+--
 -- AUTO_INCREMENT for table `tb_hospital`
 --
 ALTER TABLE `tb_hospital`
@@ -459,7 +501,7 @@ ALTER TABLE `tb_hospital`
 -- AUTO_INCREMENT for table `tb_medicos`
 --
 ALTER TABLE `tb_medicos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `tb_partes_corpo`
@@ -506,6 +548,13 @@ ALTER TABLE `tb_usuario`
 --
 -- Constraints for dumped tables
 --
+
+--
+-- Limitadores para a tabela `tb_historico`
+--
+ALTER TABLE `tb_historico`
+  ADD CONSTRAINT `tb_historico_ibfk_1` FOREIGN KEY (`fk_am`) REFERENCES `tb_area_medica` (`id`),
+  ADD CONSTRAINT `tb_historico_ibfk_2` FOREIGN KEY (`fk_parte`) REFERENCES `tb_partes_corpo` (`id`);
 
 --
 -- Limitadores para a tabela `tb_medicos`

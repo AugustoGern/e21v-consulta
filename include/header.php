@@ -1,7 +1,6 @@
 <?php 
 	session_start();
 	error_reporting(0);
-
 	require_once('include/conexao.php');
 		// Junta as informações dos usuarios
 	$sql = "SELECT * FROM tb_usuario WHERE id = '{$_SESSION['id_usuario']}'";
