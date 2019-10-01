@@ -48,7 +48,7 @@
 									<?php while ($resultadoConsulta = mysqli_fetch_array($queryConsulta)) { ?>
 									<tr>	
 										<td><?=$resultadoConsulta['area']?></td>	
-										<td><?=$resultadoConsulta['parte']?></td>
+										<td><?=utf8_encode($resultadoConsulta['parte'])?></td>
 										<td style="float: right;">
 											<a href="historico_visualizacao.php?id_consulta=<?=$resultadoConsulta['id']?>" class="btn btn-info text-center">Visualizar</a>
 										</td>
