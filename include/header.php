@@ -108,7 +108,7 @@ require_once('backend/login.php');
 				<label for="senha_login">Senha</label>
 				<input type="password" class="form-control" id="senha_login" name="senha_login" placeholder="******">
 				<input type="submit" class="btn" name="botao_login" id="botao_login" value="login"  required="">
-				<a class="navbar-brand " href="#"> Esquecer a senha</a>  
+				<a class="navbar-brand " href="recuperar_senha.php"> Esquecer a senha</a>  
 			</form>
 			<?php if (isset($alerta)) { ?>
 			<div class="alert alert-<?=$alerta['tipo']?>">
