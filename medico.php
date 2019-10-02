@@ -31,7 +31,7 @@
 		<div class="container">
 			<div class="row">
 			<div class="col-12 text-center">
-				<h1 id="batata">Aqui você encontrará nossos proficionais:</h1>
+				<h1 id="batata">Aqui você encontrará nossos profissionais:</h1>
 			</div>
 
 				<div class="col-lg-12 col-sm-12 mt-5 p-0 " >
