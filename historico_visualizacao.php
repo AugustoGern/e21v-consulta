@@ -31,7 +31,9 @@
 			</div>
 
 			<?php while ($resultadoHistorico = mysqli_fetch_array($queryHistorico)) { ?>
+				<div class="row">
 			<hr style="background-color: rgb(168, 182, 186); width: 1000px; margin-top:50px; height: 1px; ">
+			</div>
 			<div class="media mt-4 ">
 				<div class="media-body pl-5">
 					<div class="ml-5">
