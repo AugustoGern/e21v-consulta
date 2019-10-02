@@ -13,7 +13,7 @@
 		<img src="media/images/logo__.png">
 	</div>
 	<div class="container pt-5 text-center">
-		<form class="">
+		<form class="" method="post" action="">
 			<div class="form-group corpo">
 				<label for="email">Digite seu E-mail</label>
 				<input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Digite seu E-mail">	
