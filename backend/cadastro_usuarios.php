@@ -26,14 +26,15 @@ if (isset($_POST['cadastro'])) {
 	$emailUsuario = $_POST['email'];
 	$dataNasc = $_POST['dataNasc'];
 	$sexo = $_POST['sexo'];
-	$senha = $_POST['senha'];
+	$senha = $_POST['senha'	];
+	$token = $_POST['token'	];
 
 
 		// Verifica se é edição ou cadastro de usuario
 	if (isset($id_usuario)) {
 		$sql = "UPDATE tb_usuario SET nome_completo = '$nomeCompleto', email = '$emailUsuario', data_nascimento = '$dataNasc', sexo = '$sexo', senha = '$senha', nivel_acesso = 'null' WHERE id = $id_usuario";
 	} else {
-		$sql = "INSERT INTO tb_usuario VALUES (DEFAULT, '$nomeCompleto', '$emailUsuario', '$dataNasc', '$sexo', '$senha', 'null')";
+		$sql = "INSERT INTO tb_usuario VALUES (DEFAULT, '$nomeCompleto', '$emailUsuario', '$dataNasc', '$sexo', '$senha', 'null', '$token')";
 	}
 
 	if (mysqli_query($con, $sql)) {
