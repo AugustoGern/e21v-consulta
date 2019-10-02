@@ -24,8 +24,10 @@
 
 	<div class="container-fluid">
 		<div class="container mb-5 pb-5">
-			<div class="row">		
-				<h2>Historico</h2>
+			<div class="row">
+				<div class="col-12 text-center">		
+					<h2>Historico</h2>
+				</div>
 			</div>
 
 			<?php while ($resultadoHistorico = mysqli_fetch_array($queryHistorico)) { ?>
