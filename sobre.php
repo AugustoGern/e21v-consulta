@@ -26,7 +26,7 @@
 		<h1 id="batata">Aqui você saberá tudo sobre nossa página, nossa política de qualidade e muito mais.</h1>
 		
 		<h4 class="p-4 mt-5 txt1">
-			A página foi desenvolvida por uma equipe de 4 Alunos do Entra21, Edição de 2019. A <strong>SymFinder</strong> foi monitorada e auxiliada por nosso instrutor João de Paula.
+			O site foi desenvolvido por uma equipe de 4 Alunos do Entra21, Edição de 2019. A <strong>SymFinder</strong> foi monitorada e auxiliada por nosso instrutor João de Paula.
 		</h4>
 		<div class="row">
 			<hr  style="border: 0; margin-top: 20px; height: 3px; width: 900px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(34, 86, 170, 0.75), rgba(0, 0, 0, 0));">
@@ -36,7 +36,7 @@
 			</div>
 
 			<div class="col-md-12 col-lg-8 mt-3">
-				<h4 class="txt2 m-4 p-0">A página vem se desenvolvendo a cada dia, e com ela vem o nosso objetivo de entregar um processo de atendimento ao cliente, com o máximo de agilidade em seu procedimento de consulta ou pesquisa de sintomas possíveis. Nossa equipe visa entregar o máximo de conforto e simplicidade aos nossos clientes, tendo com o site o mais importante: Entregar um profissional na área hospitalar que possa cuidar do paciente, e auxilia-lo em sua caminhada ao bem-estar.</h4>
+				<h4 class="txt2 m-4 p-0">O site vem se desenvolvendo a cada dia, e com ele vem o nosso objetivo de entregar um processo de atendimento ao cliente, com o máximo de agilidade em seu procedimento de consulta. Nossa equipe visa entregar o máximo de conforto e simplicidade aos nossos clientes, tendo com o site o mais importante: Entregar um profissional na área hospitalar que possa cuidar do paciente, e auxilia-lo em sua caminhada ao bem-estar.</h4>
 			</div>
 
 			<div class="col-md-5 col-12 ">
