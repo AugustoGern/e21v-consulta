@@ -49,7 +49,14 @@
 		$redefSenha = $_POST['redefSenha'];
 
 		$sqlRedifinir = "UPDATE tb_usuario SET senha = '$senha', token = null WHERE token = '$token'";
-		$queryRedefinir = mysqli_query($con, $sqlRedifinir);
+		
+		if (mysqli_query($con, $sqlRedifinir)) {
+			header('Location: index.php');
+		} else {
+			die("Erro ao redefinir senha!!!");
+		}
+
+
 	}
 
 ?>
