@@ -1,8 +1,8 @@
 <?php
 
-	CONST HOST = "faqhospital.tk:3306";
-	CONST USER = "faqhospi_root";
-	CONST PASS = "entra21@blusoft";
+	CONST HOST = "127.0.0.1";
+	CONST USER = "root";
+	CONST PASS = "";
 	CONST DB = "faqhospi_master";
 $con = mysqli_connect(HOST, USER, PASS, DB);
 
